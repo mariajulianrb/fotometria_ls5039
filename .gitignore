@@ -1,0 +1,14 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Imagens FITS (evita ultrapassar limites do GitHub)
+*.fits
+*.FITS
+*.fit
+
+# Arquivos temporários do Python e PyRAF
+__pycache__/
+*.pyc
+uparm/
+logfile
