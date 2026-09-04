@@ -120,7 +120,7 @@ print(f"Magnitude Limite do Instrumento: {mag_limite:.2f}")
 
 # Linha vertical indicando o limite teórico 5-sigma
 #plt.axvline(x=mag_limite, color='red', linestyle='--', linewidth=2, 
-            label=f'Limite Teórico 5-sigma ({mag_limite:.2f} mag)')
+#label=f'Limite Teórico 5-sigma ({mag_limite:.2f} mag)')
 
 # Formatação final para o relatório
 #plt.title('Distribuição de Magnitudes e Limite de Detecção')
