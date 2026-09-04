@@ -7,6 +7,7 @@ from photutils.aperture import CircularAperture, aperture_photometry
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 from astroquery.vizier import Vizier
+import matplotlib.pyplot as plt
 
 # ==========================================
 # CONFIGURAÇÕES INICIAIS
@@ -58,7 +59,7 @@ coords_imagem = wcs.pixel_to_world(tabela_filtrada['xcenter'], tabela_filtrada['
 centro_ra, centro_dec = wcs.pixel_to_world(image_data.shape[1]/2, image_data.shape[0]/2).ra.deg, wcs.pixel_to_world(image_data.shape[1]/2, image_data.shape[0]/2).dec.deg
 centro_coord = SkyCoord(ra=centro_ra, dec=centro_dec, unit=(u.deg, u.deg))
 
-# Busca catálogo UCAC4 (banda V) num raio de 15 arcmin (ajuste conforme o FOV do seu telescópio)
+# Busca catálogo UCAC4 (banda V) num raio de 15 arcmin
 vizier = Vizier(columns=['RAJ2000', 'DEJ2000', 'Vmag'])
 vizier.ROW_LIMIT = -1 # Sem limite de linhas
 catalogo = vizier.query_region(centro_coord, radius=15*u.arcmin, catalog='I/322A/out')[0]
@@ -73,8 +74,7 @@ coords_catalogo = SkyCoord(ra=catalogo['RAJ2000'], dec=catalogo['DEJ2000'], unit
 # Encontra a estrela do catálogo mais próxima para cada estrela da nossa imagem
 idx_catalogo, d2d, d3d = coords_imagem.match_to_catalog_sky(coords_catalogo)
 
-# Mantém apenas os pares que estão muito próximos (ex: menos de 2 arcsec de distância)
-# Isso garante que não estamos pareando estrelas diferentes que calharam de estar na mesma área
+# Mantém apenas os pares com menos de 2 arcsec de distância
 limite_distancia = 2.0 * u.arcsec
 pares_validos = d2d < limite_distancia
 
@@ -86,15 +86,46 @@ print(f"Pares perfeitos encontrados: {len(mag_inst_pareada)}")
 # ==========================================
 # 5. CÁLCULO DO ZERO POINT
 # ==========================================
-# O Ponto Zero é a diferença entre a magnitude real e a instrumental
 diferencas = mag_aparente_pareada - mag_inst_pareada
 
-# Usamos a mediana para que estrelas com defeito ou variação não distorçam o resultado
 zero_point = np.median(diferencas)
 desvio_padrao_zp = np.std(diferencas)
 
 print(f"Zero Point (ZP): {zero_point:.4f}")
 print(f"Desvio Padrão do ZP: {desvio_padrao_zp:.4f}")
 
-# Exemplo: aplicando o ZP para descobrir a magnitude real de uma estrela qualquer da imagem
-# mag_real = mag_inst + zero_point
+# ==========================================
+# 5.5 CÁLCULO DA MAGNITUDE LIMITE
+# ==========================================
+def estimate_5sigma_limit(std, zp_real):
+    background_noise = std
+    signal_to_noise_ratio = 10
+    flux_5sigma = signal_to_noise_ratio * background_noise
+    
+    mag_5sigma = -2.5 * np.log10(flux_5sigma) + zp_real
+    return mag_5sigma
+
+mag_limite = estimate_5sigma_limit(std, zero_point)
+print(f"Magnitude Limite do Instrumento: {mag_limite:.2f}")
+
+# ==========================================
+# 5.6 GRÁFICO DA MAGNITUDE LIMITE
+# ==========================================
+# Usa as magnitudes instrumentais calculadas no Passo 2 aplicadas ao ZP calibrado
+#mags_verdadeiras = tabela_filtrada['mag_inst'] + zero_point
+
+# Criando o gráfico (Histograma)
+#plt.figure(figsize=(8, 6))
+#plt.hist(mags_verdadeiras, bins=30, color='steelblue', edgecolor='black', alpha=0.7)
+
+# Linha vertical indicando o limite teórico 5-sigma
+#plt.axvline(x=mag_limite, color='red', linestyle='--', linewidth=2, 
+            label=f'Limite Teórico 5-sigma ({mag_limite:.2f} mag)')
+
+# Formatação final para o relatório
+#plt.title('Distribuição de Magnitudes e Limite de Detecção')
+#plt.xlabel('Magnitude Calibrada (V)')
+#plt.ylabel('Número de Estrelas Detectadas')
+#plt.legend()
+#plt.grid(True, alpha=0.3)
+#plt.show()
