@@ -1,479 +1,1481 @@
 # Region file format: DS9 version 4.1
 global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1
 image
-circle(2596.53,234.24,5.0) # color=cyan
-point(2596.53,234.24) # point=cross color=red
-circle(1184.00,240.90,5.0) # color=cyan
-point(1184.00,240.90) # point=cross color=red
-circle(1292.14,244.58,5.0) # color=cyan
-point(1292.14,244.58) # point=cross color=red
-circle(525.55,248.57,5.0) # color=cyan
-point(525.55,248.57) # point=cross color=red
-circle(545.44,279.88,5.0) # color=cyan
-point(545.44,279.88) # point=cross color=red
-circle(2756.40,290.77,5.0) # color=cyan
-point(2756.40,290.77) # point=cross color=red
-circle(1793.66,294.55,5.0) # color=cyan
-point(1793.66,294.55) # point=cross color=red
-circle(707.17,295.49,5.0) # color=cyan
-point(707.17,295.49) # point=cross color=red
-circle(1838.14,297.25,5.0) # color=cyan
-point(1838.14,297.25) # point=cross color=red
-circle(825.52,310.55,5.0) # color=cyan
-point(825.52,310.55) # point=cross color=red
-circle(2517.70,312.67,5.0) # color=cyan
-point(2517.70,312.67) # point=cross color=red
-circle(2523.17,324.88,5.0) # color=cyan
-point(2523.17,324.88) # point=cross color=red
-circle(502.33,334.76,5.0) # color=cyan
-point(502.33,334.76) # point=cross color=red
-circle(413.53,347.60,5.0) # color=cyan
-point(413.53,347.60) # point=cross color=red
-circle(1440.57,353.14,5.0) # color=cyan
-point(1440.57,353.14) # point=cross color=red
-circle(1906.24,361.99,5.0) # color=cyan
-point(1906.24,361.99) # point=cross color=red
-circle(2489.11,369.16,5.0) # color=cyan
-point(2489.11,369.16) # point=cross color=red
-circle(788.79,374.10,5.0) # color=cyan
-point(788.79,374.10) # point=cross color=red
-circle(1455.05,374.07,5.0) # color=cyan
-point(1455.05,374.07) # point=cross color=red
-circle(1062.13,377.96,5.0) # color=cyan
-point(1062.13,377.96) # point=cross color=red
-circle(2661.53,380.76,5.0) # color=cyan
-point(2661.53,380.76) # point=cross color=red
-circle(1281.14,390.22,5.0) # color=cyan
-point(1281.14,390.22) # point=cross color=red
-circle(1332.32,405.46,5.0) # color=cyan
-point(1332.32,405.46) # point=cross color=red
-circle(1747.89,419.70,5.0) # color=cyan
-point(1747.89,419.70) # point=cross color=red
-circle(851.72,427.08,5.0) # color=cyan
-point(851.72,427.08) # point=cross color=red
-circle(983.45,429.04,5.0) # color=cyan
-point(983.45,429.04) # point=cross color=red
-circle(1638.68,430.01,5.0) # color=cyan
-point(1638.68,430.01) # point=cross color=red
-circle(545.78,432.59,5.0) # color=cyan
-point(545.78,432.59) # point=cross color=red
-circle(667.45,444.93,5.0) # color=cyan
-point(667.45,444.93) # point=cross color=red
-circle(824.17,469.71,5.0) # color=cyan
-point(824.17,469.71) # point=cross color=red
-circle(648.17,471.67,5.0) # color=cyan
-point(648.17,471.67) # point=cross color=red
-circle(1564.15,472.65,5.0) # color=cyan
-point(1564.15,472.65) # point=cross color=red
-circle(290.18,505.95,5.0) # color=cyan
-point(290.18,505.95) # point=cross color=red
-circle(1112.04,508.79,5.0) # color=cyan
-point(1112.04,508.79) # point=cross color=red
-circle(690.23,511.13,5.0) # color=cyan
-point(690.23,511.13) # point=cross color=red
-circle(514.73,516.41,5.0) # color=cyan
-point(514.73,516.41) # point=cross color=red
-circle(2351.78,548.46,5.0) # color=cyan
-point(2351.78,548.46) # point=cross color=red
-circle(773.60,580.32,5.0) # color=cyan
-point(773.60,580.32) # point=cross color=red
-circle(989.95,603.54,5.0) # color=cyan
-point(989.95,603.54) # point=cross color=red
-circle(809.97,607.52,5.0) # color=cyan
-point(809.97,607.52) # point=cross color=red
-circle(2667.38,610.15,5.0) # color=cyan
-point(2667.38,610.15) # point=cross color=red
-circle(2452.77,613.92,5.0) # color=cyan
-point(2452.77,613.92) # point=cross color=red
-circle(595.74,616.10,5.0) # color=cyan
-point(595.74,616.10) # point=cross color=red
-circle(2486.11,615.52,5.0) # color=cyan
-point(2486.11,615.52) # point=cross color=red
-circle(1019.70,625.63,5.0) # color=cyan
-point(1019.70,625.63) # point=cross color=red
-circle(357.17,634.53,5.0) # color=cyan
-point(357.17,634.53) # point=cross color=red
-circle(1432.09,655.66,5.0) # color=cyan
-point(1432.09,655.66) # point=cross color=red
-circle(1409.94,657.74,5.0) # color=cyan
-point(1409.94,657.74) # point=cross color=red
-circle(1431.95,667.28,5.0) # color=cyan
-point(1431.95,667.28) # point=cross color=red
-circle(747.17,680.64,5.0) # color=cyan
-point(747.17,680.64) # point=cross color=red
-circle(890.65,683.11,5.0) # color=cyan
-point(890.65,683.11) # point=cross color=red
-circle(452.49,686.05,5.0) # color=cyan
-point(452.49,686.05) # point=cross color=red
-circle(508.12,693.42,5.0) # color=cyan
-point(508.12,693.42) # point=cross color=red
-circle(1845.56,696.55,5.0) # color=cyan
-point(1845.56,696.55) # point=cross color=red
-circle(1110.31,698.27,5.0) # color=cyan
-point(1110.31,698.27) # point=cross color=red
-circle(1143.59,705.37,5.0) # color=cyan
-point(1143.59,705.37) # point=cross color=red
-circle(1664.87,710.11,5.0) # color=cyan
-point(1664.87,710.11) # point=cross color=red
-circle(800.43,712.57,5.0) # color=cyan
-point(800.43,712.57) # point=cross color=red
-circle(1427.04,717.75,5.0) # color=cyan
-point(1427.04,717.75) # point=cross color=red
-circle(1986.83,716.82,5.0) # color=cyan
-point(1986.83,716.82) # point=cross color=red
-circle(853.27,718.90,5.0) # color=cyan
-point(853.27,718.90) # point=cross color=red
-circle(1076.28,723.09,5.0) # color=cyan
-point(1076.28,723.09) # point=cross color=red
-circle(1529.78,727.18,5.0) # color=cyan
-point(1529.78,727.18) # point=cross color=red
-circle(754.61,741.37,5.0) # color=cyan
-point(754.61,741.37) # point=cross color=red
-circle(1099.47,749.28,5.0) # color=cyan
-point(1099.47,749.28) # point=cross color=red
-circle(1123.98,749.68,5.0) # color=cyan
-point(1123.98,749.68) # point=cross color=red
-circle(932.91,761.25,5.0) # color=cyan
-point(932.91,761.25) # point=cross color=red
-circle(348.38,769.50,5.0) # color=cyan
-point(348.38,769.50) # point=cross color=red
-circle(733.37,777.66,5.0) # color=cyan
-point(733.37,777.66) # point=cross color=red
-circle(1499.09,778.65,5.0) # color=cyan
-point(1499.09,778.65) # point=cross color=red
-circle(285.33,783.77,5.0) # color=cyan
-point(285.33,783.77) # point=cross color=red
-circle(2094.16,792.75,5.0) # color=cyan
-point(2094.16,792.75) # point=cross color=red
-circle(1787.42,799.78,5.0) # color=cyan
-point(1787.42,799.78) # point=cross color=red
-circle(1672.74,802.55,5.0) # color=cyan
-point(1672.74,802.55) # point=cross color=red
-circle(708.33,808.85,5.0) # color=cyan
-point(708.33,808.85) # point=cross color=red
-circle(1165.70,811.11,5.0) # color=cyan
-point(1165.70,811.11) # point=cross color=red
-circle(301.13,812.02,5.0) # color=cyan
-point(301.13,812.02) # point=cross color=red
-circle(2664.48,820.18,5.0) # color=cyan
-point(2664.48,820.18) # point=cross color=red
-circle(2276.77,835.64,5.0) # color=cyan
-point(2276.77,835.64) # point=cross color=red
-circle(2294.11,838.13,5.0) # color=cyan
-point(2294.11,838.13) # point=cross color=red
-circle(1182.04,839.75,5.0) # color=cyan
-point(1182.04,839.75) # point=cross color=red
-circle(1628.43,853.36,5.0) # color=cyan
-point(1628.43,853.36) # point=cross color=red
-circle(926.41,878.56,5.0) # color=cyan
-point(926.41,878.56) # point=cross color=red
-circle(2777.77,880.14,5.0) # color=cyan
-point(2777.77,880.14) # point=cross color=red
-circle(1588.47,882.51,5.0) # color=cyan
-point(1588.47,882.51) # point=cross color=red
-circle(2046.40,882.42,5.0) # color=cyan
-point(2046.40,882.42) # point=cross color=red
-circle(963.57,886.61,5.0) # color=cyan
-point(963.57,886.61) # point=cross color=red
-circle(1510.39,894.23,5.0) # color=cyan
-point(1510.39,894.23) # point=cross color=red
-circle(1162.24,908.22,5.0) # color=cyan
-point(1162.24,908.22) # point=cross color=red
-circle(1829.33,907.98,5.0) # color=cyan
-point(1829.33,907.98) # point=cross color=red
-circle(1368.48,916.04,5.0) # color=cyan
-point(1368.48,916.04) # point=cross color=red
-circle(321.28,926.07,5.0) # color=cyan
-point(321.28,926.07) # point=cross color=red
-circle(1562.51,935.70,5.0) # color=cyan
-point(1562.51,935.70) # point=cross color=red
-circle(1642.19,935.79,5.0) # color=cyan
-point(1642.19,935.79) # point=cross color=red
-circle(683.91,946.73,5.0) # color=cyan
-point(683.91,946.73) # point=cross color=red
-circle(1256.89,963.63,5.0) # color=cyan
-point(1256.89,963.63) # point=cross color=red
-circle(1390.33,964.82,5.0) # color=cyan
-point(1390.33,964.82) # point=cross color=red
-circle(2099.72,970.86,5.0) # color=cyan
-point(2099.72,970.86) # point=cross color=red
-circle(415.11,978.55,5.0) # color=cyan
-point(415.11,978.55) # point=cross color=red
-circle(840.09,979.38,5.0) # color=cyan
-point(840.09,979.38) # point=cross color=red
+circle(943.86,231.93,5.0) # color=cyan
+point(943.86,231.93) # point=cross color=red
+circle(2185.15,233.05,5.0) # color=cyan
+point(2185.15,233.05) # point=cross color=red
+circle(2597.33,233.77,5.0) # color=cyan
+point(2597.33,233.77) # point=cross color=red
+circle(2836.92,234.94,5.0) # color=cyan
+point(2836.92,234.94) # point=cross color=red
+circle(396.17,236.14,5.0) # color=cyan
+point(396.17,236.14) # point=cross color=red
+circle(1374.47,237.18,5.0) # color=cyan
+point(1374.47,237.18) # point=cross color=red
+circle(265.27,238.16,5.0) # color=cyan
+point(265.27,238.16) # point=cross color=red
+circle(755.35,239.43,5.0) # color=cyan
+point(755.35,239.43) # point=cross color=red
+circle(1184.05,240.85,5.0) # color=cyan
+point(1184.05,240.85) # point=cross color=red
+circle(2035.58,240.75,5.0) # color=cyan
+point(2035.58,240.75) # point=cross color=red
+circle(1003.81,242.84,5.0) # color=cyan
+point(1003.81,242.84) # point=cross color=red
+circle(1292.17,244.49,5.0) # color=cyan
+point(1292.17,244.49) # point=cross color=red
+circle(1161.34,246.51,5.0) # color=cyan
+point(1161.34,246.51) # point=cross color=red
+circle(525.50,248.54,5.0) # color=cyan
+point(525.50,248.54) # point=cross color=red
+circle(2092.44,248.67,5.0) # color=cyan
+point(2092.44,248.67) # point=cross color=red
+circle(1569.39,249.40,5.0) # color=cyan
+point(1569.39,249.40) # point=cross color=red
+circle(486.21,251.37,5.0) # color=cyan
+point(486.21,251.37) # point=cross color=red
+circle(1700.03,261.16,5.0) # color=cyan
+point(1700.03,261.16) # point=cross color=red
+circle(404.43,263.92,5.0) # color=cyan
+point(404.43,263.92) # point=cross color=red
+circle(2655.41,263.11,5.0) # color=cyan
+point(2655.41,263.11) # point=cross color=red
+circle(1310.30,265.30,5.0) # color=cyan
+point(1310.30,265.30) # point=cross color=red
+circle(660.27,266.79,5.0) # color=cyan
+point(660.27,266.79) # point=cross color=red
+circle(255.23,272.24,5.0) # color=cyan
+point(255.23,272.24) # point=cross color=red
+circle(771.15,272.89,5.0) # color=cyan
+point(771.15,272.89) # point=cross color=red
+circle(1682.86,273.87,5.0) # color=cyan
+point(1682.86,273.87) # point=cross color=red
+circle(2828.28,273.81,5.0) # color=cyan
+point(2828.28,273.81) # point=cross color=red
+circle(899.37,275.86,5.0) # color=cyan
+point(899.37,275.86) # point=cross color=red
+circle(545.27,279.71,5.0) # color=cyan
+point(545.27,279.71) # point=cross color=red
+circle(1210.07,281.47,5.0) # color=cyan
+point(1210.07,281.47) # point=cross color=red
+circle(449.87,283.44,5.0) # color=cyan
+point(449.87,283.44) # point=cross color=red
+circle(2663.26,282.18,5.0) # color=cyan
+point(2663.26,282.18) # point=cross color=red
+circle(605.98,289.75,5.0) # color=cyan
+point(605.98,289.75) # point=cross color=red
+circle(2756.60,290.52,5.0) # color=cyan
+point(2756.60,290.52) # point=cross color=red
+circle(662.11,292.61,5.0) # color=cyan
+point(662.11,292.61) # point=cross color=red
+circle(1793.73,294.53,5.0) # color=cyan
+point(1793.73,294.53) # point=cross color=red
+circle(707.07,295.61,5.0) # color=cyan
+point(707.07,295.61) # point=cross color=red
+circle(1159.58,295.75,5.0) # color=cyan
+point(1159.58,295.75) # point=cross color=red
+circle(1132.85,297.96,5.0) # color=cyan
+point(1132.85,297.96) # point=cross color=red
+circle(1838.24,297.09,5.0) # color=cyan
+point(1838.24,297.09) # point=cross color=red
+circle(1083.07,301.68,5.0) # color=cyan
+point(1083.07,301.68) # point=cross color=red
+circle(1730.43,305.12,5.0) # color=cyan
+point(1730.43,305.12) # point=cross color=red
+circle(329.61,305.89,5.0) # color=cyan
+point(329.61,305.89) # point=cross color=red
+circle(1289.52,306.35,5.0) # color=cyan
+point(1289.52,306.35) # point=cross color=red
+circle(1570.57,309.36,5.0) # color=cyan
+point(1570.57,309.36) # point=cross color=red
+circle(2590.07,308.62,5.0) # color=cyan
+point(2590.07,308.62) # point=cross color=red
+circle(391.03,310.90,5.0) # color=cyan
+point(391.03,310.90) # point=cross color=red
+circle(825.44,310.59,5.0) # color=cyan
+point(825.44,310.59) # point=cross color=red
+circle(854.36,312.38,5.0) # color=cyan
+point(854.36,312.38) # point=cross color=red
+circle(1463.64,313.07,5.0) # color=cyan
+point(1463.64,313.07) # point=cross color=red
+circle(2518.02,312.55,5.0) # color=cyan
+point(2518.02,312.55) # point=cross color=red
+circle(2837.80,311.65,5.0) # color=cyan
+point(2837.80,311.65) # point=cross color=red
+circle(1957.70,317.88,5.0) # color=cyan
+point(1957.70,317.88) # point=cross color=red
+circle(1305.54,316.64,5.0) # color=cyan
+point(1305.54,316.64) # point=cross color=red
+circle(2758.70,322.66,5.0) # color=cyan
+point(2758.70,322.66) # point=cross color=red
+circle(2665.07,329.51,5.0) # color=cyan
+point(2665.07,329.51) # point=cross color=red
+circle(2461.24,330.91,5.0) # color=cyan
+point(2461.24,330.91) # point=cross color=red
+circle(284.26,334.14,5.0) # color=cyan
+point(284.26,334.14) # point=cross color=red
+circle(502.39,334.57,5.0) # color=cyan
+point(502.39,334.57) # point=cross color=red
+circle(690.07,342.71,5.0) # color=cyan
+point(690.07,342.71) # point=cross color=red
+circle(865.74,344.62,5.0) # color=cyan
+point(865.74,344.62) # point=cross color=red
+circle(1526.78,344.86,5.0) # color=cyan
+point(1526.78,344.86) # point=cross color=red
+circle(752.82,346.92,5.0) # color=cyan
+point(752.82,346.92) # point=cross color=red
+circle(413.50,347.35,5.0) # color=cyan
+point(413.50,347.35) # point=cross color=red
+circle(1205.91,348.95,5.0) # color=cyan
+point(1205.91,348.95) # point=cross color=red
+circle(1936.41,346.82,5.0) # color=cyan
+point(1936.41,346.82) # point=cross color=red
+circle(850.52,349.59,5.0) # color=cyan
+point(850.52,349.59) # point=cross color=red
+circle(993.07,351.91,5.0) # color=cyan
+point(993.07,351.91) # point=cross color=red
+circle(1440.57,353.11,5.0) # color=cyan
+point(1440.57,353.11) # point=cross color=red
+circle(356.17,355.07,5.0) # color=cyan
+point(356.17,355.07) # point=cross color=red
+circle(881.33,358.25,5.0) # color=cyan
+point(881.33,358.25) # point=cross color=red
+circle(2872.80,359.44,5.0) # color=cyan
+point(2872.80,359.44) # point=cross color=red
+circle(1341.04,361.84,5.0) # color=cyan
+point(1341.04,361.84) # point=cross color=red
+circle(1906.32,361.86,5.0) # color=cyan
+point(1906.32,361.86) # point=cross color=red
+circle(1178.98,365.27,5.0) # color=cyan
+point(1178.98,365.27) # point=cross color=red
+circle(708.47,365.81,5.0) # color=cyan
+point(708.47,365.81) # point=cross color=red
+circle(428.56,366.86,5.0) # color=cyan
+point(428.56,366.86) # point=cross color=red
+circle(1570.62,368.48,5.0) # color=cyan
+point(1570.62,368.48) # point=cross color=red
+circle(2150.72,369.22,5.0) # color=cyan
+point(2150.72,369.22) # point=cross color=red
+circle(2489.74,369.15,5.0) # color=cyan
+point(2489.74,369.15) # point=cross color=red
+circle(664.63,372.39,5.0) # color=cyan
+point(664.63,372.39) # point=cross color=red
+circle(788.78,374.20,5.0) # color=cyan
+point(788.78,374.20) # point=cross color=red
+circle(1455.19,374.03,5.0) # color=cyan
+point(1455.19,374.03) # point=cross color=red
+circle(1835.07,375.89,5.0) # color=cyan
+point(1835.07,375.89) # point=cross color=red
+circle(2110.69,375.87,5.0) # color=cyan
+point(2110.69,375.87) # point=cross color=red
+circle(462.83,377.03,5.0) # color=cyan
+point(462.83,377.03) # point=cross color=red
+circle(1062.54,377.82,5.0) # color=cyan
+point(1062.54,377.82) # point=cross color=red
+circle(397.93,377.30,5.0) # color=cyan
+point(397.93,377.30) # point=cross color=red
+circle(2661.93,380.74,5.0) # color=cyan
+point(2661.93,380.74) # point=cross color=red
+circle(437.98,383.04,5.0) # color=cyan
+point(437.98,383.04) # point=cross color=red
+circle(753.15,383.60,5.0) # color=cyan
+point(753.15,383.60) # point=cross color=red
+circle(2129.43,384.12,5.0) # color=cyan
+point(2129.43,384.12) # point=cross color=red
+circle(727.56,385.32,5.0) # color=cyan
+point(727.56,385.32) # point=cross color=red
+circle(885.50,389.91,5.0) # color=cyan
+point(885.50,389.91) # point=cross color=red
+circle(1238.80,388.13,5.0) # color=cyan
+point(1238.80,388.13) # point=cross color=red
+circle(2886.35,390.09,5.0) # color=cyan
+point(2886.35,390.09) # point=cross color=red
+circle(1281.15,390.28,5.0) # color=cyan
+point(1281.15,390.28) # point=cross color=red
+circle(1646.97,391.53,5.0) # color=cyan
+point(1646.97,391.53) # point=cross color=red
+circle(1215.74,391.43,5.0) # color=cyan
+point(1215.74,391.43) # point=cross color=red
+circle(679.29,393.50,5.0) # color=cyan
+point(679.29,393.50) # point=cross color=red
+circle(271.53,398.57,5.0) # color=cyan
+point(271.53,398.57) # point=cross color=red
+circle(1296.78,404.21,5.0) # color=cyan
+point(1296.78,404.21) # point=cross color=red
+circle(1332.34,405.35,5.0) # color=cyan
+point(1332.34,405.35) # point=cross color=red
+circle(366.84,406.93,5.0) # color=cyan
+point(366.84,406.93) # point=cross color=red
+circle(2870.94,407.13,5.0) # color=cyan
+point(2870.94,407.13) # point=cross color=red
+circle(732.40,417.03,5.0) # color=cyan
+point(732.40,417.03) # point=cross color=red
+circle(1747.99,419.60,5.0) # color=cyan
+point(1747.99,419.60) # point=cross color=red
+circle(2127.81,420.09,5.0) # color=cyan
+point(2127.81,420.09) # point=cross color=red
+circle(820.54,421.43,5.0) # color=cyan
+point(820.54,421.43) # point=cross color=red
+circle(1183.13,421.21,5.0) # color=cyan
+point(1183.13,421.21) # point=cross color=red
+circle(657.81,423.63,5.0) # color=cyan
+point(657.81,423.63) # point=cross color=red
+circle(851.68,427.21,5.0) # color=cyan
+point(851.68,427.21) # point=cross color=red
+circle(2320.94,425.34,5.0) # color=cyan
+point(2320.94,425.34) # point=cross color=red
+circle(2030.33,426.06,5.0) # color=cyan
+point(2030.33,426.06) # point=cross color=red
+circle(983.40,428.95,5.0) # color=cyan
+point(983.40,428.95) # point=cross color=red
+circle(880.16,429.88,5.0) # color=cyan
+point(880.16,429.88) # point=cross color=red
+circle(1517.77,430.23,5.0) # color=cyan
+point(1517.77,430.23) # point=cross color=red
+circle(545.71,432.50,5.0) # color=cyan
+point(545.71,432.50) # point=cross color=red
+circle(1924.52,434.27,5.0) # color=cyan
+point(1924.52,434.27) # point=cross color=red
+circle(2567.76,437.13,5.0) # color=cyan
+point(2567.76,437.13) # point=cross color=red
+circle(1834.92,440.57,5.0) # color=cyan
+point(1834.92,440.57) # point=cross color=red
+circle(1442.60,440.90,5.0) # color=cyan
+point(1442.60,440.90) # point=cross color=red
+circle(309.60,442.94,5.0) # color=cyan
+point(309.60,442.94) # point=cross color=red
+circle(667.60,444.95,5.0) # color=cyan
+point(667.60,444.95) # point=cross color=red
+circle(1028.83,459.84,5.0) # color=cyan
+point(1028.83,459.84) # point=cross color=red
+circle(2637.79,459.72,5.0) # color=cyan
+point(2637.79,459.72) # point=cross color=red
+circle(861.63,465.98,5.0) # color=cyan
+point(861.63,465.98) # point=cross color=red
+circle(545.40,468.44,5.0) # color=cyan
+point(545.40,468.44) # point=cross color=red
+circle(824.31,469.68,5.0) # color=cyan
+point(824.31,469.68) # point=cross color=red
+circle(648.08,471.39,5.0) # color=cyan
+point(648.08,471.39) # point=cross color=red
+circle(1192.90,470.12,5.0) # color=cyan
+point(1192.90,470.12) # point=cross color=red
+circle(251.90,473.03,5.0) # color=cyan
+point(251.90,473.03) # point=cross color=red
+circle(1564.30,472.41,5.0) # color=cyan
+point(1564.30,472.41) # point=cross color=red
+circle(1700.08,473.39,5.0) # color=cyan
+point(1700.08,473.39) # point=cross color=red
+circle(1747.02,473.88,5.0) # color=cyan
+point(1747.02,473.88) # point=cross color=red
+circle(1074.14,475.09,5.0) # color=cyan
+point(1074.14,475.09) # point=cross color=red
+circle(1144.73,476.28,5.0) # color=cyan
+point(1144.73,476.28) # point=cross color=red
+circle(395.09,479.11,5.0) # color=cyan
+point(395.09,479.11) # point=cross color=red
+circle(504.82,482.77,5.0) # color=cyan
+point(504.82,482.77) # point=cross color=red
+circle(886.40,484.65,5.0) # color=cyan
+point(886.40,484.65) # point=cross color=red
+circle(2699.03,489.75,5.0) # color=cyan
+point(2699.03,489.75) # point=cross color=red
+circle(981.43,492.04,5.0) # color=cyan
+point(981.43,492.04) # point=cross color=red
+circle(566.53,492.32,5.0) # color=cyan
+point(566.53,492.32) # point=cross color=red
+circle(1009.45,493.18,5.0) # color=cyan
+point(1009.45,493.18) # point=cross color=red
+circle(1590.52,494.89,5.0) # color=cyan
+point(1590.52,494.89) # point=cross color=red
+circle(786.34,501.86,5.0) # color=cyan
+point(786.34,501.86) # point=cross color=red
+circle(290.17,505.87,5.0) # color=cyan
+point(290.17,505.87) # point=cross color=red
+circle(1715.11,507.25,5.0) # color=cyan
+point(1715.11,507.25) # point=cross color=red
+circle(2764.29,508.35,5.0) # color=cyan
+point(2764.29,508.35) # point=cross color=red
+circle(1111.99,508.57,5.0) # color=cyan
+point(1111.99,508.57) # point=cross color=red
+circle(690.29,510.90,5.0) # color=cyan
+point(690.29,510.90) # point=cross color=red
+circle(514.72,516.35,5.0) # color=cyan
+point(514.72,516.35) # point=cross color=red
+circle(2472.23,516.86,5.0) # color=cyan
+point(2472.23,516.86) # point=cross color=red
+circle(814.58,519.28,5.0) # color=cyan
+point(814.58,519.28) # point=cross color=red
+circle(718.52,525.91,5.0) # color=cyan
+point(718.52,525.91) # point=cross color=red
+circle(1871.92,524.72,5.0) # color=cyan
+point(1871.92,524.72) # point=cross color=red
+circle(1004.43,530.68,5.0) # color=cyan
+point(1004.43,530.68) # point=cross color=red
+circle(1648.85,531.29,5.0) # color=cyan
+point(1648.85,531.29) # point=cross color=red
+circle(2259.75,535.54,5.0) # color=cyan
+point(2259.75,535.54) # point=cross color=red
+circle(1072.50,540.03,5.0) # color=cyan
+point(1072.50,540.03) # point=cross color=red
+circle(347.31,540.66,5.0) # color=cyan
+point(347.31,540.66) # point=cross color=red
+circle(933.52,541.97,5.0) # color=cyan
+point(933.52,541.97) # point=cross color=red
+circle(965.16,544.44,5.0) # color=cyan
+point(965.16,544.44) # point=cross color=red
+circle(2352.10,548.54,5.0) # color=cyan
+point(2352.10,548.54) # point=cross color=red
+circle(1372.87,556.64,5.0) # color=cyan
+point(1372.87,556.64) # point=cross color=red
+circle(757.02,556.91,5.0) # color=cyan
+point(757.02,556.91) # point=cross color=red
+circle(623.71,558.30,5.0) # color=cyan
+point(623.71,558.30) # point=cross color=red
+circle(897.36,564.78,5.0) # color=cyan
+point(897.36,564.78) # point=cross color=red
+circle(1115.88,564.94,5.0) # color=cyan
+point(1115.88,564.94) # point=cross color=red
+circle(2779.68,566.35,5.0) # color=cyan
+point(2779.68,566.35) # point=cross color=red
+circle(693.84,569.64,5.0) # color=cyan
+point(693.84,569.64) # point=cross color=red
+circle(1203.56,569.55,5.0) # color=cyan
+point(1203.56,569.55) # point=cross color=red
+circle(2565.90,571.46,5.0) # color=cyan
+point(2565.90,571.46) # point=cross color=red
+circle(456.53,574.35,5.0) # color=cyan
+point(456.53,574.35) # point=cross color=red
+circle(1718.72,572.18,5.0) # color=cyan
+point(1718.72,572.18) # point=cross color=red
+circle(292.18,575.97,5.0) # color=cyan
+point(292.18,575.97) # point=cross color=red
+circle(1350.58,578.58,5.0) # color=cyan
+point(1350.58,578.58) # point=cross color=red
+circle(773.66,580.33,5.0) # color=cyan
+point(773.66,580.33) # point=cross color=red
+circle(1954.61,579.24,5.0) # color=cyan
+point(1954.61,579.24) # point=cross color=red
+circle(1263.08,581.11,5.0) # color=cyan
+point(1263.08,581.11) # point=cross color=red
+circle(1405.75,581.23,5.0) # color=cyan
+point(1405.75,581.23) # point=cross color=red
+circle(796.31,584.42,5.0) # color=cyan
+point(796.31,584.42) # point=cross color=red
+circle(677.20,587.74,5.0) # color=cyan
+point(677.20,587.74) # point=cross color=red
+circle(2326.90,597.88,5.0) # color=cyan
+point(2326.90,597.88) # point=cross color=red
+circle(2736.02,598.00,5.0) # color=cyan
+point(2736.02,598.00) # point=cross color=red
+circle(506.78,597.65,5.0) # color=cyan
+point(506.78,597.65) # point=cross color=red
+circle(990.04,603.43,5.0) # color=cyan
+point(990.04,603.43) # point=cross color=red
+circle(2399.80,603.25,5.0) # color=cyan
+point(2399.80,603.25) # point=cross color=red
+circle(1299.08,605.13,5.0) # color=cyan
+point(1299.08,605.13) # point=cross color=red
+circle(1737.79,605.47,5.0) # color=cyan
+point(1737.79,605.47) # point=cross color=red
+circle(642.78,607.60,5.0) # color=cyan
+point(642.78,607.60) # point=cross color=red
+circle(810.01,607.52,5.0) # color=cyan
+point(810.01,607.52) # point=cross color=red
+circle(2667.85,610.06,5.0) # color=cyan
+point(2667.85,610.06) # point=cross color=red
+circle(2453.24,613.53,5.0) # color=cyan
+point(2453.24,613.53) # point=cross color=red
+circle(595.82,616.11,5.0) # color=cyan
+point(595.82,616.11) # point=cross color=red
+circle(846.75,616.47,5.0) # color=cyan
+point(846.75,616.47) # point=cross color=red
+circle(2486.44,615.48,5.0) # color=cyan
+point(2486.44,615.48) # point=cross color=red
+circle(1250.68,619.55,5.0) # color=cyan
+point(1250.68,619.55) # point=cross color=red
+circle(1802.57,623.32,5.0) # color=cyan
+point(1802.57,623.32) # point=cross color=red
+circle(980.94,626.04,5.0) # color=cyan
+point(980.94,626.04) # point=cross color=red
+circle(1019.73,625.58,5.0) # color=cyan
+point(1019.73,625.58) # point=cross color=red
+circle(559.99,632.01,5.0) # color=cyan
+point(559.99,632.01) # point=cross color=red
+circle(1706.70,629.87,5.0) # color=cyan
+point(1706.70,629.87) # point=cross color=red
+circle(357.16,634.46,5.0) # color=cyan
+point(357.16,634.46) # point=cross color=red
+circle(225.32,635.30,5.0) # color=cyan
+point(225.32,635.30) # point=cross color=red
+circle(843.98,635.17,5.0) # color=cyan
+point(843.98,635.17) # point=cross color=red
+circle(1240.20,635.76,5.0) # color=cyan
+point(1240.20,635.76) # point=cross color=red
+circle(2348.41,639.24,5.0) # color=cyan
+point(2348.41,639.24) # point=cross color=red
+circle(1377.23,649.15,5.0) # color=cyan
+point(1377.23,649.15) # point=cross color=red
+circle(1463.22,652.24,5.0) # color=cyan
+point(1463.22,652.24) # point=cross color=red
+circle(619.02,653.31,5.0) # color=cyan
+point(619.02,653.31) # point=cross color=red
+circle(714.20,657.45,5.0) # color=cyan
+point(714.20,657.45) # point=cross color=red
+circle(1409.99,657.72,5.0) # color=cyan
+point(1409.99,657.72) # point=cross color=red
+circle(886.93,664.45,5.0) # color=cyan
+point(886.93,664.45) # point=cross color=red
+circle(1432.01,667.29,5.0) # color=cyan
+point(1432.01,667.29) # point=cross color=red
+circle(1740.29,666.63,5.0) # color=cyan
+point(1740.29,666.63) # point=cross color=red
+circle(2003.39,667.82,5.0) # color=cyan
+point(2003.39,667.82) # point=cross color=red
+circle(528.51,667.39,5.0) # color=cyan
+point(528.51,667.39) # point=cross color=red
+circle(747.16,680.55,5.0) # color=cyan
+point(747.16,680.55) # point=cross color=red
+circle(890.79,682.98,5.0) # color=cyan
+point(890.79,682.98) # point=cross color=red
+circle(2756.44,683.58,5.0) # color=cyan
+point(2756.44,683.58) # point=cross color=red
+circle(452.50,685.89,5.0) # color=cyan
+point(452.50,685.89) # point=cross color=red
+circle(1957.37,687.46,5.0) # color=cyan
+point(1957.37,687.46) # point=cross color=red
+circle(277.46,687.60,5.0) # color=cyan
+point(277.46,687.60) # point=cross color=red
+circle(1551.51,688.65,5.0) # color=cyan
+point(1551.51,688.65) # point=cross color=red
+circle(254.13,689.21,5.0) # color=cyan
+point(254.13,689.21) # point=cross color=red
+circle(508.15,693.21,5.0) # color=cyan
+point(508.15,693.21) # point=cross color=red
+circle(1631.26,695.88,5.0) # color=cyan
+point(1631.26,695.88) # point=cross color=red
+circle(1845.71,696.54,5.0) # color=cyan
+point(1845.71,696.54) # point=cross color=red
+circle(1034.53,704.25,5.0) # color=cyan
+point(1034.53,704.25) # point=cross color=red
+circle(1143.59,705.27,5.0) # color=cyan
+point(1143.59,705.27) # point=cross color=red
+circle(1233.41,704.88,5.0) # color=cyan
+point(1233.41,704.88) # point=cross color=red
+circle(1665.21,710.12,5.0) # color=cyan
+point(1665.21,710.12) # point=cross color=red
+circle(800.43,712.51,5.0) # color=cyan
+point(800.43,712.51) # point=cross color=red
+circle(264.47,714.67,5.0) # color=cyan
+point(264.47,714.67) # point=cross color=red
+circle(599.41,716.01,5.0) # color=cyan
+point(599.41,716.01) # point=cross color=red
+circle(701.98,716.85,5.0) # color=cyan
+point(701.98,716.85) # point=cross color=red
+circle(1986.93,716.78,5.0) # color=cyan
+point(1986.93,716.78) # point=cross color=red
+circle(1427.02,717.51,5.0) # color=cyan
+point(1427.02,717.51) # point=cross color=red
+circle(725.98,718.64,5.0) # color=cyan
+point(725.98,718.64) # point=cross color=red
+circle(853.35,718.85,5.0) # color=cyan
+point(853.35,718.85) # point=cross color=red
+circle(985.29,719.52,5.0) # color=cyan
+point(985.29,719.52) # point=cross color=red
+circle(1076.11,723.15,5.0) # color=cyan
+point(1076.11,723.15) # point=cross color=red
+circle(1814.14,723.91,5.0) # color=cyan
+point(1814.14,723.91) # point=cross color=red
+circle(1716.04,724.43,5.0) # color=cyan
+point(1716.04,724.43) # point=cross color=red
+circle(1096.65,726.45,5.0) # color=cyan
+point(1096.65,726.45) # point=cross color=red
+circle(1529.96,727.34,5.0) # color=cyan
+point(1529.96,727.34) # point=cross color=red
+circle(2738.74,728.36,5.0) # color=cyan
+point(2738.74,728.36) # point=cross color=red
+circle(388.89,732.50,5.0) # color=cyan
+point(388.89,732.50) # point=cross color=red
+circle(1343.01,733.98,5.0) # color=cyan
+point(1343.01,733.98) # point=cross color=red
+circle(1588.21,740.39,5.0) # color=cyan
+point(1588.21,740.39) # point=cross color=red
+circle(754.63,741.32,5.0) # color=cyan
+point(754.63,741.32) # point=cross color=red
+circle(1251.01,742.34,5.0) # color=cyan
+point(1251.01,742.34) # point=cross color=red
+circle(1639.13,743.69,5.0) # color=cyan
+point(1639.13,743.69) # point=cross color=red
+circle(681.38,746.07,5.0) # color=cyan
+point(681.38,746.07) # point=cross color=red
+circle(881.64,746.93,5.0) # color=cyan
+point(881.64,746.93) # point=cross color=red
+circle(1099.54,749.17,5.0) # color=cyan
+point(1099.54,749.17) # point=cross color=red
+circle(1124.00,749.62,5.0) # color=cyan
+point(1124.00,749.62) # point=cross color=red
+circle(231.10,751.54,5.0) # color=cyan
+point(231.10,751.54) # point=cross color=red
+circle(1436.55,750.26,5.0) # color=cyan
+point(1436.55,750.26) # point=cross color=red
+circle(810.72,752.08,5.0) # color=cyan
+point(810.72,752.08) # point=cross color=red
+circle(1763.99,756.92,5.0) # color=cyan
+point(1763.99,756.92) # point=cross color=red
+circle(1356.90,757.63,5.0) # color=cyan
+point(1356.90,757.63) # point=cross color=red
+circle(2535.17,757.28,5.0) # color=cyan
+point(2535.17,757.28) # point=cross color=red
+circle(1310.24,759.05,5.0) # color=cyan
+point(1310.24,759.05) # point=cross color=red
+circle(932.90,761.18,5.0) # color=cyan
+point(932.90,761.18) # point=cross color=red
+circle(1138.53,766.20,5.0) # color=cyan
+point(1138.53,766.20) # point=cross color=red
+circle(437.80,769.96,5.0) # color=cyan
+point(437.80,769.96) # point=cross color=red
+circle(348.58,769.37,5.0) # color=cyan
+point(348.58,769.37) # point=cross color=red
+circle(914.81,770.25,5.0) # color=cyan
+point(914.81,770.25) # point=cross color=red
+circle(787.88,770.99,5.0) # color=cyan
+point(787.88,770.99) # point=cross color=red
+circle(1059.98,771.63,5.0) # color=cyan
+point(1059.98,771.63) # point=cross color=red
+circle(1545.45,771.89,5.0) # color=cyan
+point(1545.45,771.89) # point=cross color=red
+circle(733.45,777.59,5.0) # color=cyan
+point(733.45,777.59) # point=cross color=red
+circle(1499.26,778.55,5.0) # color=cyan
+point(1499.26,778.55) # point=cross color=red
+circle(2325.85,780.47,5.0) # color=cyan
+point(2325.85,780.47) # point=cross color=red
+circle(505.77,781.32,5.0) # color=cyan
+point(505.77,781.32) # point=cross color=red
+circle(285.32,783.73,5.0) # color=cyan
+point(285.32,783.73) # point=cross color=red
+circle(2655.67,786.10,5.0) # color=cyan
+point(2655.67,786.10) # point=cross color=red
+circle(570.12,792.76,5.0) # color=cyan
+point(570.12,792.76) # point=cross color=red
+circle(2094.36,792.80,5.0) # color=cyan
+point(2094.36,792.80) # point=cross color=red
+circle(1181.31,795.75,5.0) # color=cyan
+point(1181.31,795.75) # point=cross color=red
+circle(872.51,795.26,5.0) # color=cyan
+point(872.51,795.26) # point=cross color=red
+circle(1475.09,799.70,5.0) # color=cyan
+point(1475.09,799.70) # point=cross color=red
+circle(1787.39,799.97,5.0) # color=cyan
+point(1787.39,799.97) # point=cross color=red
+circle(1672.80,802.62,5.0) # color=cyan
+point(1672.80,802.62) # point=cross color=red
+circle(708.40,808.87,5.0) # color=cyan
+point(708.40,808.87) # point=cross color=red
+circle(807.13,809.01,5.0) # color=cyan
+point(807.13,809.01) # point=cross color=red
+circle(2765.76,808.08,5.0) # color=cyan
+point(2765.76,808.08) # point=cross color=red
+circle(1165.84,811.16,5.0) # color=cyan
+point(1165.84,811.16) # point=cross color=red
+circle(301.13,811.88,5.0) # color=cyan
+point(301.13,811.88) # point=cross color=red
+circle(1570.66,815.07,5.0) # color=cyan
+point(1570.66,815.07) # point=cross color=red
+circle(771.81,817.37,5.0) # color=cyan
+point(771.81,817.37) # point=cross color=red
+circle(615.62,818.57,5.0) # color=cyan
+point(615.62,818.57) # point=cross color=red
+circle(2055.63,819.03,5.0) # color=cyan
+point(2055.63,819.03) # point=cross color=red
+circle(2664.96,820.09,5.0) # color=cyan
+point(2664.96,820.09) # point=cross color=red
+circle(1464.00,823.69,5.0) # color=cyan
+point(1464.00,823.69) # point=cross color=red
+circle(1290.23,824.43,5.0) # color=cyan
+point(1290.23,824.43) # point=cross color=red
+circle(1843.28,828.12,5.0) # color=cyan
+point(1843.28,828.12) # point=cross color=red
+circle(2009.31,825.90,5.0) # color=cyan
+point(2009.31,825.90) # point=cross color=red
+circle(2789.85,827.38,5.0) # color=cyan
+point(2789.85,827.38) # point=cross color=red
+circle(416.01,828.67,5.0) # color=cyan
+point(416.01,828.67) # point=cross color=red
+circle(889.91,834.07,5.0) # color=cyan
+point(889.91,834.07) # point=cross color=red
+circle(964.73,834.11,5.0) # color=cyan
+point(964.73,834.11) # point=cross color=red
+circle(482.45,834.06,5.0) # color=cyan
+point(482.45,834.06) # point=cross color=red
+circle(1417.17,835.46,5.0) # color=cyan
+point(1417.17,835.46) # point=cross color=red
+circle(2279.63,835.35,5.0) # color=cyan
+point(2279.63,835.35) # point=cross color=red
+circle(1182.21,839.76,5.0) # color=cyan
+point(1182.21,839.76) # point=cross color=red
+circle(915.48,840.11,5.0) # color=cyan
+point(915.48,840.11) # point=cross color=red
+circle(865.99,841.76,5.0) # color=cyan
+point(865.99,841.76) # point=cross color=red
+circle(1397.11,842.48,5.0) # color=cyan
+point(1397.11,842.48) # point=cross color=red
+circle(1127.51,847.14,5.0) # color=cyan
+point(1127.51,847.14) # point=cross color=red
+circle(1736.70,846.63,5.0) # color=cyan
+point(1736.70,846.63) # point=cross color=red
+circle(1585.49,848.12,5.0) # color=cyan
+point(1585.49,848.12) # point=cross color=red
+circle(1202.87,854.21,5.0) # color=cyan
+point(1202.87,854.21) # point=cross color=red
+circle(1628.56,853.42,5.0) # color=cyan
+point(1628.56,853.42) # point=cross color=red
+circle(360.04,858.21,5.0) # color=cyan
+point(360.04,858.21) # point=cross color=red
+circle(336.34,857.99,5.0) # color=cyan
+point(336.34,857.99) # point=cross color=red
+circle(2474.06,859.72,5.0) # color=cyan
+point(2474.06,859.72) # point=cross color=red
+circle(1660.69,866.00,5.0) # color=cyan
+point(1660.69,866.00) # point=cross color=red
+circle(673.92,867.56,5.0) # color=cyan
+point(673.92,867.56) # point=cross color=red
+circle(1036.23,868.05,5.0) # color=cyan
+point(1036.23,868.05) # point=cross color=red
+circle(592.08,872.46,5.0) # color=cyan
+point(592.08,872.46) # point=cross color=red
+circle(1681.13,875.59,5.0) # color=cyan
+point(1681.13,875.59) # point=cross color=red
+circle(1361.78,875.55,5.0) # color=cyan
+point(1361.78,875.55) # point=cross color=red
+circle(926.45,878.52,5.0) # color=cyan
+point(926.45,878.52) # point=cross color=red
+circle(1424.41,878.80,5.0) # color=cyan
+point(1424.41,878.80) # point=cross color=red
+circle(2778.28,879.87,5.0) # color=cyan
+point(2778.28,879.87) # point=cross color=red
+circle(1588.48,882.44,5.0) # color=cyan
+point(1588.48,882.44) # point=cross color=red
+circle(2046.57,882.55,5.0) # color=cyan
+point(2046.57,882.55) # point=cross color=red
+circle(258.74,884.28,5.0) # color=cyan
+point(258.74,884.28) # point=cross color=red
+circle(700.50,884.25,5.0) # color=cyan
+point(700.50,884.25) # point=cross color=red
+circle(963.59,886.62,5.0) # color=cyan
+point(963.59,886.62) # point=cross color=red
+circle(1295.40,886.84,5.0) # color=cyan
+point(1295.40,886.84) # point=cross color=red
+circle(1801.74,893.12,5.0) # color=cyan
+point(1801.74,893.12) # point=cross color=red
+circle(1443.43,894.52,5.0) # color=cyan
+point(1443.43,894.52) # point=cross color=red
+circle(1510.43,894.34,5.0) # color=cyan
+point(1510.43,894.34) # point=cross color=red
+circle(715.36,902.81,5.0) # color=cyan
+point(715.36,902.81) # point=cross color=red
+circle(638.90,907.03,5.0) # color=cyan
+point(638.90,907.03) # point=cross color=red
+circle(1162.32,908.15,5.0) # color=cyan
+point(1162.32,908.15) # point=cross color=red
+circle(1829.43,907.92,5.0) # color=cyan
+point(1829.43,907.92) # point=cross color=red
+circle(1368.63,916.04,5.0) # color=cyan
+point(1368.63,916.04) # point=cross color=red
+circle(571.57,919.15,5.0) # color=cyan
+point(571.57,919.15) # point=cross color=red
+circle(321.35,926.02,5.0) # color=cyan
+point(321.35,926.02) # point=cross color=red
+circle(447.43,925.75,5.0) # color=cyan
+point(447.43,925.75) # point=cross color=red
+circle(698.35,926.29,5.0) # color=cyan
+point(698.35,926.29) # point=cross color=red
+circle(1074.73,926.32,5.0) # color=cyan
+point(1074.73,926.32) # point=cross color=red
+circle(499.22,931.47,5.0) # color=cyan
+point(499.22,931.47) # point=cross color=red
+circle(1092.47,933.11,5.0) # color=cyan
+point(1092.47,933.11) # point=cross color=red
+circle(2613.57,932.81,5.0) # color=cyan
+point(2613.57,932.81) # point=cross color=red
+circle(1562.65,935.69,5.0) # color=cyan
+point(1562.65,935.69) # point=cross color=red
+circle(1642.47,935.70,5.0) # color=cyan
+point(1642.47,935.70) # point=cross color=red
+circle(1132.00,940.86,5.0) # color=cyan
+point(1132.00,940.86) # point=cross color=red
+circle(1535.68,941.59,5.0) # color=cyan
+point(1535.68,941.59) # point=cross color=red
+circle(1681.09,941.17,5.0) # color=cyan
+point(1681.09,941.17) # point=cross color=red
+circle(370.63,944.43,5.0) # color=cyan
+point(370.63,944.43) # point=cross color=red
+circle(1320.30,944.64,5.0) # color=cyan
+point(1320.30,944.64) # point=cross color=red
+circle(683.97,946.64,5.0) # color=cyan
+point(683.97,946.64) # point=cross color=red
+circle(1811.11,949.72,5.0) # color=cyan
+point(1811.11,949.72) # point=cross color=red
+circle(326.25,955.90,5.0) # color=cyan
+point(326.25,955.90) # point=cross color=red
+circle(2280.72,960.20,5.0) # color=cyan
+point(2280.72,960.20) # point=cross color=red
+circle(1256.97,963.59,5.0) # color=cyan
+point(1256.97,963.59) # point=cross color=red
+circle(1390.40,964.76,5.0) # color=cyan
+point(1390.40,964.76) # point=cross color=red
+circle(226.17,966.95,5.0) # color=cyan
+point(226.17,966.95) # point=cross color=red
+circle(1298.54,971.15,5.0) # color=cyan
+point(1298.54,971.15) # point=cross color=red
+circle(2099.79,970.41,5.0) # color=cyan
+point(2099.79,970.41) # point=cross color=red
+circle(1316.79,973.08,5.0) # color=cyan
+point(1316.79,973.08) # point=cross color=red
+circle(2430.14,976.95,5.0) # color=cyan
+point(2430.14,976.95) # point=cross color=red
+circle(415.11,978.45,5.0) # color=cyan
+point(415.11,978.45) # point=cross color=red
+circle(840.07,979.28,5.0) # color=cyan
+point(840.07,979.28) # point=cross color=red
+circle(1703.88,983.10,5.0) # color=cyan
+point(1703.88,983.10) # point=cross color=red
+circle(1959.49,988.72,5.0) # color=cyan
+point(1959.49,988.72) # point=cross color=red
 circle(313.29,989.39,5.0) # color=cyan
 point(313.29,989.39) # point=cross color=red
-circle(1469.68,993.12,5.0) # color=cyan
-point(1469.68,993.12) # point=cross color=red
-circle(1329.91,994.20,5.0) # color=cyan
-point(1329.91,994.20) # point=cross color=red
-circle(861.22,1004.77,5.0) # color=cyan
-point(861.22,1004.77) # point=cross color=red
-circle(473.94,1008.50,5.0) # color=cyan
-point(473.94,1008.50) # point=cross color=red
-circle(964.12,1008.60,5.0) # color=cyan
-point(964.12,1008.60) # point=cross color=red
-circle(1122.09,1008.83,5.0) # color=cyan
-point(1122.09,1008.83) # point=cross color=red
-circle(622.92,1014.41,5.0) # color=cyan
-point(622.92,1014.41) # point=cross color=red
-circle(836.28,1026.53,5.0) # color=cyan
-point(836.28,1026.53) # point=cross color=red
-circle(857.02,1042.11,5.0) # color=cyan
-point(857.02,1042.11) # point=cross color=red
-circle(494.70,1047.72,5.0) # color=cyan
-point(494.70,1047.72) # point=cross color=red
-circle(1328.03,1055.31,5.0) # color=cyan
-point(1328.03,1055.31) # point=cross color=red
-circle(1425.42,1054.61,5.0) # color=cyan
-point(1425.42,1054.61) # point=cross color=red
-circle(275.88,1055.52,5.0) # color=cyan
-point(275.88,1055.52) # point=cross color=red
-circle(685.71,1059.06,5.0) # color=cyan
-point(685.71,1059.06) # point=cross color=red
-circle(542.71,1059.91,5.0) # color=cyan
-point(542.71,1059.91) # point=cross color=red
-circle(821.54,1067.30,5.0) # color=cyan
-point(821.54,1067.30) # point=cross color=red
-circle(1819.20,1067.95,5.0) # color=cyan
-point(1819.20,1067.95) # point=cross color=red
-circle(737.24,1071.71,5.0) # color=cyan
-point(737.24,1071.71) # point=cross color=red
-circle(935.60,1074.51,5.0) # color=cyan
-point(935.60,1074.51) # point=cross color=red
-circle(349.44,1082.27,5.0) # color=cyan
-point(349.44,1082.27) # point=cross color=red
-circle(1192.54,1100.52,5.0) # color=cyan
-point(1192.54,1100.52) # point=cross color=red
-circle(575.45,1105.03,5.0) # color=cyan
-point(575.45,1105.03) # point=cross color=red
-circle(647.87,1106.60,5.0) # color=cyan
-point(647.87,1106.60) # point=cross color=red
-circle(762.73,1110.18,5.0) # color=cyan
-point(762.73,1110.18) # point=cross color=red
-circle(667.92,1111.49,5.0) # color=cyan
-point(667.92,1111.49) # point=cross color=red
-circle(441.89,1113.06,5.0) # color=cyan
-point(441.89,1113.06) # point=cross color=red
-circle(1445.97,1127.84,5.0) # color=cyan
-point(1445.97,1127.84) # point=cross color=red
-circle(378.93,1129.38,5.0) # color=cyan
-point(378.93,1129.38) # point=cross color=red
-circle(724.92,1139.99,5.0) # color=cyan
-point(724.92,1139.99) # point=cross color=red
-circle(748.27,1144.18,5.0) # color=cyan
-point(748.27,1144.18) # point=cross color=red
-circle(845.15,1144.51,5.0) # color=cyan
-point(845.15,1144.51) # point=cross color=red
-circle(1786.97,1155.95,5.0) # color=cyan
-point(1786.97,1155.95) # point=cross color=red
-circle(2133.78,1159.09,5.0) # color=cyan
-point(2133.78,1159.09) # point=cross color=red
-circle(734.16,1161.93,5.0) # color=cyan
-point(734.16,1161.93) # point=cross color=red
-circle(766.94,1164.46,5.0) # color=cyan
-point(766.94,1164.46) # point=cross color=red
-circle(894.36,1166.69,5.0) # color=cyan
-point(894.36,1166.69) # point=cross color=red
-circle(2494.73,1185.56,5.0) # color=cyan
-point(2494.73,1185.56) # point=cross color=red
-circle(1413.50,1199.08,5.0) # color=cyan
-point(1413.50,1199.08) # point=cross color=red
-circle(960.29,1204.12,5.0) # color=cyan
-point(960.29,1204.12) # point=cross color=red
-circle(2465.66,1208.69,5.0) # color=cyan
-point(2465.66,1208.69) # point=cross color=red
-circle(1197.58,1210.95,5.0) # color=cyan
-point(1197.58,1210.95) # point=cross color=red
-circle(446.86,1221.95,5.0) # color=cyan
-point(446.86,1221.95) # point=cross color=red
-circle(1376.23,1230.79,5.0) # color=cyan
-point(1376.23,1230.79) # point=cross color=red
-circle(1969.06,1236.37,5.0) # color=cyan
-point(1969.06,1236.37) # point=cross color=red
-circle(1186.87,1241.50,5.0) # color=cyan
-point(1186.87,1241.50) # point=cross color=red
-circle(284.27,1243.82,5.0) # color=cyan
-point(284.27,1243.82) # point=cross color=red
-circle(604.65,1250.41,5.0) # color=cyan
-point(604.65,1250.41) # point=cross color=red
-circle(979.35,1252.51,5.0) # color=cyan
-point(979.35,1252.51) # point=cross color=red
-circle(928.35,1253.63,5.0) # color=cyan
-point(928.35,1253.63) # point=cross color=red
-circle(1754.98,1255.00,5.0) # color=cyan
-point(1754.98,1255.00) # point=cross color=red
-circle(1682.44,1255.98,5.0) # color=cyan
-point(1682.44,1255.98) # point=cross color=red
-circle(2205.66,1271.38,5.0) # color=cyan
-point(2205.66,1271.38) # point=cross color=red
-circle(2766.29,1276.31,5.0) # color=cyan
-point(2766.29,1276.31) # point=cross color=red
-circle(1451.43,1284.78,5.0) # color=cyan
-point(1451.43,1284.78) # point=cross color=red
-circle(1350.11,1289.10,5.0) # color=cyan
-point(1350.11,1289.10) # point=cross color=red
-circle(1340.16,1295.17,5.0) # color=cyan
-point(1340.16,1295.17) # point=cross color=red
-circle(1616.74,1299.04,5.0) # color=cyan
-point(1616.74,1299.04) # point=cross color=red
-circle(1254.23,1301.43,5.0) # color=cyan
-point(1254.23,1301.43) # point=cross color=red
-circle(2230.00,1312.03,5.0) # color=cyan
-point(2230.00,1312.03) # point=cross color=red
-circle(2153.81,1312.91,5.0) # color=cyan
-point(2153.81,1312.91) # point=cross color=red
-circle(897.70,1316.38,5.0) # color=cyan
-point(897.70,1316.38) # point=cross color=red
-circle(1750.67,1319.25,5.0) # color=cyan
-point(1750.67,1319.25) # point=cross color=red
-circle(1030.89,1320.71,5.0) # color=cyan
-point(1030.89,1320.71) # point=cross color=red
-circle(1192.60,1326.97,5.0) # color=cyan
-point(1192.60,1326.97) # point=cross color=red
-circle(744.52,1330.16,5.0) # color=cyan
-point(744.52,1330.16) # point=cross color=red
-circle(411.57,1338.37,5.0) # color=cyan
-point(411.57,1338.37) # point=cross color=red
-circle(562.24,1346.25,5.0) # color=cyan
-point(562.24,1346.25) # point=cross color=red
-circle(1363.84,1358.25,5.0) # color=cyan
-point(1363.84,1358.25) # point=cross color=red
-circle(578.11,1360.52,5.0) # color=cyan
-point(578.11,1360.52) # point=cross color=red
-circle(423.06,1365.42,5.0) # color=cyan
-point(423.06,1365.42) # point=cross color=red
-circle(2160.65,1380.99,5.0) # color=cyan
-point(2160.65,1380.99) # point=cross color=red
-circle(648.68,1386.10,5.0) # color=cyan
-point(648.68,1386.10) # point=cross color=red
-circle(1965.51,1397.97,5.0) # color=cyan
-point(1965.51,1397.97) # point=cross color=red
-circle(2235.84,1402.49,5.0) # color=cyan
-point(2235.84,1402.49) # point=cross color=red
-circle(2689.69,1411.28,5.0) # color=cyan
-point(2689.69,1411.28) # point=cross color=red
-circle(592.10,1413.44,5.0) # color=cyan
-point(592.10,1413.44) # point=cross color=red
-circle(1192.35,1417.19,5.0) # color=cyan
-point(1192.35,1417.19) # point=cross color=red
-circle(2110.43,1422.32,5.0) # color=cyan
-point(2110.43,1422.32) # point=cross color=red
-circle(327.68,1447.38,5.0) # color=cyan
-point(327.68,1447.38) # point=cross color=red
-circle(1655.51,1453.98,5.0) # color=cyan
-point(1655.51,1453.98) # point=cross color=red
-circle(1704.42,1456.33,5.0) # color=cyan
-point(1704.42,1456.33) # point=cross color=red
-circle(376.11,1464.13,5.0) # color=cyan
-point(376.11,1464.13) # point=cross color=red
-circle(786.15,1465.64,5.0) # color=cyan
-point(786.15,1465.64) # point=cross color=red
-circle(1083.15,1486.80,5.0) # color=cyan
-point(1083.15,1486.80) # point=cross color=red
-circle(414.37,1490.70,5.0) # color=cyan
-point(414.37,1490.70) # point=cross color=red
-circle(317.07,1497.59,5.0) # color=cyan
-point(317.07,1497.59) # point=cross color=red
-circle(930.50,1503.11,5.0) # color=cyan
-point(930.50,1503.11) # point=cross color=red
-circle(541.48,1505.34,5.0) # color=cyan
-point(541.48,1505.34) # point=cross color=red
-circle(814.17,1516.54,5.0) # color=cyan
-point(814.17,1516.54) # point=cross color=red
-circle(836.84,1519.38,5.0) # color=cyan
-point(836.84,1519.38) # point=cross color=red
-circle(900.97,1530.65,5.0) # color=cyan
-point(900.97,1530.65) # point=cross color=red
-circle(2067.66,1532.66,5.0) # color=cyan
-point(2067.66,1532.66) # point=cross color=red
-circle(465.96,1534.71,5.0) # color=cyan
-point(465.96,1534.71) # point=cross color=red
-circle(1456.32,1554.53,5.0) # color=cyan
-point(1456.32,1554.53) # point=cross color=red
-circle(407.33,1555.34,5.0) # color=cyan
-point(407.33,1555.34) # point=cross color=red
-circle(295.89,1557.72,5.0) # color=cyan
-point(295.89,1557.72) # point=cross color=red
-circle(536.08,1562.01,5.0) # color=cyan
-point(536.08,1562.01) # point=cross color=red
-circle(1403.15,1566.86,5.0) # color=cyan
-point(1403.15,1566.86) # point=cross color=red
-circle(432.87,1592.10,5.0) # color=cyan
-point(432.87,1592.10) # point=cross color=red
-circle(593.63,1591.87,5.0) # color=cyan
-point(593.63,1591.87) # point=cross color=red
-circle(1733.03,1601.61,5.0) # color=cyan
-point(1733.03,1601.61) # point=cross color=red
-circle(1592.60,1608.96,5.0) # color=cyan
-point(1592.60,1608.96) # point=cross color=red
-circle(1795.05,1609.93,5.0) # color=cyan
-point(1795.05,1609.93) # point=cross color=red
-circle(393.25,1624.17,5.0) # color=cyan
-point(393.25,1624.17) # point=cross color=red
-circle(252.45,1634.51,5.0) # color=cyan
-point(252.45,1634.51) # point=cross color=red
-circle(1423.54,1646.30,5.0) # color=cyan
-point(1423.54,1646.30) # point=cross color=red
-circle(708.75,1651.61,5.0) # color=cyan
-point(708.75,1651.61) # point=cross color=red
-circle(1053.25,1653.76,5.0) # color=cyan
-point(1053.25,1653.76) # point=cross color=red
-circle(1314.63,1666.55,5.0) # color=cyan
-point(1314.63,1666.55) # point=cross color=red
-circle(2550.77,1672.25,5.0) # color=cyan
-point(2550.77,1672.25) # point=cross color=red
-circle(762.07,1673.17,5.0) # color=cyan
-point(762.07,1673.17) # point=cross color=red
-circle(1819.54,1683.15,5.0) # color=cyan
-point(1819.54,1683.15) # point=cross color=red
-circle(802.09,1687.41,5.0) # color=cyan
-point(802.09,1687.41) # point=cross color=red
-circle(1722.77,1701.87,5.0) # color=cyan
-point(1722.77,1701.87) # point=cross color=red
-circle(1431.28,1708.42,5.0) # color=cyan
-point(1431.28,1708.42) # point=cross color=red
-circle(1375.40,1708.41,5.0) # color=cyan
-point(1375.40,1708.41) # point=cross color=red
-circle(446.38,1710.76,5.0) # color=cyan
-point(446.38,1710.76) # point=cross color=red
-circle(1039.75,1725.64,5.0) # color=cyan
-point(1039.75,1725.64) # point=cross color=red
-circle(961.46,1732.23,5.0) # color=cyan
-point(961.46,1732.23) # point=cross color=red
-circle(664.47,1740.42,5.0) # color=cyan
-point(664.47,1740.42) # point=cross color=red
-circle(382.33,1742.44,5.0) # color=cyan
-point(382.33,1742.44) # point=cross color=red
-circle(2820.52,1756.95,5.0) # color=cyan
-point(2820.52,1756.95) # point=cross color=red
-circle(2021.15,1764.91,5.0) # color=cyan
-point(2021.15,1764.91) # point=cross color=red
-circle(782.31,1785.50,5.0) # color=cyan
-point(782.31,1785.50) # point=cross color=red
-circle(337.33,1807.82,5.0) # color=cyan
-point(337.33,1807.82) # point=cross color=red
-circle(1053.12,1807.60,5.0) # color=cyan
-point(1053.12,1807.60) # point=cross color=red
-circle(1348.49,1808.23,5.0) # color=cyan
-point(1348.49,1808.23) # point=cross color=red
-circle(1933.02,1808.98,5.0) # color=cyan
-point(1933.02,1808.98) # point=cross color=red
-circle(2544.30,1809.20,5.0) # color=cyan
-point(2544.30,1809.20) # point=cross color=red
-circle(614.05,1820.04,5.0) # color=cyan
-point(614.05,1820.04) # point=cross color=red
-circle(339.61,1827.42,5.0) # color=cyan
-point(339.61,1827.42) # point=cross color=red
-circle(1277.28,1838.09,5.0) # color=cyan
-point(1277.28,1838.09) # point=cross color=red
-circle(725.17,1841.26,5.0) # color=cyan
-point(725.17,1841.26) # point=cross color=red
-circle(2655.58,1842.59,5.0) # color=cyan
-point(2655.58,1842.59) # point=cross color=red
-circle(2708.03,1854.42,5.0) # color=cyan
-point(2708.03,1854.42) # point=cross color=red
-circle(2867.34,1862.73,5.0) # color=cyan
-point(2867.34,1862.73) # point=cross color=red
-circle(2180.49,1868.86,5.0) # color=cyan
-point(2180.49,1868.86) # point=cross color=red
+circle(811.44,992.24,5.0) # color=cyan
+point(811.44,992.24) # point=cross color=red
+circle(1469.78,993.07,5.0) # color=cyan
+point(1469.78,993.07) # point=cross color=red
+circle(1329.92,994.15,5.0) # color=cyan
+point(1329.92,994.15) # point=cross color=red
+circle(2552.13,994.96,5.0) # color=cyan
+point(2552.13,994.96) # point=cross color=red
+circle(935.25,1001.52,5.0) # color=cyan
+point(935.25,1001.52) # point=cross color=red
+circle(1766.35,1004.33,5.0) # color=cyan
+point(1766.35,1004.33) # point=cross color=red
+circle(381.59,1004.28,5.0) # color=cyan
+point(381.59,1004.28) # point=cross color=red
+circle(681.84,1004.16,5.0) # color=cyan
+point(681.84,1004.16) # point=cross color=red
+circle(861.19,1004.75,5.0) # color=cyan
+point(861.19,1004.75) # point=cross color=red
+circle(2860.53,1006.68,5.0) # color=cyan
+point(2860.53,1006.68) # point=cross color=red
+circle(1007.02,1008.45,5.0) # color=cyan
+point(1007.02,1008.45) # point=cross color=red
+circle(473.88,1008.39,5.0) # color=cyan
+point(473.88,1008.39) # point=cross color=red
+circle(964.20,1008.57,5.0) # color=cyan
+point(964.20,1008.57) # point=cross color=red
+circle(1122.12,1008.80,5.0) # color=cyan
+point(1122.12,1008.80) # point=cross color=red
+circle(622.87,1014.48,5.0) # color=cyan
+point(622.87,1014.48) # point=cross color=red
+circle(2795.77,1019.24,5.0) # color=cyan
+point(2795.77,1019.24) # point=cross color=red
+circle(836.30,1026.47,5.0) # color=cyan
+point(836.30,1026.47) # point=cross color=red
+circle(1252.01,1028.55,5.0) # color=cyan
+point(1252.01,1028.55) # point=cross color=red
+circle(1649.12,1029.04,5.0) # color=cyan
+point(1649.12,1029.04) # point=cross color=red
+circle(765.44,1032.53,5.0) # color=cyan
+point(765.44,1032.53) # point=cross color=red
+circle(1501.62,1039.10,5.0) # color=cyan
+point(1501.62,1039.10) # point=cross color=red
+circle(856.97,1042.45,5.0) # color=cyan
+point(856.97,1042.45) # point=cross color=red
+circle(1723.61,1045.56,5.0) # color=cyan
+point(1723.61,1045.56) # point=cross color=red
+circle(494.72,1047.77,5.0) # color=cyan
+point(494.72,1047.77) # point=cross color=red
+circle(439.07,1052.97,5.0) # color=cyan
+point(439.07,1052.97) # point=cross color=red
+circle(609.80,1053.45,5.0) # color=cyan
+point(609.80,1053.45) # point=cross color=red
+circle(468.49,1052.58,5.0) # color=cyan
+point(468.49,1052.58) # point=cross color=red
+circle(1425.55,1054.50,5.0) # color=cyan
+point(1425.55,1054.50) # point=cross color=red
+circle(1328.12,1055.30,5.0) # color=cyan
+point(1328.12,1055.30) # point=cross color=red
+circle(275.90,1055.48,5.0) # color=cyan
+point(275.90,1055.48) # point=cross color=red
+circle(2565.18,1056.04,5.0) # color=cyan
+point(2565.18,1056.04) # point=cross color=red
+circle(685.72,1059.02,5.0) # color=cyan
+point(685.72,1059.02) # point=cross color=red
+circle(542.69,1059.89,5.0) # color=cyan
+point(542.69,1059.89) # point=cross color=red
+circle(2036.30,1062.71,5.0) # color=cyan
+point(2036.30,1062.71) # point=cross color=red
+circle(898.98,1065.06,5.0) # color=cyan
+point(898.98,1065.06) # point=cross color=red
+circle(821.55,1067.28,5.0) # color=cyan
+point(821.55,1067.28) # point=cross color=red
+circle(1819.32,1067.94,5.0) # color=cyan
+point(1819.32,1067.94) # point=cross color=red
+circle(1175.05,1068.57,5.0) # color=cyan
+point(1175.05,1068.57) # point=cross color=red
+circle(737.24,1071.68,5.0) # color=cyan
+point(737.24,1071.68) # point=cross color=red
+circle(935.84,1074.14,5.0) # color=cyan
+point(935.84,1074.14) # point=cross color=red
+circle(1028.92,1074.75,5.0) # color=cyan
+point(1028.92,1074.75) # point=cross color=red
+circle(349.44,1082.45,5.0) # color=cyan
+point(349.44,1082.45) # point=cross color=red
+circle(681.08,1086.92,5.0) # color=cyan
+point(681.08,1086.92) # point=cross color=red
+circle(1350.46,1087.82,5.0) # color=cyan
+point(1350.46,1087.82) # point=cross color=red
+circle(720.19,1089.94,5.0) # color=cyan
+point(720.19,1089.94) # point=cross color=red
+circle(2200.85,1089.74,5.0) # color=cyan
+point(2200.85,1089.74) # point=cross color=red
+circle(2589.13,1094.67,5.0) # color=cyan
+point(2589.13,1094.67) # point=cross color=red
+circle(2177.69,1095.76,5.0) # color=cyan
+point(2177.69,1095.76) # point=cross color=red
+circle(312.73,1097.00,5.0) # color=cyan
+point(312.73,1097.00) # point=cross color=red
+circle(1050.30,1098.69,5.0) # color=cyan
+point(1050.30,1098.69) # point=cross color=red
+circle(1690.39,1098.87,5.0) # color=cyan
+point(1690.39,1098.87) # point=cross color=red
+circle(1192.56,1100.48,5.0) # color=cyan
+point(1192.56,1100.48) # point=cross color=red
+circle(794.12,1102.31,5.0) # color=cyan
+point(794.12,1102.31) # point=cross color=red
+circle(575.41,1105.06,5.0) # color=cyan
+point(575.41,1105.06) # point=cross color=red
+circle(647.85,1106.53,5.0) # color=cyan
+point(647.85,1106.53) # point=cross color=red
+circle(762.75,1110.18,5.0) # color=cyan
+point(762.75,1110.18) # point=cross color=red
+circle(667.92,1111.46,5.0) # color=cyan
+point(667.92,1111.46) # point=cross color=red
+circle(441.89,1112.98,5.0) # color=cyan
+point(441.89,1112.98) # point=cross color=red
+circle(401.05,1119.77,5.0) # color=cyan
+point(401.05,1119.77) # point=cross color=red
+circle(1240.84,1120.27,5.0) # color=cyan
+point(1240.84,1120.27) # point=cross color=red
+circle(486.63,1123.38,5.0) # color=cyan
+point(486.63,1123.38) # point=cross color=red
+circle(1340.51,1127.09,5.0) # color=cyan
+point(1340.51,1127.09) # point=cross color=red
+circle(1374.55,1127.56,5.0) # color=cyan
+point(1374.55,1127.56) # point=cross color=red
+circle(1446.02,1127.77,5.0) # color=cyan
+point(1446.02,1127.77) # point=cross color=red
+circle(379.01,1129.43,5.0) # color=cyan
+point(379.01,1129.43) # point=cross color=red
+circle(606.72,1130.12,5.0) # color=cyan
+point(606.72,1130.12) # point=cross color=red
+circle(1620.21,1131.51,5.0) # color=cyan
+point(1620.21,1131.51) # point=cross color=red
+circle(629.50,1134.96,5.0) # color=cyan
+point(629.50,1134.96) # point=cross color=red
+circle(1877.24,1136.06,5.0) # color=cyan
+point(1877.24,1136.06) # point=cross color=red
+circle(724.90,1140.00,5.0) # color=cyan
+point(724.90,1140.00) # point=cross color=red
+circle(667.97,1141.88,5.0) # color=cyan
+point(667.97,1141.88) # point=cross color=red
+circle(748.19,1144.20,5.0) # color=cyan
+point(748.19,1144.20) # point=cross color=red
+circle(845.22,1144.56,5.0) # color=cyan
+point(845.22,1144.56) # point=cross color=red
+circle(1406.40,1144.77,5.0) # color=cyan
+point(1406.40,1144.77) # point=cross color=red
+circle(315.59,1147.78,5.0) # color=cyan
+point(315.59,1147.78) # point=cross color=red
+circle(909.02,1149.42,5.0) # color=cyan
+point(909.02,1149.42) # point=cross color=red
+circle(600.41,1155.47,5.0) # color=cyan
+point(600.41,1155.47) # point=cross color=red
+circle(2438.07,1155.21,5.0) # color=cyan
+point(2438.07,1155.21) # point=cross color=red
+circle(1787.06,1155.94,5.0) # color=cyan
+point(1787.06,1155.94) # point=cross color=red
+circle(2456.97,1156.51,5.0) # color=cyan
+point(2456.97,1156.51) # point=cross color=red
+circle(2133.83,1159.27,5.0) # color=cyan
+point(2133.83,1159.27) # point=cross color=red
+circle(354.88,1160.88,5.0) # color=cyan
+point(354.88,1160.88) # point=cross color=red
+circle(734.14,1161.65,5.0) # color=cyan
+point(734.14,1161.65) # point=cross color=red
+circle(1826.06,1162.59,5.0) # color=cyan
+point(1826.06,1162.59) # point=cross color=red
+circle(766.81,1164.36,5.0) # color=cyan
+point(766.81,1164.36) # point=cross color=red
+circle(1123.33,1164.46,5.0) # color=cyan
+point(1123.33,1164.46) # point=cross color=red
+circle(894.27,1166.70,5.0) # color=cyan
+point(894.27,1166.70) # point=cross color=red
+circle(2687.56,1171.19,5.0) # color=cyan
+point(2687.56,1171.19) # point=cross color=red
+circle(968.35,1172.05,5.0) # color=cyan
+point(968.35,1172.05) # point=cross color=red
+circle(2099.71,1171.81,5.0) # color=cyan
+point(2099.71,1171.81) # point=cross color=red
+circle(1389.78,1172.97,5.0) # color=cyan
+point(1389.78,1172.97) # point=cross color=red
+circle(415.43,1175.00,5.0) # color=cyan
+point(415.43,1175.00) # point=cross color=red
+circle(1069.31,1174.85,5.0) # color=cyan
+point(1069.31,1174.85) # point=cross color=red
+circle(1503.12,1175.40,5.0) # color=cyan
+point(1503.12,1175.40) # point=cross color=red
+circle(836.78,1175.39,5.0) # color=cyan
+point(836.78,1175.39) # point=cross color=red
+circle(2598.67,1176.70,5.0) # color=cyan
+point(2598.67,1176.70) # point=cross color=red
+circle(1813.35,1180.63,5.0) # color=cyan
+point(1813.35,1180.63) # point=cross color=red
+circle(288.83,1183.81,5.0) # color=cyan
+point(288.83,1183.81) # point=cross color=red
+circle(1311.96,1183.92,5.0) # color=cyan
+point(1311.96,1183.92) # point=cross color=red
+circle(1044.91,1186.32,5.0) # color=cyan
+point(1044.91,1186.32) # point=cross color=red
+circle(2494.97,1185.68,5.0) # color=cyan
+point(2494.97,1185.68) # point=cross color=red
+circle(1234.29,1195.13,5.0) # color=cyan
+point(1234.29,1195.13) # point=cross color=red
+circle(1468.46,1196.28,5.0) # color=cyan
+point(1468.46,1196.28) # point=cross color=red
+circle(1413.61,1199.12,5.0) # color=cyan
+point(1413.61,1199.12) # point=cross color=red
+circle(1164.11,1200.51,5.0) # color=cyan
+point(1164.11,1200.51) # point=cross color=red
+circle(717.09,1201.75,5.0) # color=cyan
+point(717.09,1201.75) # point=cross color=red
+circle(318.49,1203.25,5.0) # color=cyan
+point(318.49,1203.25) # point=cross color=red
+circle(806.19,1202.90,5.0) # color=cyan
+point(806.19,1202.90) # point=cross color=red
+circle(960.28,1204.14,5.0) # color=cyan
+point(960.28,1204.14) # point=cross color=red
+circle(471.48,1205.66,5.0) # color=cyan
+point(471.48,1205.66) # point=cross color=red
+circle(767.26,1206.82,5.0) # color=cyan
+point(767.26,1206.82) # point=cross color=red
+circle(1561.00,1207.72,5.0) # color=cyan
+point(1561.00,1207.72) # point=cross color=red
+circle(2466.08,1208.83,5.0) # color=cyan
+point(2466.08,1208.83) # point=cross color=red
+circle(1197.53,1210.80,5.0) # color=cyan
+point(1197.53,1210.80) # point=cross color=red
+circle(1239.49,1211.86,5.0) # color=cyan
+point(1239.49,1211.86) # point=cross color=red
+circle(338.94,1214.20,5.0) # color=cyan
+point(338.94,1214.20) # point=cross color=red
+circle(449.54,1213.72,5.0) # color=cyan
+point(449.54,1213.72) # point=cross color=red
+circle(1598.72,1215.13,5.0) # color=cyan
+point(1598.72,1215.13) # point=cross color=red
+circle(1675.70,1223.17,5.0) # color=cyan
+point(1675.70,1223.17) # point=cross color=red
+circle(1093.14,1225.50,5.0) # color=cyan
+point(1093.14,1225.50) # point=cross color=red
+circle(1376.26,1230.67,5.0) # color=cyan
+point(1376.26,1230.67) # point=cross color=red
+circle(398.63,1231.67,5.0) # color=cyan
+point(398.63,1231.67) # point=cross color=red
+circle(1328.52,1231.52,5.0) # color=cyan
+point(1328.52,1231.52) # point=cross color=red
+circle(1807.05,1235.63,5.0) # color=cyan
+point(1807.05,1235.63) # point=cross color=red
+circle(1969.19,1236.30,5.0) # color=cyan
+point(1969.19,1236.30) # point=cross color=red
+circle(2154.60,1239.70,5.0) # color=cyan
+point(2154.60,1239.70) # point=cross color=red
+circle(642.00,1241.35,5.0) # color=cyan
+point(642.00,1241.35) # point=cross color=red
+circle(414.38,1242.20,5.0) # color=cyan
+point(414.38,1242.20) # point=cross color=red
+circle(483.69,1242.00,5.0) # color=cyan
+point(483.69,1242.00) # point=cross color=red
+circle(1187.00,1241.49,5.0) # color=cyan
+point(1187.00,1241.49) # point=cross color=red
+circle(284.17,1243.79,5.0) # color=cyan
+point(284.17,1243.79) # point=cross color=red
+circle(604.66,1250.32,5.0) # color=cyan
+point(604.66,1250.32) # point=cross color=red
+circle(979.41,1252.53,5.0) # color=cyan
+point(979.41,1252.53) # point=cross color=red
+circle(928.43,1253.53,5.0) # color=cyan
+point(928.43,1253.53) # point=cross color=red
+circle(1495.12,1254.60,5.0) # color=cyan
+point(1495.12,1254.60) # point=cross color=red
+circle(1755.09,1254.91,5.0) # color=cyan
+point(1755.09,1254.91) # point=cross color=red
+circle(1682.53,1255.99,5.0) # color=cyan
+point(1682.53,1255.99) # point=cross color=red
+circle(2753.34,1257.10,5.0) # color=cyan
+point(2753.34,1257.10) # point=cross color=red
+circle(781.78,1259.47,5.0) # color=cyan
+point(781.78,1259.47) # point=cross color=red
+circle(1902.94,1263.81,5.0) # color=cyan
+point(1902.94,1263.81) # point=cross color=red
+circle(2889.08,1264.02,5.0) # color=cyan
+point(2889.08,1264.02) # point=cross color=red
+circle(236.87,1269.39,5.0) # color=cyan
+point(236.87,1269.39) # point=cross color=red
+circle(2205.84,1271.36,5.0) # color=cyan
+point(2205.84,1271.36) # point=cross color=red
+circle(1779.93,1272.06,5.0) # color=cyan
+point(1779.93,1272.06) # point=cross color=red
+circle(2766.92,1276.28,5.0) # color=cyan
+point(2766.92,1276.28) # point=cross color=red
+circle(1580.57,1280.48,5.0) # color=cyan
+point(1580.57,1280.48) # point=cross color=red
+circle(863.45,1280.78,5.0) # color=cyan
+point(863.45,1280.78) # point=cross color=red
+circle(767.20,1283.63,5.0) # color=cyan
+point(767.20,1283.63) # point=cross color=red
+circle(1395.56,1283.93,5.0) # color=cyan
+point(1395.56,1283.93) # point=cross color=red
+circle(1451.51,1284.76,5.0) # color=cyan
+point(1451.51,1284.76) # point=cross color=red
+circle(1350.14,1289.08,5.0) # color=cyan
+point(1350.14,1289.08) # point=cross color=red
+circle(421.83,1292.35,5.0) # color=cyan
+point(421.83,1292.35) # point=cross color=red
+circle(2023.65,1295.06,5.0) # color=cyan
+point(2023.65,1295.06) # point=cross color=red
+circle(1148.18,1295.53,5.0) # color=cyan
+point(1148.18,1295.53) # point=cross color=red
+circle(323.24,1294.51,5.0) # color=cyan
+point(323.24,1294.51) # point=cross color=red
+circle(1507.31,1296.77,5.0) # color=cyan
+point(1507.31,1296.77) # point=cross color=red
+circle(1482.59,1297.57,5.0) # color=cyan
+point(1482.59,1297.57) # point=cross color=red
+circle(1089.96,1299.44,5.0) # color=cyan
+point(1089.96,1299.44) # point=cross color=red
+circle(1616.82,1299.08,5.0) # color=cyan
+point(1616.82,1299.08) # point=cross color=red
+circle(1254.42,1301.31,5.0) # color=cyan
+point(1254.42,1301.31) # point=cross color=red
+circle(1595.17,1301.58,5.0) # color=cyan
+point(1595.17,1301.58) # point=cross color=red
+circle(1664.08,1307.64,5.0) # color=cyan
+point(1664.08,1307.64) # point=cross color=red
+circle(1423.21,1307.80,5.0) # color=cyan
+point(1423.21,1307.80) # point=cross color=red
+circle(2230.25,1311.98,5.0) # color=cyan
+point(2230.25,1311.98) # point=cross color=red
+circle(2153.90,1312.86,5.0) # color=cyan
+point(2153.90,1312.86) # point=cross color=red
+circle(2437.79,1312.66,5.0) # color=cyan
+point(2437.79,1312.66) # point=cross color=red
+circle(2518.24,1316.45,5.0) # color=cyan
+point(2518.24,1316.45) # point=cross color=red
+circle(897.82,1316.38,5.0) # color=cyan
+point(897.82,1316.38) # point=cross color=red
+circle(240.13,1317.30,5.0) # color=cyan
+point(240.13,1317.30) # point=cross color=red
+circle(1591.03,1317.77,5.0) # color=cyan
+point(1591.03,1317.77) # point=cross color=red
+circle(1750.77,1319.23,5.0) # color=cyan
+point(1750.77,1319.23) # point=cross color=red
+circle(1030.94,1320.67,5.0) # color=cyan
+point(1030.94,1320.67) # point=cross color=red
+circle(1802.91,1323.17,5.0) # color=cyan
+point(1802.91,1323.17) # point=cross color=red
+circle(1554.43,1323.77,5.0) # color=cyan
+point(1554.43,1323.77) # point=cross color=red
+circle(815.53,1324.38,5.0) # color=cyan
+point(815.53,1324.38) # point=cross color=red
+circle(506.94,1327.16,5.0) # color=cyan
+point(506.94,1327.16) # point=cross color=red
+circle(1192.75,1327.38,5.0) # color=cyan
+point(1192.75,1327.38) # point=cross color=red
+circle(744.57,1330.11,5.0) # color=cyan
+point(744.57,1330.11) # point=cross color=red
+circle(665.72,1337.10,5.0) # color=cyan
+point(665.72,1337.10) # point=cross color=red
+circle(411.54,1338.40,5.0) # color=cyan
+point(411.54,1338.40) # point=cross color=red
+circle(2395.64,1341.51,5.0) # color=cyan
+point(2395.64,1341.51) # point=cross color=red
+circle(562.11,1346.17,5.0) # color=cyan
+point(562.11,1346.17) # point=cross color=red
+circle(787.50,1346.67,5.0) # color=cyan
+point(787.50,1346.67) # point=cross color=red
+circle(1841.90,1347.70,5.0) # color=cyan
+point(1841.90,1347.70) # point=cross color=red
+circle(980.26,1350.34,5.0) # color=cyan
+point(980.26,1350.34) # point=cross color=red
+circle(1784.07,1351.79,5.0) # color=cyan
+point(1784.07,1351.79) # point=cross color=red
+circle(2077.31,1354.19,5.0) # color=cyan
+point(2077.31,1354.19) # point=cross color=red
+circle(473.56,1354.61,5.0) # color=cyan
+point(473.56,1354.61) # point=cross color=red
+circle(1363.92,1358.22,5.0) # color=cyan
+point(1363.92,1358.22) # point=cross color=red
+circle(578.14,1360.46,5.0) # color=cyan
+point(578.14,1360.46) # point=cross color=red
+circle(2134.41,1362.64,5.0) # color=cyan
+point(2134.41,1362.64) # point=cross color=red
+circle(1137.34,1363.41,5.0) # color=cyan
+point(1137.34,1363.41) # point=cross color=red
+circle(423.02,1365.36,5.0) # color=cyan
+point(423.02,1365.36) # point=cross color=red
+circle(1497.84,1368.47,5.0) # color=cyan
+point(1497.84,1368.47) # point=cross color=red
+circle(2474.34,1369.18,5.0) # color=cyan
+point(2474.34,1369.18) # point=cross color=red
+circle(513.84,1370.01,5.0) # color=cyan
+point(513.84,1370.01) # point=cross color=red
+circle(1896.29,1370.81,5.0) # color=cyan
+point(1896.29,1370.81) # point=cross color=red
+circle(755.78,1372.87,5.0) # color=cyan
+point(755.78,1372.87) # point=cross color=red
+circle(1172.14,1373.64,5.0) # color=cyan
+point(1172.14,1373.64) # point=cross color=red
+circle(1476.07,1378.67,5.0) # color=cyan
+point(1476.07,1378.67) # point=cross color=red
+circle(1747.04,1379.02,5.0) # color=cyan
+point(1747.04,1379.02) # point=cross color=red
+circle(2160.87,1381.02,5.0) # color=cyan
+point(2160.87,1381.02) # point=cross color=red
+circle(1568.60,1382.13,5.0) # color=cyan
+point(1568.60,1382.13) # point=cross color=red
+circle(1924.06,1383.65,5.0) # color=cyan
+point(1924.06,1383.65) # point=cross color=red
+circle(648.67,1386.01,5.0) # color=cyan
+point(648.67,1386.01) # point=cross color=red
+circle(1069.53,1385.64,5.0) # color=cyan
+point(1069.53,1385.64) # point=cross color=red
+circle(1112.98,1388.67,5.0) # color=cyan
+point(1112.98,1388.67) # point=cross color=red
+circle(858.43,1389.93,5.0) # color=cyan
+point(858.43,1389.93) # point=cross color=red
+circle(1633.03,1391.90,5.0) # color=cyan
+point(1633.03,1391.90) # point=cross color=red
+circle(1789.57,1391.96,5.0) # color=cyan
+point(1789.57,1391.96) # point=cross color=red
+circle(1965.60,1397.92,5.0) # color=cyan
+point(1965.60,1397.92) # point=cross color=red
+circle(974.84,1399.15,5.0) # color=cyan
+point(974.84,1399.15) # point=cross color=red
+circle(2235.76,1402.27,5.0) # color=cyan
+point(2235.76,1402.27) # point=cross color=red
+circle(1311.41,1403.78,5.0) # color=cyan
+point(1311.41,1403.78) # point=cross color=red
+circle(748.21,1405.69,5.0) # color=cyan
+point(748.21,1405.69) # point=cross color=red
+circle(338.94,1406.83,5.0) # color=cyan
+point(338.94,1406.83) # point=cross color=red
+circle(2690.20,1411.31,5.0) # color=cyan
+point(2690.20,1411.31) # point=cross color=red
+circle(592.16,1413.15,5.0) # color=cyan
+point(592.16,1413.15) # point=cross color=red
+circle(301.61,1414.17,5.0) # color=cyan
+point(301.61,1414.17) # point=cross color=red
+circle(1192.38,1417.28,5.0) # color=cyan
+point(1192.38,1417.28) # point=cross color=red
+circle(657.97,1418.04,5.0) # color=cyan
+point(657.97,1418.04) # point=cross color=red
+circle(2394.15,1418.72,5.0) # color=cyan
+point(2394.15,1418.72) # point=cross color=red
+circle(569.59,1419.91,5.0) # color=cyan
+point(569.59,1419.91) # point=cross color=red
+circle(2110.58,1422.31,5.0) # color=cyan
+point(2110.58,1422.31) # point=cross color=red
+circle(1733.35,1423.73,5.0) # color=cyan
+point(1733.35,1423.73) # point=cross color=red
+circle(2900.41,1428.47,5.0) # color=cyan
+point(2900.41,1428.47) # point=cross color=red
+circle(2088.07,1430.59,5.0) # color=cyan
+point(2088.07,1430.59) # point=cross color=red
+circle(597.29,1435.41,5.0) # color=cyan
+point(597.29,1435.41) # point=cross color=red
+circle(1436.21,1441.57,5.0) # color=cyan
+point(1436.21,1441.57) # point=cross color=red
+circle(1567.77,1441.66,5.0) # color=cyan
+point(1567.77,1441.66) # point=cross color=red
+circle(1011.75,1444.74,5.0) # color=cyan
+point(1011.75,1444.74) # point=cross color=red
+circle(2457.98,1445.85,5.0) # color=cyan
+point(2457.98,1445.85) # point=cross color=red
+circle(327.53,1447.51,5.0) # color=cyan
+point(327.53,1447.51) # point=cross color=red
+circle(937.94,1451.05,5.0) # color=cyan
+point(937.94,1451.05) # point=cross color=red
+circle(1655.60,1454.10,5.0) # color=cyan
+point(1655.60,1454.10) # point=cross color=red
+circle(1704.52,1456.38,5.0) # color=cyan
+point(1704.52,1456.38) # point=cross color=red
+circle(2846.54,1456.03,5.0) # color=cyan
+point(2846.54,1456.03) # point=cross color=red
+circle(557.15,1460.54,5.0) # color=cyan
+point(557.15,1460.54) # point=cross color=red
+circle(1828.31,1462.46,5.0) # color=cyan
+point(1828.31,1462.46) # point=cross color=red
+circle(2184.90,1463.17,5.0) # color=cyan
+point(2184.90,1463.17) # point=cross color=red
+circle(786.18,1465.58,5.0) # color=cyan
+point(786.18,1465.58) # point=cross color=red
+circle(1021.85,1466.84,5.0) # color=cyan
+point(1021.85,1466.84) # point=cross color=red
+circle(607.51,1469.38,5.0) # color=cyan
+point(607.51,1469.38) # point=cross color=red
+circle(1406.59,1468.41,5.0) # color=cyan
+point(1406.59,1468.41) # point=cross color=red
+circle(2569.12,1474.48,5.0) # color=cyan
+point(2569.12,1474.48) # point=cross color=red
+circle(1083.28,1486.89,5.0) # color=cyan
+point(1083.28,1486.89) # point=cross color=red
+circle(414.37,1490.38,5.0) # color=cyan
+point(414.37,1490.38) # point=cross color=red
+circle(2773.07,1499.25,5.0) # color=cyan
+point(2773.07,1499.25) # point=cross color=red
+circle(317.02,1497.89,5.0) # color=cyan
+point(317.02,1497.89) # point=cross color=red
+circle(438.25,1497.54,5.0) # color=cyan
+point(438.25,1497.54) # point=cross color=red
+circle(461.15,1497.71,5.0) # color=cyan
+point(461.15,1497.71) # point=cross color=red
+circle(2505.19,1500.62,5.0) # color=cyan
+point(2505.19,1500.62) # point=cross color=red
+circle(2001.46,1501.62,5.0) # color=cyan
+point(2001.46,1501.62) # point=cross color=red
+circle(930.51,1503.05,5.0) # color=cyan
+point(930.51,1503.05) # point=cross color=red
+circle(2028.48,1502.82,5.0) # color=cyan
+point(2028.48,1502.82) # point=cross color=red
+circle(541.42,1505.02,5.0) # color=cyan
+point(541.42,1505.02) # point=cross color=red
+circle(749.18,1504.48,5.0) # color=cyan
+point(749.18,1504.48) # point=cross color=red
+circle(1263.11,1508.12,5.0) # color=cyan
+point(1263.11,1508.12) # point=cross color=red
+circle(619.26,1509.70,5.0) # color=cyan
+point(619.26,1509.70) # point=cross color=red
+circle(814.25,1516.33,5.0) # color=cyan
+point(814.25,1516.33) # point=cross color=red
+circle(836.80,1519.26,5.0) # color=cyan
+point(836.80,1519.26) # point=cross color=red
+circle(2032.33,1521.97,5.0) # color=cyan
+point(2032.33,1521.97) # point=cross color=red
+circle(349.98,1524.38,5.0) # color=cyan
+point(349.98,1524.38) # point=cross color=red
+circle(900.99,1530.65,5.0) # color=cyan
+point(900.99,1530.65) # point=cross color=red
+circle(2067.85,1532.63,5.0) # color=cyan
+point(2067.85,1532.63) # point=cross color=red
+circle(465.98,1534.57,5.0) # color=cyan
+point(465.98,1534.57) # point=cross color=red
+circle(543.64,1534.11,5.0) # color=cyan
+point(543.64,1534.11) # point=cross color=red
+circle(1185.55,1533.68,5.0) # color=cyan
+point(1185.55,1533.68) # point=cross color=red
+circle(2426.91,1535.18,5.0) # color=cyan
+point(2426.91,1535.18) # point=cross color=red
+circle(868.59,1540.81,5.0) # color=cyan
+point(868.59,1540.81) # point=cross color=red
+circle(1673.90,1540.07,5.0) # color=cyan
+point(1673.90,1540.07) # point=cross color=red
+circle(487.91,1542.25,5.0) # color=cyan
+point(487.91,1542.25) # point=cross color=red
+circle(1238.73,1543.63,5.0) # color=cyan
+point(1238.73,1543.63) # point=cross color=red
+circle(759.11,1544.49,5.0) # color=cyan
+point(759.11,1544.49) # point=cross color=red
+circle(1456.58,1554.39,5.0) # color=cyan
+point(1456.58,1554.39) # point=cross color=red
+circle(407.35,1555.36,5.0) # color=cyan
+point(407.35,1555.36) # point=cross color=red
+circle(295.87,1557.71,5.0) # color=cyan
+point(295.87,1557.71) # point=cross color=red
+circle(536.12,1561.95,5.0) # color=cyan
+point(536.12,1561.95) # point=cross color=red
+circle(1403.30,1566.81,5.0) # color=cyan
+point(1403.30,1566.81) # point=cross color=red
+circle(577.10,1569.38,5.0) # color=cyan
+point(577.10,1569.38) # point=cross color=red
+circle(828.07,1582.59,5.0) # color=cyan
+point(828.07,1582.59) # point=cross color=red
+circle(432.88,1592.08,5.0) # color=cyan
+point(432.88,1592.08) # point=cross color=red
+circle(593.60,1591.78,5.0) # color=cyan
+point(593.60,1591.78) # point=cross color=red
+circle(952.77,1594.01,5.0) # color=cyan
+point(952.77,1594.01) # point=cross color=red
+circle(1475.13,1595.82,5.0) # color=cyan
+point(1475.13,1595.82) # point=cross color=red
+circle(1733.13,1601.65,5.0) # color=cyan
+point(1733.13,1601.65) # point=cross color=red
+circle(2525.11,1607.66,5.0) # color=cyan
+point(2525.11,1607.66) # point=cross color=red
+circle(1592.63,1608.97,5.0) # color=cyan
+point(1592.63,1608.97) # point=cross color=red
+circle(1795.15,1609.60,5.0) # color=cyan
+point(1795.15,1609.60) # point=cross color=red
+circle(1165.99,1620.63,5.0) # color=cyan
+point(1165.99,1620.63) # point=cross color=red
+circle(393.22,1624.23,5.0) # color=cyan
+point(393.22,1624.23) # point=cross color=red
+circle(252.43,1634.43,5.0) # color=cyan
+point(252.43,1634.43) # point=cross color=red
+circle(2267.08,1638.49,5.0) # color=cyan
+point(2267.08,1638.49) # point=cross color=red
+circle(2237.68,1640.12,5.0) # color=cyan
+point(2237.68,1640.12) # point=cross color=red
+circle(2673.64,1640.74,5.0) # color=cyan
+point(2673.64,1640.74) # point=cross color=red
+circle(1423.68,1646.27,5.0) # color=cyan
+point(1423.68,1646.27) # point=cross color=red
+circle(1879.59,1647.94,5.0) # color=cyan
+point(1879.59,1647.94) # point=cross color=red
+circle(2565.09,1647.00,5.0) # color=cyan
+point(2565.09,1647.00) # point=cross color=red
+circle(1152.64,1649.10,5.0) # color=cyan
+point(1152.64,1649.10) # point=cross color=red
+circle(708.76,1651.59,5.0) # color=cyan
+point(708.76,1651.59) # point=cross color=red
+circle(2035.39,1652.17,5.0) # color=cyan
+point(2035.39,1652.17) # point=cross color=red
+circle(1053.22,1653.80,5.0) # color=cyan
+point(1053.22,1653.80) # point=cross color=red
+circle(1008.26,1658.99,5.0) # color=cyan
+point(1008.26,1658.99) # point=cross color=red
+circle(2225.38,1661.36,5.0) # color=cyan
+point(2225.38,1661.36) # point=cross color=red
+circle(1887.45,1663.74,5.0) # color=cyan
+point(1887.45,1663.74) # point=cross color=red
+circle(1236.82,1665.11,5.0) # color=cyan
+point(1236.82,1665.11) # point=cross color=red
+circle(1314.59,1666.66,5.0) # color=cyan
+point(1314.59,1666.66) # point=cross color=red
+circle(373.45,1670.61,5.0) # color=cyan
+point(373.45,1670.61) # point=cross color=red
+circle(2551.24,1672.17,5.0) # color=cyan
+point(2551.24,1672.17) # point=cross color=red
+circle(762.03,1673.11,5.0) # color=cyan
+point(762.03,1673.11) # point=cross color=red
+circle(1632.96,1681.67,5.0) # color=cyan
+point(1632.96,1681.67) # point=cross color=red
+circle(1819.61,1683.28,5.0) # color=cyan
+point(1819.61,1683.28) # point=cross color=red
+circle(802.15,1687.47,5.0) # color=cyan
+point(802.15,1687.47) # point=cross color=red
+circle(596.77,1689.41,5.0) # color=cyan
+point(596.77,1689.41) # point=cross color=red
+circle(2170.10,1690.20,5.0) # color=cyan
+point(2170.10,1690.20) # point=cross color=red
+circle(2048.95,1694.10,5.0) # color=cyan
+point(2048.95,1694.10) # point=cross color=red
+circle(2072.44,1701.72,5.0) # color=cyan
+point(2072.44,1701.72) # point=cross color=red
+circle(1722.85,1701.91,5.0) # color=cyan
+point(1722.85,1701.91) # point=cross color=red
+circle(1086.72,1702.99,5.0) # color=cyan
+point(1086.72,1702.99) # point=cross color=red
+circle(1375.71,1708.34,5.0) # color=cyan
+point(1375.71,1708.34) # point=cross color=red
+circle(1431.37,1708.40,5.0) # color=cyan
+point(1431.37,1708.40) # point=cross color=red
+circle(446.43,1710.83,5.0) # color=cyan
+point(446.43,1710.83) # point=cross color=red
+circle(1267.70,1714.84,5.0) # color=cyan
+point(1267.70,1714.84) # point=cross color=red
+circle(494.52,1717.10,5.0) # color=cyan
+point(494.52,1717.10) # point=cross color=red
+circle(1486.30,1717.70,5.0) # color=cyan
+point(1486.30,1717.70) # point=cross color=red
+circle(2326.94,1723.82,5.0) # color=cyan
+point(2326.94,1723.82) # point=cross color=red
+circle(1039.73,1725.67,5.0) # color=cyan
+point(1039.73,1725.67) # point=cross color=red
+circle(2213.24,1731.56,5.0) # color=cyan
+point(2213.24,1731.56) # point=cross color=red
+circle(961.55,1732.02,5.0) # color=cyan
+point(961.55,1732.02) # point=cross color=red
+circle(518.52,1733.56,5.0) # color=cyan
+point(518.52,1733.56) # point=cross color=red
+circle(664.33,1740.49,5.0) # color=cyan
+point(664.33,1740.49) # point=cross color=red
+circle(382.27,1742.44,5.0) # color=cyan
+point(382.27,1742.44) # point=cross color=red
+circle(595.44,1743.34,5.0) # color=cyan
+point(595.44,1743.34) # point=cross color=red
+circle(2820.78,1757.39,5.0) # color=cyan
+point(2820.78,1757.39) # point=cross color=red
+circle(434.47,1763.77,5.0) # color=cyan
+point(434.47,1763.77) # point=cross color=red
+circle(1611.74,1765.51,5.0) # color=cyan
+point(1611.74,1765.51) # point=cross color=red
+circle(2021.34,1764.92,5.0) # color=cyan
+point(2021.34,1764.92) # point=cross color=red
+circle(1914.55,1767.17,5.0) # color=cyan
+point(1914.55,1767.17) # point=cross color=red
+circle(2784.28,1780.45,5.0) # color=cyan
+point(2784.28,1780.45) # point=cross color=red
+circle(782.38,1785.48,5.0) # color=cyan
+point(782.38,1785.48) # point=cross color=red
+circle(2044.95,1788.05,5.0) # color=cyan
+point(2044.95,1788.05) # point=cross color=red
+circle(1917.87,1790.96,5.0) # color=cyan
+point(1917.87,1790.96) # point=cross color=red
+circle(2440.08,1789.49,5.0) # color=cyan
+point(2440.08,1789.49) # point=cross color=red
+circle(2571.25,1790.95,5.0) # color=cyan
+point(2571.25,1790.95) # point=cross color=red
+circle(1631.11,1792.82,5.0) # color=cyan
+point(1631.11,1792.82) # point=cross color=red
+circle(1810.78,1796.04,5.0) # color=cyan
+point(1810.78,1796.04) # point=cross color=red
+circle(1704.87,1797.75,5.0) # color=cyan
+point(1704.87,1797.75) # point=cross color=red
+circle(337.28,1807.80,5.0) # color=cyan
+point(337.28,1807.80) # point=cross color=red
+circle(1053.14,1807.55,5.0) # color=cyan
+point(1053.14,1807.55) # point=cross color=red
+circle(1348.52,1808.23,5.0) # color=cyan
+point(1348.52,1808.23) # point=cross color=red
+circle(252.18,1808.62,5.0) # color=cyan
+point(252.18,1808.62) # point=cross color=red
+circle(1933.02,1809.06,5.0) # color=cyan
+point(1933.02,1809.06) # point=cross color=red
+circle(1771.31,1815.40,5.0) # color=cyan
+point(1771.31,1815.40) # point=cross color=red
+circle(614.10,1819.98,5.0) # color=cyan
+point(614.10,1819.98) # point=cross color=red
+circle(339.66,1827.42,5.0) # color=cyan
+point(339.66,1827.42) # point=cross color=red
+circle(2153.15,1827.16,5.0) # color=cyan
+point(2153.15,1827.16) # point=cross color=red
+circle(1709.21,1828.42,5.0) # color=cyan
+point(1709.21,1828.42) # point=cross color=red
+circle(488.97,1838.52,5.0) # color=cyan
+point(488.97,1838.52) # point=cross color=red
+circle(1277.23,1838.07,5.0) # color=cyan
+point(1277.23,1838.07) # point=cross color=red
+circle(725.23,1841.19,5.0) # color=cyan
+point(725.23,1841.19) # point=cross color=red
+circle(646.05,1841.49,5.0) # color=cyan
+point(646.05,1841.49) # point=cross color=red
+circle(2656.19,1842.65,5.0) # color=cyan
+point(2656.19,1842.65) # point=cross color=red
+circle(2451.39,1844.75,5.0) # color=cyan
+point(2451.39,1844.75) # point=cross color=red
+circle(882.06,1850.56,5.0) # color=cyan
+point(882.06,1850.56) # point=cross color=red
+circle(2708.62,1854.06,5.0) # color=cyan
+point(2708.62,1854.06) # point=cross color=red
+circle(2867.44,1862.87,5.0) # color=cyan
+point(2867.44,1862.87) # point=cross color=red
+circle(816.51,1864.77,5.0) # color=cyan
+point(816.51,1864.77) # point=cross color=red
