@@ -9,7 +9,7 @@ from photutils.aperture import CircularAperture, CircularAnnulus, aperture_photo
 # Configuração da banda atual ('B', 'G' ou 'R')
 banda = 'B'
 
-arquivo_fits = f'scripts/LS5039_B_wcs.fits
+arquivo_fits = f'/home/maju/Downloads/dados/astronometry/LS5039_B_wcs.fits'
 nome_csv = f'resultado_fotometria_{banda}.csv'
 nome_reg = f'centroides_{banda}.reg'
 
