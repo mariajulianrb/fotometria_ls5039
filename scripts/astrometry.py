@@ -25,7 +25,7 @@ wcs = WCS(header)
 media, mediana, desvio = sigma_clipped_stats(dados, sigma=3.0)
 
 # 3. Detectar estrelas na imagem
-daofind = DAOStarFinder(fwhm=1.29*5, threshold=5.0 * desvio)
+daofind = DAOStarFinder(fwhm=5.0, threshold=5.0 * desvio)
 fontes = daofind(dados - mediana)
 
 # 4. Descartar borda vinhetada (Margem ampliada para 220px)
