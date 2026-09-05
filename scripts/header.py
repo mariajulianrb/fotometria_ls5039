@@ -17,9 +17,8 @@ nome_reg = f'centroides_{banda}.reg'
 
 with fits.open(arquivo_fits) as hdu:
     dados = hdu[0].data.astype(float)
-    header = hdu[0].header.copy()  # O .copy() garante que tudo fique na memória após fechar o arquivo
+    header = hdu[0].header.copy() 
 
-# Busca e imprime as chaves mais comuns de seeing/FWHM
 chaves_fwhm = ['SEEING', 'FWHM', 'PSF_FWHM', 'DIMMSEE']
 for chave in chaves_fwhm:
     if chave in header:

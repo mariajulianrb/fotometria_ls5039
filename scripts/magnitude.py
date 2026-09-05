@@ -1,56 +1,74 @@
 import numpy as np
+import matplotlib.pyplot as plt
 from astropy.io import fits
 from astropy.wcs import WCS
-from astropy.stats import sigma_clipped_stats
-from photutils.detection import DAOStarFinder
-from photutils.aperture import CircularAperture, aperture_photometry
+from astropy.stats import SigmaClip, sigma_clip
 from astropy.coordinates import SkyCoord
 import astropy.units as u
-from astroquery.vizier import Vizier
-import matplotlib.pyplot as plt
 from astropy.table import Table
+from astroquery.vizier import Vizier
+from photutils.background import Background2D, MedianBackground
+from photutils.detection import DAOStarFinder
+from photutils.aperture import CircularAperture, CircularAnnulus, aperture_photometry
 
 # ==========================================
 # CONFIGURAÇÕES INICIAIS
 # ==========================================
 arquivo_imagem = '/home/maju/Downloads/dados/astronometry/LS5039_B_wcs.fits'
-raio_abertura = 5.0 # Raio em pixels para medir a luz da estrela
+FWHM = 5.0
+raio_abertura = FWHM             # Raio para medir a luz da estrela
+raio_in = FWHM * 1.5             # Início do anel de medição do céu
+raio_out = FWHM * 2.0            # Fim do anel de medição do céu
 
-# Abre a imagem e extrai dados e WCS
-hdul = fits.open(arquivo_imagem)
-image_data = hdul[0].data
-header = hdul[0].header
+with fits.open(arquivo_imagem) as hdul:
+    image_data = hdul[0].data.astype(float)
+    header = hdul[0].header
+
 wcs = WCS(header)
+exptime = header.get('EXPTIME', 1.0)
 
 # ==========================================
-# 1. RUÍDO DE FUNDO E DETECÇÃO
+# 1. RUÍDO DE FUNDO 2D E DETECÇÃO ROBUSTA
 # ==========================================
-mean, median, std = sigma_clipped_stats(image_data, sigma=3.0)
+# O mapa 2D resolve problemas de vinhetagem e iluminação irregular
+bkg = Background2D(
+    image_data, box_size=(64, 64), filter_size=(3, 3),
+    sigma_clip=SigmaClip(sigma=3.0), bkg_estimator=MedianBackground()
+)
+dados_subtraidos = image_data - bkg.background
 
-# Detecta estrelas com picos 5x acima do ruído de fundo (5-sigma)
-daofind = DAOStarFinder(fwhm=3.0, threshold=5. * std)
-fontes = daofind(image_data - median)
-print(f"Estrelas detectadas na imagem: {len(fontes)}")
+# Detecção com filtros geométricos para evitar falsos positivos
+daofind = DAOStarFinder(
+    fwhm=FWHM, 
+    threshold=5.0 * bkg.background_rms_median,
+    sharplo=0.2, sharphi=1.0, 
+    roundlo=-0.5, roundhi=0.5
+)
+fontes = daofind(dados_subtraidos)
+print(f"Estrelas detectadas (validadas): {len(fontes)}")
 
 # ==========================================
-# 2. FOTOMETRIA INSTRUMENTAL E WCS
+# 2. FOTOMETRIA DE ABERTURA COM ANEL DE CÉU
 # ==========================================
-# Cria as aberturas circulares nas posições (X, Y) detectadas
 posicoes = np.transpose((fontes['xcentroid'], fontes['ycentroid']))
 aberturas = CircularAperture(posicoes, r=raio_abertura)
+aneis = CircularAnnulus(posicoes, r_in=raio_in, r_out=raio_out)
 
-# Soma a luz (fluxo) dentro de cada abertura
-tabela_fotometria = aperture_photometry(image_data - median, aberturas)
+tabela_fotometria = aperture_photometry(image_data, [aberturas, aneis])
 
-# Calcula a magnitude instrumental: m = -2.5 * log10(fluxo)
-fluxos_validos = tabela_fotometria['aperture_sum'] > 0
-tabela_filtrada = tabela_fotometria[fluxos_validos]
-fluxo = tabela_filtrada['aperture_sum']
-tabela_filtrada['mag_inst'] = -2.5 * np.log10(fluxo)
+# Subtração do fundo local medido no anel de cada estrela
+fundo_medio_anel = tabela_fotometria['aperture_sum_1'] / aneis.area
+fundo_total_abertura = fundo_medio_anel * aberturas.area
+fluxo_limpo = tabela_fotometria['aperture_sum_0'] - fundo_total_abertura
 
-# Converte o (X, Y) dessas estrelas válidas para RA e Dec
-coords_imagem = wcs.pixel_to_world(tabela_filtrada['xcenter'], tabela_filtrada['ycenter'])
+# Filtrar fluxos negativos ou nulos
+validos = fluxo_limpo > 0
+fluxo_valido = fluxo_limpo[validos]
+fontes_validas = fontes[validos]
 
+# Magnitude instrumental e coordenadas
+mag_inst = -2.5 * np.log10(fluxo_valido / exptime)
+coords_imagem = wcs.pixel_to_world(fontes_validas['xcentroid'], fontes_validas['ycentroid'])
 
 # ==========================================
 # 3. BUSCA NO CATÁLOGO (VIZIER - UCAC4)
@@ -59,70 +77,85 @@ centro_ra = wcs.pixel_to_world(image_data.shape[1]/2, image_data.shape[0]/2).ra.
 centro_dec = wcs.pixel_to_world(image_data.shape[1]/2, image_data.shape[0]/2).dec.deg
 centro_coord = SkyCoord(ra=centro_ra, dec=centro_dec, unit=(u.deg, u.deg))
 
-# Alterado de 'Vmag' para 'Bmag'
-vizier = Vizier(columns=['RAJ2000', 'DEJ2000', 'Bmag'])
-vizier.ROW_LIMIT = -1 
+print("\nBaixando referências do catálogo UCAC4...")
+vizier = Vizier(columns=['RAJ2000', 'DEJ2000', 'Bmag'], row_limit=-1)
 catalogo = vizier.query_region(centro_coord, radius=15*u.arcmin, catalog='I/322A/out')[0]
 
-# Alterado de 'Vmag' para 'Bmag'
 catalogo = catalogo[~np.isnan(catalogo['Bmag'])]
 coords_catalogo = SkyCoord(ra=catalogo['RAJ2000'], dec=catalogo['DEJ2000'], unit=(u.deg, u.deg))
 
 # ==========================================
-# 4. CROSS-MATCHING (CRUZAMENTO)
+# 4. CROSS-MATCHING ESPACIAL
 # ==========================================
-idx_catalogo, d2d, d3d = coords_imagem.match_to_catalog_sky(coords_catalogo)
-limite_distancia = 2.0 * u.arcsec
-pares_validos = d2d < limite_distancia
+idx_catalogo, d2d, _ = coords_imagem.match_to_catalog_sky(coords_catalogo)
+pares_validos = d2d < (2.0 * u.arcsec)
 
-mag_inst_pareada = tabela_filtrada['mag_inst'][pares_validos]
-
-# Alterado de 'Vmag' para 'Bmag'
+mag_inst_pareada = mag_inst[pares_validos]
 mag_aparente_pareada = catalogo['Bmag'][idx_catalogo[pares_validos]]
-print(f"Pares perfeitos encontrados: {len(mag_inst_pareada)}")
+print(f"Pares perfeitos cruzados: {len(mag_inst_pareada)}")
 
 # ==========================================
-# 5. CÁLCULO DO ZERO POINT
+# 5. CÁLCULO DO ZERO POINT (COM SIGMA CLIPPING)
 # ==========================================
 diferencas = mag_aparente_pareada - mag_inst_pareada
-zero_point = np.median(diferencas)
-desvio_padrao_zp = np.std(diferencas)
+
+# O sigma clipping remove estrelas variáveis ou cruzas erradas que poluem o ZP
+diferencas_limpas = sigma_clip(diferencas, sigma=2.5)
+
+zero_point = np.ma.median(diferencas_limpas)
+desvio_padrao_zp = np.ma.std(diferencas_limpas)
 
 print(f"Zero Point (ZP): {zero_point:.4f}")
-print(f"Desvio Padrão do ZP: {desvio_padrao_zp:.4f}")
+print(f"Desvio Padrão do ZP: {desvio_padrao_zp:.4f}\n")
 
 # ==========================================
 # 6. SALVAR DADOS CALIBRADOS EM CSV
 # ==========================================
-# Calcula a magnitude real (calibrada) para todas as estrelas da imagem
-tabela_filtrada['mag_calibrada'] = tabela_filtrada['mag_inst'] + zero_point
+mag_calibrada_total = mag_inst + zero_point
 
-# Cria uma tabela com RA, DEC e a Magnitude e salva
-tabela_final = Table([coords_imagem.ra.deg, coords_imagem.dec.deg, tabela_filtrada['mag_calibrada']], 
-                     names=('RA', 'DEC', 'Magnitude'))
+tabela_final = Table([
+    coords_imagem.ra.deg, 
+    coords_imagem.dec.deg, 
+    fluxo_valido, 
+    mag_inst, 
+    mag_calibrada_total
+], names=('RA', 'DEC', 'Fluxo', 'Mag_Inst', 'Mag_B_Calibrada'))
 
-# ATENÇÃO: Mude o nome ao rodar as outras bandas (fotometria_B.csv, fotometria_R.csv, etc)
-nome_arquivo_saida = 'fotometria_B.csv'
+nome_arquivo_saida = 'fotometria_B_calibrada.csv'
 tabela_final.write(nome_arquivo_saida, format='csv', overwrite=True)
-print(f"Dados salvos com sucesso em: {nome_arquivo_saida}")
+print(f"Resultados de {len(tabela_final)} estrelas salvos em: {nome_arquivo_saida}")
 
 # ==========================================
-# 7. GRÁFICO DE CALIBRAÇÃO
+# 7. GRÁFICO DE CALIBRAÇÃO (INSTRUMENTAL x REAL)
 # ==========================================
-plt.figure(figsize=(8, 6))
-plt.scatter(mag_inst_pareada, mag_aparente_pareada, color='royalblue', alpha=0.6, edgecolor='k', label='Estrelas Pareadas')
+# Separar inliers e outliers para visualização no gráfico
+mascara_inliers = ~diferencas_limpas.mask
+mascara_outliers = diferencas_limpas.mask
 
+plt.figure(figsize=(9, 6))
+
+# Plotar pontos aceitos
+plt.scatter(mag_inst_pareada[mascara_inliers], mag_aparente_pareada[mascara_inliers], 
+            color='royalblue', alpha=0.7, edgecolor='k', label='Estrelas Válidas (Inliers)')
+
+# Plotar pontos rejeitados (para controle de qualidade)
+if mascara_outliers.any():
+    plt.scatter(mag_inst_pareada[mascara_outliers], mag_aparente_pareada[mascara_outliers], 
+                color='red', alpha=0.7, marker='x', label='Descartadas (Outliers)')
+
+# Linha de tendência baseada no ZP
 x_line = np.linspace(min(mag_inst_pareada), max(mag_inst_pareada), 100)
 y_line = x_line + zero_point
-plt.plot(x_line, y_line, color='red', linestyle='--', linewidth=2, label=f'Ajuste ZP ({zero_point:.2f})')
+plt.plot(x_line, y_line, color='darkorange', linestyle='--', linewidth=2.5, 
+         label=f'Ajuste ZP = {zero_point:.2f} $\\pm$ {desvio_padrao_zp:.2f}')
 
 plt.xlabel('Magnitude Instrumental')
-plt.ylabel('Magnitude Aparente (Catálogo VizieR)')
+plt.ylabel('Magnitude Aparente ($B_{mag}$ Catálogo UCAC4)')
 plt.title('Calibração Fotométrica: Instrumental vs Catálogo')
 plt.legend()
-plt.grid(True, linestyle='--', alpha=0.5)
+plt.grid(True, linestyle='--', alpha=0.6)
 plt.gca().invert_xaxis()
 plt.gca().invert_yaxis()
 
-# Único plt.show() no final do script
+plt.tight_layout()
 plt.show()
