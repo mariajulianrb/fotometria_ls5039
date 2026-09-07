@@ -9,8 +9,8 @@ from photutils.detection import DAOStarFinder
 from photutils.aperture import CircularAperture, CircularAnnulus, aperture_photometry, ApertureStats
 
 # Configurações Iniciais
-arquivo_imagem = '/home/maju/Downloads/dados/astronometry/ls5039_R_wcs.fits'
-FWHM = 7.51846
+arquivo_imagem = '/home/maju/Downloads/dados/astronometry/ls5039_G_wcs.fits'
+FWHM = 8.89
 raio_abertura = 2.0 * FWHM
 raio_in = 3.0 * FWHM
 raio_out = 4.0 * FWHM
@@ -112,10 +112,10 @@ else:
     # Ordena pelas mais brilhantes
     df_bruto = df_bruto.sort_values(by='Fluxo', ascending=False).head(NUM_ESTRELAS_BRILHANTES).reset_index(drop=True)
 
-    df_bruto.to_csv('fotometria_bruta_R.csv', index=False)
+    df_bruto.to_csv('fotometria_bruta_G.csv', index=False)
 
     # Regiões DS9
-    with open('regioes_aneis_R.reg', 'w') as f:
+    with open('regioes_aneis_G.reg', 'w') as f:
         f.write('global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1\nimage\n')
         for x, y in zip(df_bruto['X_pix'], df_bruto['Y_pix']):
             f.write(f'circle({x+1:.2f},{y+1:.2f},{raio_abertura:.2f}) # color=cyan\n')

@@ -9,7 +9,7 @@ from astroquery.vizier import Vizier
 # 1. Carrega os Dados Brutos da Fotometria
 df_bruto = pd.read_csv('fotometria_bruta_B.csv')
 
-std_fundo = df_bruto['Std_Fundo'].iloc[0]
+std_fundo = df_bruto['Std_Fundo_Local'].iloc[0]
 area_ap = df_bruto['Area_Ap'].iloc[0]
 exptime = df_bruto['Exptime'].iloc[0]
 
