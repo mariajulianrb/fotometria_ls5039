@@ -6,8 +6,8 @@ from astropy.coordinates import SkyCoord
 import astropy.units as u
 from astroquery.vizier import Vizier
 
-# 1. Carrega os Dados Brutos da Fotometria (Filtro R)
-df_bruto = pd.read_csv('fotometria_bruta_R.csv')
+# 1. Carrega os Dados Brutos da Fotometria (Filtro G)
+df_bruto = pd.read_csv('fotometria_bruta_G.csv')
 
 std_fundo = df_bruto['Std_Fundo'].iloc[0]
 area_ap = df_bruto['Area_Ap'].iloc[0]

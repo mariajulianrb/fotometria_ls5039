@@ -13,9 +13,8 @@ FWHM = 8.89
 raio_abertura = 2.0 * FWHM
 raio_in = 3.0 * FWHM
 raio_out = 4.0 * FWHM
-
-NUM_ESTRELAS_BRILHANTES = 200  # Quantidade final desejada
-MAX_ERRO_MAG = 0.05           #  Erro máximo tolerado (em magnitudes)
+NUM_ESTRELAS_BRILHANTES = 200
+MAX_ERRO_MAG = 0.05 # Filtro sugerido pelo professor para remover anéis contaminados
 
 # 1. Carregamento da Imagem e WCS
 with fits.open(arquivo_imagem) as hdul:
@@ -67,23 +66,22 @@ else:
     validos = fluxo_limpo > 0
     fluxo_valido = fluxo_limpo[validos]
     fontes_validas = fontes[validos]
-    posicoes_validas = posicoes[validos]
-
-    # --- CÁLCULO DE ERRO DA FOTOMETRIA (SUGESTÃO DO PROFESSOR) ---
-    area_ap = aberturas.area
-    area_anel = aneis.area
-    
-    # Variância do fluxo = Ruído Poisson do sinal + Ruído do fundo na abertura + Incerteza do fundo no anel
-    variancia_fluxo = fluxo_valido + (area_ap * (std_fundo ** 2)) + ((area_ap ** 2 / area_anel) * (std_fundo ** 2))
-    erro_fluxo = np.sqrt(np.maximum(variancia_fluxo, 0))
-    
-    # Erro da magnitude instrumental
-    erro_mag_inst = 1.0857 * (erro_fluxo / fluxo_valido)
 
     mag_inst = -2.5 * np.log10(fluxo_valido / exptime)
     coords_imagem = wcs.pixel_to_world(fontes_validas['x_centroid'], fontes_validas['y_centroid'])
+    
+    # NOVO: Cálculo do Erro da Fotometria (Equação do CCD)
+    area_ap = aberturas.area
+    area_anel = aneis.area
+    
+    # Variância = Sinal da estrela + Ruído do fundo na abertura + Incerteza da medição do anel
+    variancia_fluxo = fluxo_valido + (area_ap * (std_fundo ** 2)) + ((area_ap ** 2 / area_anel) * (std_fundo ** 2))
+    erro_fluxo = np.sqrt(np.maximum(variancia_fluxo, 0))
+    
+    # Propagação do erro do fluxo para a magnitude
+    erro_mag_inst = 1.0857 * (erro_fluxo / fluxo_valido)
 
-    # 4. Tabela com Metadados e Filtro de Erro
+    # 4. Salvar Tabela Intermediária com Metadados
     df_bruto = pd.DataFrame({
         'ID': fontes_validas['id'],
         'X_pix': fontes_validas['x_centroid'],
@@ -91,27 +89,27 @@ else:
         'RA_deg': coords_imagem.ra.deg,
         'Dec_deg': coords_imagem.dec.deg,
         'Fluxo': fluxo_valido,
-        'Erro_Fluxo': erro_fluxo,
+        'Erro_Fluxo': erro_fluxo, # Coluna adicionada
         'Mag_Inst': mag_inst,
-        'Erro_Mag_Inst': erro_mag_inst,
+        'Erro_Mag_Inst': erro_mag_inst, # Coluna adicionada
         'Std_Fundo': std_fundo,
         'Area_Ap': area_ap,
         'Exptime': exptime
     })
 
-    # FILTRO DO PROFESSOR: Descarta estrelas com erro alto (afetadas por contaminação no anel)
+    # Filtra as estrelas com erro alto (provável contaminação no anel)
     df_bruto = df_bruto[df_bruto['Erro_Mag_Inst'] <= MAX_ERRO_MAG]
 
-    # Ordena pelo MENOR erro e pega as melhores estrelas
+    # Ordena pelo MENOR erro e mantém a quantidade desejada
     df_bruto = df_bruto.sort_values(by='Erro_Mag_Inst', ascending=True).head(NUM_ESTRELAS_BRILHANTES).reset_index(drop=True)
 
     df_bruto.to_csv('fotometria_bruta_G.csv', index=False)
 
     # Regiões DS9
-    with open('regioes_aneis_G.reg', 'w') as f:
+    with open('regioes_aneis_semcorr_G.reg', 'w') as f:
         f.write('global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1\nimage\n')
         for x, y in zip(df_bruto['X_pix'], df_bruto['Y_pix']):
             f.write(f'circle({x+1:.2f},{y+1:.2f},{raio_abertura:.2f}) # color=cyan\n')
             f.write(f'annulus({x+1:.2f},{y+1:.2f},{raio_in:.2f},{raio_out:.2f}) # color=yellow\n')
 
-    print(f"Sucesso! {len(df_bruto)} fontes selecionadas com erro < {MAX_ERRO_MAG} mag e salvas.")
+    print(f"Sucesso! As {len(df_bruto)} estrelas com menor erro foram salvas em 'fotometria_bruta_G.csv'.")

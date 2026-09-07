@@ -38,11 +38,15 @@ mag_cat = np.array(catalogo['Bmag'][idx_catalogo[pares]])
 diferencas = mag_cat - mag_inst
 diferencas_limpas = sigma_clip(diferencas, sigma=2.5)
 
+# Cálculo do Zero Point, Desvio Padrão e Erro Padrão
 zero_point = np.ma.median(diferencas_limpas)
 desvio_zp = np.ma.std(diferencas_limpas)
+n_inliers = diferencas_limpas.count() # Conta apenas os pontos não descartados pelo sigma_clip
 
-print(f"Estrelas pareadas: {len(mag_inst)}")
-print(f"Zero Point (ZP): {zero_point:.4f} ± {desvio_zp:.4f} mag")
+erro_zp = desvio_zp / np.sqrt(n_inliers)
+
+print(f"Estrelas pareadas: {len(mag_inst)} (Inliers utilizados: {n_inliers})")
+print(f"Zero Point (ZP): {zero_point:.4f} ± {erro_zp:.4f} mag (Desvio: {desvio_zp:.4f})")
 
 # 4. Calibração e Magnitude Limite
 ruido = std_fundo * np.sqrt(area_ap)
