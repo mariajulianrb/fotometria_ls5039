@@ -33,7 +33,7 @@ print(f"Estrelas combinadas (B + R): {len(df_obs)}")
 
 # 3. Consulta ao Gaia DR3 no VizieR
 print("Consultando o Gaia DR3 no VizieR...")
-v = Vizier(columns=['RA_ICRS', 'DE_ICRS', 'BPmag', 'RPmag', 'Gmag'], row_limit=5000)
+v = Vizier(columns=['RA_ICRS', 'DE_ICRS', 'BPmag', 'RPmag', 'Gmag', 'Plx'], row_limit=5000)
 tabela_gaia = v.query_region(coord_alvo, radius=RAIO_VIZIER, catalog='I/355/gaiadr3')[0].to_pandas()
 coords_gaia = SkyCoord(ra=tabela_gaia['RA_ICRS'].values * u.deg, dec=tabela_gaia['DE_ICRS'].values * u.deg)
 
@@ -107,7 +107,7 @@ polinomio = np.poly1d(coeficientes)
 x_linha = np.linspace(0.6, 2.0, 100)
 y_linha = polinomio(x_linha)
 
-plt.plot(x_linha, y_linha, color='dodgerblue', linestyle='--', linewidth=2.5, label='Sequência Principal')
+#plt.plot(x_linha, y_linha, color='dodgerblue', linestyle='--', linewidth=2.5, label='Sequência Principal')
 
 # Formatação do Gráfico
 plt.gca().invert_yaxis()  # Magnitudes mais brilhantes para cima

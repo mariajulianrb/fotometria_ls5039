@@ -1,117 +1,96 @@
-import numpy as np
 import pandas as pd
-from astropy.io import fits
-from astropy.wcs import WCS
-from astropy.stats import SigmaClip, sigma_clipped_stats
-from photutils.background import Background2D, MedianBackground
-from photutils.detection import DAOStarFinder
-from photutils.aperture import CircularAperture, CircularAnnulus, aperture_photometry, ApertureStats
+import numpy as np
+import matplotlib.pyplot as plt
+from astropy.stats import sigma_clip
+from astropy.coordinates import SkyCoord
+import astropy.units as u
+from astroquery.vizier import Vizier
 
-# Configurações Iniciais
-arquivo_imagem = '/home/maju/Downloads/dados/astronometry/ls5039_G_wcs.fits'
-FWHM = 8.89
-raio_abertura = 2.0 * FWHM
-raio_in = 3.0 * FWHM
-raio_out = 4.0 * FWHM
+# 1. Carrega os Dados Brutos da Fotometria (Filtro G)
+df_bruto = pd.read_csv('fotometria_bruta_G.csv')
 
-NUM_ESTRELAS_BRILHANTES = 200  # Quantidade final desejada
-MAX_ERRO_MAG = 0.05           #  Erro máximo tolerado (em magnitudes)
+std_fundo = df_bruto['Std_Fundo'].iloc[0]
+area_ap = df_bruto['Area_Ap'].iloc[0]
+exptime = df_bruto['Exptime'].iloc[0]
 
-# 1. Carregamento da Imagem e WCS
-with fits.open(arquivo_imagem) as hdul:
-    image_data = hdul[0].data.astype(float)
-    header = hdul[0].header
+coords_imagem = SkyCoord(ra=df_bruto['RA_deg'].values * u.deg, dec=df_bruto['Dec_deg'].values * u.deg)
+centro_coord = SkyCoord(ra=df_bruto['RA_deg'].mean() * u.deg, dec=df_bruto['Dec_deg'].mean() * u.deg)
 
-wcs = WCS(header)
-exptime = header.get('EXPTIME', 1.0)
-altura, largura = image_data.shape
+# 2. Consulta ao catálogo Gaia DR3 via VizieR (Banda G)
+print("Consultando VizieR (Gaia DR3, Banda G)...")
+vizier = Vizier(columns=['RA_ICRS', 'DE_ICRS', 'Gmag'], row_limit=-1)
+catalogo = vizier.query_region(centro_coord, radius=15 * u.arcmin, catalog='I/355/gaiadr3')[0]
 
-# 2. Tratamento do Fundo e Detecção
-bkg = Background2D(
-    image_data, box_size=(64, 64), filter_size=(3, 3),
-    sigma_clip=SigmaClip(sigma=3.0), bkg_estimator=MedianBackground()
-)
-dados_subtraidos = image_data - bkg.background
-_, _, std_fundo = sigma_clipped_stats(dados_subtraidos, sigma=3.0)
+# Limpeza: remove NaNs e filtra pela faixa de brilho segura (10 < Gmag < 18)
+catalogo = catalogo[~np.isnan(catalogo['Gmag'])]
+catalogo = catalogo[(catalogo['Gmag'] > 10.0) & (catalogo['Gmag'] < 18.0)]
 
-daofind = DAOStarFinder(
-    fwhm=FWHM, 
-    threshold=10.0 * std_fundo,
-    sharpness_range=(0.3, 1.0),
-    roundness_range=(-0.5, 0.5)
-)
-fontes = daofind(dados_subtraidos)
+coords_catalogo = SkyCoord(ra=np.array(catalogo['RA_ICRS']) * u.deg, dec=np.array(catalogo['DE_ICRS']) * u.deg)
 
-if fontes is None:
-    print("Nenhuma fonte encontrada.")
+# 3. Cross-Matching e Zero Point
+idx_catalogo, d2d, _ = coords_imagem.match_to_catalog_sky(coords_catalogo)
+
+pares = d2d < (2.0 * u.arcsec)
+mag_inst = df_bruto['Mag_Inst'].values[pares]
+mag_cat = np.array(catalogo['Gmag'][idx_catalogo[pares]])
+
+diferencas = mag_cat - mag_inst
+diferencas_limpas = sigma_clip(diferencas, sigma=2.5)
+
+# Cálculo da Estatística do ZP
+zero_point = np.ma.median(diferencas_limpas)
+desvio_zp = np.ma.std(diferencas_limpas)
+n_inliers = diferencas_limpas.count()
+erro_zp = desvio_zp / np.sqrt(n_inliers)
+
+print(f"Estrelas pareadas: {len(mag_inst)} (Inliers utilizados: {n_inliers})")
+print(f"Zero Point (ZP): {zero_point:.4f} ± {erro_zp:.4f} mag (Desvio: {desvio_zp:.4f})")
+
+# 4. Calibração e Magnitude Limite
+ruido = std_fundo * np.sqrt(area_ap)
+mag_inst_limite = -2.5 * np.log10((5.0 * ruido) / exptime)
+mag_limite = mag_inst_limite + zero_point
+
+df_bruto['Mag_G_Calibrada'] = df_bruto['Mag_Inst'] + zero_point
+df_bruto.to_csv('resultado_fotometria_G_calibrada.csv', index=False)
+
+# 5. Gráficos Diagnósticos
+fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+
+if np.ma.is_masked(diferencas_limpas):
+    outliers = diferencas_limpas.mask
+    inliers = ~outliers
 else:
-    # Corte de borda
-    margem = int(np.ceil(raio_out))
-    mascara_borda = (
-        (fontes['x_centroid'] > margem) & (fontes['x_centroid'] < largura - margem) &
-        (fontes['y_centroid'] > margem) & (fontes['y_centroid'] < altura - margem)
-    )
-    fontes = fontes[mascara_borda]
+    outliers = np.zeros_like(diferencas_limpas, dtype=bool)
+    inliers = ~outliers
 
-    # 3. Fotometria de Abertura com Anel (Mediana)
-    posicoes = np.transpose((fontes['x_centroid'], fontes['y_centroid']))
-    aberturas = CircularAperture(posicoes, r=raio_abertura)
-    aneis = CircularAnnulus(posicoes, r_in=raio_in, r_out=raio_out)
+# P1: Calibração Linear
+axes[0].scatter(mag_inst[inliers], mag_cat[inliers], c='forestgreen', label='Inliers')
+if outliers.any():
+    axes[0].scatter(mag_inst[outliers], mag_cat[outliers], c='black', marker='x', label='Outliers')
 
-    tabela_fotometria = aperture_photometry(image_data, aberturas)
-    estatisticas_anel = ApertureStats(image_data, aneis, sigma_clip=SigmaClip(sigma=3.0))
+x_line = np.array([mag_inst.min(), mag_inst.max()])
+axes[0].plot(x_line, x_line + zero_point, color='darkorange', ls='--', lw=2, label=f'ZP = {zero_point:.2f}')
+axes[0].set(xlabel='Mag Instrumental', ylabel='Mag Gaia (G)', title='Calibração ZP (Banda G)')
+axes[0].invert_xaxis()
+axes[0].invert_yaxis()
+axes[0].legend()
+axes[0].grid(ls='--', alpha=0.5)
 
-    fundo_total_abertura = estatisticas_anel.median * aberturas.area
-    fluxo_limpo = tabela_fotometria['aperture_sum'] - fundo_total_abertura
+# P2: Resíduos
+residuos = mag_cat[inliers] - (mag_inst[inliers] + zero_point)
+axes[1].scatter(mag_cat[inliers], residuos, c='seagreen', alpha=0.6)
+axes[1].axhline(0, c='black', ls='--')
+axes[1].set(xlabel='Mag Gaia (G)', ylabel='Resíduo', title='Resíduos do ZP (Banda G)')
+axes[1].invert_xaxis()
+axes[1].grid(ls='--', alpha=0.5)
 
-    validos = fluxo_limpo > 0
-    fluxo_valido = fluxo_limpo[validos]
-    fontes_validas = fontes[validos]
-    posicoes_validas = posicoes[validos]
+# P3: Histograma
+axes[2].hist(df_bruto['Mag_G_Calibrada'], bins=30, color='forestgreen', edgecolor='black')
+axes[2].axvline(mag_limite, c='red', ls='--', lw=2, label=f'Lim 5-sigma ({mag_limite:.2f})')
+axes[2].set(xlabel='Mag Calibrada (G)', ylabel='Nº de Estrelas', title='Distribuição (Banda G)')
+axes[2].legend()
+axes[2].grid(ls='--', alpha=0.5)
 
-    # --- CÁLCULO DE ERRO DA FOTOMETRIA (SUGESTÃO DO PROFESSOR) ---
-    area_ap = aberturas.area
-    area_anel = aneis.area
-    
-    # Variância do fluxo = Ruído Poisson do sinal + Ruído do fundo na abertura + Incerteza do fundo no anel
-    variancia_fluxo = fluxo_valido + (area_ap * (std_fundo ** 2)) + ((area_ap ** 2 / area_anel) * (std_fundo ** 2))
-    erro_fluxo = np.sqrt(np.maximum(variancia_fluxo, 0))
-    
-    # Erro da magnitude instrumental
-    erro_mag_inst = 1.0857 * (erro_fluxo / fluxo_valido)
-
-    mag_inst = -2.5 * np.log10(fluxo_valido / exptime)
-    coords_imagem = wcs.pixel_to_world(fontes_validas['x_centroid'], fontes_validas['y_centroid'])
-
-    # 4. Tabela com Metadados e Filtro de Erro
-    df_bruto = pd.DataFrame({
-        'ID': fontes_validas['id'],
-        'X_pix': fontes_validas['x_centroid'],
-        'Y_pix': fontes_validas['y_centroid'],
-        'RA_deg': coords_imagem.ra.deg,
-        'Dec_deg': coords_imagem.dec.deg,
-        'Fluxo': fluxo_valido,
-        'Erro_Fluxo': erro_fluxo,
-        'Mag_Inst': mag_inst,
-        'Erro_Mag_Inst': erro_mag_inst,
-        'Std_Fundo': std_fundo,
-        'Area_Ap': area_ap,
-        'Exptime': exptime
-    })
-
-    # FILTRO DO PROFESSOR: Descarta estrelas com erro alto (afetadas por contaminação no anel)
-    df_bruto = df_bruto[df_bruto['Erro_Mag_Inst'] <= MAX_ERRO_MAG]
-
-    # Ordena pelo MENOR erro e pega as melhores estrelas
-    df_bruto = df_bruto.sort_values(by='Erro_Mag_Inst', ascending=True).head(NUM_ESTRELAS_BRILHANTES).reset_index(drop=True)
-
-    df_bruto.to_csv('fotometria_bruta_G.csv', index=False)
-
-    # Regiões DS9
-    with open('regioes_aneis_G.reg', 'w') as f:
-        f.write('global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1\nimage\n')
-        for x, y in zip(df_bruto['X_pix'], df_bruto['Y_pix']):
-            f.write(f'circle({x+1:.2f},{y+1:.2f},{raio_abertura:.2f}) # color=cyan\n')
-            f.write(f'annulus({x+1:.2f},{y+1:.2f},{raio_in:.2f},{raio_out:.2f}) # color=yellow\n')
-
-    print(f"Sucesso! {len(df_bruto)} fontes selecionadas com erro < {MAX_ERRO_MAG} mag e salvas.")
+plt.tight_layout()
+plt.show()
