@@ -10,24 +10,51 @@ raio_out = 4.0 * FWHM
 df = pd.read_csv('fotometria_final_B.csv')
 
 # 2. Lista de IDs identificados na vinhetagem
-ids_vinhetagem = [787, 776, 753, 133, 73, 88, 38, 27, 224, 66, 83, 151, 198,30,18,13,40,61,121,752,762,767,737,761, 632, 485,318,243,56,94,101,57,127,124,533,500,642,735,758,757,540,691, 361, 248,465,552,108]
+ids_vinhetagem = [
+    1282,
+    1250,
+    1248,
+    1230,
+    1200,
+    1176,
+    1192,
+    1198,
+    1252,
+    1290,
+    58,
+    34,
+    28,
+    327,
+    244,
+    19,
+    66,
+    12,
+    67,
+    59,
+    125,
+    144,
+    183,
+    177,
+    152,
+    67,
+    59,
+    202,
+
+]
 
 # 3. Remover os IDs e salvar a nova tabela
 df_limpo = df[~df['ID'].isin(ids_vinhetagem)].reset_index(drop=True)
 df_limpo.to_csv('fotometria_limpa_B.csv', index=False)
 
-# 4. Gerar o novo arquivo de regiões (mantém o regioes_aneis_B.reg intocado)
+# 4. Gerar o novo arquivo de regiões sem os textos impresso no DS9
 with open('regioes_limpas_B.reg', 'w') as f:
     f.write(
         'global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1'
         ' source=1\nimage\n'
     )
-    for id_est, x, y in zip(
-        df_limpo['ID'], df_limpo['X_pix'], df_limpo['Y_pix']
-    ):
+    for x, y in zip(df_limpo['X_pix'], df_limpo['Y_pix']):
         f.write(
-            f'circle({x+1:.2f},{y+1:.2f},{raio_abertura:.2f}) # color=cyan'
-            f' text={{{id_est}}}\n'
+            f'circle({x+1:.2f},{y+1:.2f},{raio_abertura:.2f}) # color=cyan\n'
         )
         f.write(
             f'annulus({x+1:.2f},{y+1:.2f},{raio_in:.2f},{raio_out:.2f}) #'
