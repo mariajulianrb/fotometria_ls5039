@@ -10,7 +10,7 @@ raio_out = 4.0 * FWHM
 df = pd.read_csv('fotometria_final_B.csv')
 
 # 2. Lista de IDs identificados na vinhetagem
-ids_vinhetagem = [787, 776, 753]
+ids_vinhetagem = [787, 776, 753, 133, 73, 88, 38, 27, 224, 66, 83, 151, 198,30,18,13,40,61,121,752,762,767,737,761, 632, 485,318,243,56,94,101,57,127,124,533,500,642,735,758,757,540,691, 361, 248,465,552,108]
 
 # 3. Remover os IDs e salvar a nova tabela
 df_limpo = df[~df['ID'].isin(ids_vinhetagem)].reset_index(drop=True)

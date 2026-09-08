@@ -19,7 +19,7 @@ FWHM = 8.89
 raio_abertura = 2.0 * FWHM
 raio_in = 3.0 * FWHM
 raio_out = 4.0 * FWHM
-NUM_ESTRELAS_BRILHANTES = 200
+NUM_ESTRELAS_BRILHANTES = 250
 MIN_SNR = 20.0  # SNR >= 20 equivale a um erro <= 0.05 mag
 
 # 1. Carregamento da Imagem e WCS
