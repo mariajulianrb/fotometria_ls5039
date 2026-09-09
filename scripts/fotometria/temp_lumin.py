@@ -6,177 +6,112 @@ from astropy import units as u
 from astroquery.vizier import Vizier
 
 # ==========================================
-# 1. PARÂMETROS FÍSICOS E DA LITERATURA
+# 1. CONFIGURAÇÕES & PARÂMETROS DA LITERATURA
 # ==========================================
 ARQUIVO_FOTOMETRIA = 'resultado_fotometria_calibrada_BG.csv'
-RA_ALVO, DEC_ALVO = 276.5627, -14.8479
+RA_ALVO, DEC_ALVO = 276.5627, -14.8479  # Posição de LS 5039
 
-# Parâmetros de Reddening para o campo de LS 5039
-E_BG = 1.28              # Excesso de cor intrínseco E(B-G)
-A_G = 3.07               # Extinção interestelar na banda G
-MAG_ABS_SOL_G = 4.66     # Magnitude absoluta do Sol na banda G
+# Valore de extinção e desavermelhamento (Casares et al. 2005; Megier et al. 2009)
+E_BG = 1.51             # Excesso de cor E(B-G) no campo de LS 5039
+A_G = 3.37              # Extinção total na banda G
+MAG_ABS_SOL_G = 4.66    # Magnitude absoluta do Sol na banda G
 
-# Tabela empírica de Pecaut & Mamajek (2013) para Sequência Principal
-# Relaciona o índice de cor intrínseco (B-G)_0 diretamente à Temperatura Efetiva (K)
-BG0_GRID = np.array([-0.363, -0.352, -0.330, -0.220, -0.110, 0.000, 0.165, 0.330, 0.550, 0.715, 0.880, 1.100, 1.320, 1.551, 1.760])
-TEFF_GRID = np.array([42000, 39000, 31400, 20000, 14000, 9500, 8000, 7000, 6100, 5770, 5300, 4800, 4300, 3850, 3300])
-
-def estimar_temperatura(cor_BG_0):
-    """Retorna T_eff via interpolação linear dos dados empíricos estelares."""
-    return np.interp(cor_BG_0, BG0_GRID, TEFF_GRID)
+def ballesteros_teff(cor_BV_0):
+    """Calcula T_eff (K) usando a equação empírica de Ballesteros (2012)."""
+    # Proteção contra a singularidade matemática em B-V = -0.673
+    cor_BV_clean = np.maximum(cor_BV_0, -0.55)
+    termo1 = 1.0 / (0.92 * cor_BV_clean + 1.7)
+    termo2 = 1.0 / (0.92 * cor_BV_clean + 0.62)
+    return 4600.0 * (termo1 + termo2)
 
 # ==========================================
-# 2. CARREGAMENTO DOS DADOS FOTOMÉTRICOS
+# 2. LEITURA DOS DADOS LOCAIS
 # ==========================================
 df_obs = pd.read_csv(ARQUIVO_FOTOMETRIA)
 coords_obs = SkyCoord(ra=df_obs['RA_deg'].values * u.deg, dec=df_obs['Dec_deg'].values * u.deg)
 
 # ==========================================
-# 3. CRUZAMENTO ASTROMÉTRICO COM O GAIA DR3
+# 3. CONSULTA AO GAIA DR3 (PARALAXES E DISTÂNCIAS)
 # ==========================================
-print("Baixando paralaxes do Gaia DR3 via VizieR...")
+print("Consultando Gaia DR3 no VizieR para resgatar paralaxes...")
 v = Vizier(columns=['RA_ICRS', 'DE_ICRS', 'Plx', 'e_Plx'], row_limit=-1)
 coord_centro = SkyCoord(ra=RA_ALVO * u.deg, dec=DEC_ALVO * u.deg)
 tabela_gaia = v.query_region(coord_centro, radius=15 * u.arcmin, catalog='I/355/gaiadr3')[0].to_pandas()
 
-# Filtro de qualidade astrométrica (Sinal/Ruído da paralaxe > 3)
+# Filtro de qualidade: Paralaxes válidas e com S/N > 3
 tabela_gaia = tabela_gaia[(tabela_gaia['Plx'] > 0) & (tabela_gaia['Plx'] / tabela_gaia['e_Plx'] > 3)]
 coords_gaia = SkyCoord(ra=tabela_gaia['RA_ICRS'].values * u.deg, dec=tabela_gaia['DE_ICRS'].values * u.deg)
 
-# Identificação das estrelas em comum (raio de tolerância de 2.5")
+# Cross-match astronômico
 idx_gaia, d2d_gaia, _ = coords_obs.match_to_catalog_sky(coords_gaia)
 valid_gaia = d2d_gaia < (2.5 * u.arcsec)
 
-df = df_obs[valid_gaia].copy().reset_index(drop=True)
-df['Paralaxe_mas'] = tabela_gaia['Plx'].iloc[idx_gaia[valid_gaia]].values
+df_fisico = df_obs[valid_gaia].copy().reset_index(drop=True)
+df_fisico['Paralaxe_mas'] = tabela_gaia['Plx'].iloc[idx_gaia[valid_gaia]].values
+df_fisico['Erro_Paralaxe'] = tabela_gaia['e_Plx'].iloc[idx_gaia[valid_gaia]].values
 
 # ==========================================
-# 4. CÁLCULO DOS PARÂMETROS INTRÍNSECOS
+# 4. DESAVERMELHAMENTO, TEMPERATURA E LUMINOSIDADE
 # ==========================================
-# Cor Intrinseca e Temperatura
-df['Cor_BG_0'] = df['Cor_B_G'] - E_BG
-df['T_eff'] = estimar_temperatura(df['Cor_BG_0'])
+# A. Correção do Índice de Cor Intrinseco (B - G)_0
+df_fisico['Cor_BG_0'] = df_fisico['Cor_B_G'] - E_BG
 
-# Distância (pc) e Módulo de Distância
-df['Distancia_pc'] = 1000.0 / df['Paralaxe_mas']
-modulo_distancia = 5 * np.log10(df['Distancia_pc']) - 5
+# B. Conversão (B - G)_0 -> (B - V)_0 -> Temperatura Efetiva
+df_fisico['Cor_BV_0'] = 0.86 * df_fisico['Cor_BG_0'] + 0.04
+df_fisico['Teff'] = ballesteros_teff(df_fisico['Cor_BV_0'])
 
-# Magnitude Absoluta Desavermelhada e Luminosidade Solar
-df['Mag_Abs_G0'] = df['Mag_Ap_G'] - modulo_distancia - A_G
-df['Luminosidade'] = 10 ** (-0.4 * (df['Mag_Abs_G0'] - MAG_ABS_SOL_G))
+# C. Distância e Módulo de Distância
+df_fisico['Distancia_pc'] = 1000.0 / df_fisico['Paralaxe_mas']
+modulo_distancia = 5 * np.log10(df_fisico['Distancia_pc']) - 5
 
-# Identificação exata da LS 5039 (menor separação do centro coordenado)
-coords_fisico = SkyCoord(ra=df['RA_deg'].values * u.deg, dec=df['Dec_deg'].values * u.deg)
+# D. Magnitude Absoluta Desavermelhada M_{G,0} e Luminosidade L/L_sun
+df_fisico['Mag_Abs_G0'] = df_fisico['Mag_Ap_G'] - modulo_distancia - A_G
+df_fisico['Luminosidade'] = 10 ** (-0.4 * (df_fisico['Mag_Abs_G0'] - MAG_ABS_SOL_G))
+
+# E. Identificar a estrela alvo (LS 5039)
+coords_fisico = SkyCoord(ra=df_fisico['RA_deg'].values * u.deg, dec=df_fisico['Dec_deg'].values * u.deg)
 idx_alvo = np.argmin(coords_fisico.separation(coord_centro))
 
-print(f"Estrelas processadas: {len(df)}")
-print(f"LS 5039 (Alvo) -> T_eff: {df['T_eff'].iloc[idx_alvo]:.0f} K | Luminosidade: {df['Luminosidade'].iloc[idx_alvo]:.1f} L_sol")
+print(f"Total de estrelas processadas no Diagrama HR: {len(df_fisico)}")
 
 # ==========================================
-# 5. CONSTRUÇÃO DO DIAGRAMA HR
+# 5. DIAGRAMA HR: TEMPERATURA VS LUMINOSIDADE
 # ==========================================
-fig, ax = plt.subplots(figsize=(10, 8), dpi=100)
+plt.figure(figsize=(10, 8), dpi=100)
 
-# Fundo estilizado para as estrelas de campo (Coloridas por T_eff)
-sc = ax.scatter(
-    df['T_eff'], df['Luminosidade'],
-    c=df['T_eff'], cmap='RdYlBu', # Mapa de cores astrofísico (Azul = Quente, Vermelho = Frio)
-    s=40, alpha=0.8, edgecolor='black', linewidth=0.4,
-    label='Estrelas de Campo'
+# Mapeamento de cores baseado na Temperatura
+sc = plt.scatter(
+    df_fisico['Teff'], df_fisico['Luminosidade'],
+    c=df_fisico['Teff'], cmap='Spectral_r',
+    s=30, alpha=0.75, edgecolor='k', linewidth=0.3,
+    label='Estrelas do Campo (Corrigidas)'
 )
 
-# Destaque robusto para LS 5039
-ax.scatter(
-    df['T_eff'].iloc[idx_alvo], df['Luminosidade'].iloc[idx_alvo],
-    color='cyan', marker='*', s=450, edgecolor='black', linewidth=1.5,
-    zorder=10, label=f'LS 5039 ($T_{{eff}} \\approx {df["T_eff"].iloc[idx_alvo]:.0f}$ K)'
+# Destaque do Alvo (LS 5039)
+plt.scatter(
+    df_fisico['Teff'].iloc[idx_alvo], df_fisico['Luminosidade'].iloc[idx_alvo],
+    color='cyan', marker='*', s=250, edgecolor='black', linewidth=1.2,
+    zorder=5, label=f'LS 5039 ($T_{{eff}} \\approx {df_fisico["Teff"].iloc[idx_alvo]:.0f}$ K)'
 )
 
-# Linha Base de Luminosidade Solar
-ax.axhline(1.Como você não enviou o código anterior na nossa conversa atual, criei uma versão definitiva e independente utilizando o **Plotly** em Python. Para visualização astronômica, o Plotly representa o "melhor dos mundos" porque gera um gráfico 3D **interativo**: você pode girar, dar zoom e explorar a nuvem de estrelas, sem perder o destaque da LS 5039.
+# Linha de referência da Luminosidade Solar
+plt.axhline(1.0, color='gray', linestyle='--', linewidth=1.5, alpha=0.8, label='Luminosidade Solar ($1 L_\\odot$)')
 
-Este código simula um campo estelar denso com fundo escuro (estilo espaço profundo) e isola a LS 5039 com um marcador de diamante vermelho, contorno amarelo e texto fixo.
+# Escalas e Inversão padrão de Diagramas HR
+plt.yscale('log')
+plt.gca().invert_xaxis()  # Temperatura diminui da esquerda para a direita
 
-```python
-import plotly.graph_objects as go
-import numpy as np
+# Formatação do Gráfico
+plt.title(r'Diagrama HR Desavermelhado ($E(B-G)=1.51$, $A_G=3.37$)', fontsize=14, pad=15)
+plt.xlabel(r'Temperatura Efetiva Estimada $T_{\mathrm{eff}}$ [K]', fontsize=12)
+plt.ylabel(r'Luminosidade Intrínseca ($L / L_\odot$)', fontsize=12)
 
-# 1. Gerando dados simulados para a "maioria das estrelas"
-np.random.seed(42) # Para manter o padrão estelar consistente
-n_estrelas = 1500
+cbar = plt.colorbar(sc)
+cbar.set_label('Temperatura Efetiva (K)', fontsize=11)
 
-# Distribuindo estrelas em um espaço 3D
-x_fundo = np.random.normal(0, 50, n_estrelas)
-y_fundo = np.random.normal(0, 50, n_estrelas)
-z_fundo = np.random.normal(0, 50, n_estrelas)
+plt.grid(True, which='both', linestyle=':', alpha=0.5)
+plt.legend(fontsize=11, loc='lower left')
+plt.tight_layout()
 
-# Variando o tamanho para simular diferentes magnitudes (brilhos)
-tamanhos_fundo = np.random.uniform(1, 3.5, n_estrelas)
-
-# Iniciar a figura
-fig = go.Figure()
-
-# 2. Plotando as estrelas de fundo
-fig.add_trace(go.Scatter3d(
-    x=x_fundo, 
-    y=y_fundo, 
-    z=z_fundo,
-    mode='markers',
-    marker=dict(
-        size=tamanhos_fundo,
-        color=z_fundo, # Gradiente de cor baseado na profundidade
-        colorscale='Plotly3', # Escala de cores vibrante, boa para fundos escuros
-        opacity=0.7
-    ),
-    name='Campo Estelar',
-    hoverinfo='none' # Desativa o hover no fundo para focar na LS 5039
-))
-
-# 3. Plotando a estrela LS 5039 em DESTAQUE ABSOLUTO
-# Coordenadas relativas posicionadas para fácil visualização
-x_ls, y_ls, z_ls = [10], [10], [15] 
-
-fig.add_trace(go.Scatter3d(
-    x=x_ls, 
-    y=y_ls, 
-    z=z_ls,
-    mode='markers+text',
-    marker=dict(
-        size=14,
-        color='red',
-        symbol='diamond', # Formato distinto
-        line=dict(color='yellow', width=2) # Contorno brilhante
-    ),
-    text=['⭐ LS 5039'],
-    textposition='top center',
-    textfont=dict(color='yellow', size=16, family='Arial Black'),
-    name='Microquasar LS 5039',
-    hovertemplate='<b>LS 5039</b><br>Sistema Binário de Alta Massa<extra></extra>'
-))
-
-# 4. Configurando o "Melhor dos Mundos" (Visual Limpo e Fundo Espacial)
-fig.update_layout(
-    title=dict(
-        text='Mapa Estelar Interativo 3D: Destaque para LS 5039', 
-        font=dict(color='white', size=22),
-        x=0.5 # Centraliza o título
-    ),
-    paper_bgcolor='black', # Fundo externo preto
-    scene=dict(
-        bgcolor='black', # Fundo interno (espaço) preto
-        xaxis=dict(showbackground=False, showgrid=False, zeroline=False, visible=False),
-        yaxis=dict(showbackground=False, showgrid=False, zeroline=False, visible=False),
-        zaxis=dict(showbackground=False, showgrid=False, zeroline=False, visible=False),
-        camera=dict(
-            up=dict(x=0, y=0, z=1),
-            center=dict(x=0, y=0, z=0),
-            eye=dict(x=1.5, y=1.5, z=1.5) # Zoom inicial
-        )
-    ),
-    margin=dict(l=0, r=0, b=0, t=60),
-    showlegend=True,
-    legend=dict(font=dict(color='white'), bgcolor='rgba(0,0,0,0)')
-)
-
-# Mostrar o gráfico interativo
-fig.show()
+plt.savefig('diagrama_HR_Temperatura_Luminosidade_Corrigido.png', dpi=300)
+plt.show()
