@@ -8,14 +8,19 @@ from photutils.background import Background2D, MedianBackground
 from photutils.detection import DAOStarFinder
 from scipy.spatial import distance
 
+# Parametros da imagem
 ARQUIVO = '/home/maju/Downloads/dados/astronometry/ls5039_G_wcs.fits'
 FWHM = 8.89
 RAIO_AP = 1.5 * FWHM
 RAIO_IN, RAIO_OUT = 3.0 * FWHM, 4.0 * FWHM
 
-THRESHOLD_SIGMA = 3.5  
-MIN_SNR = 5.0         
+# Sensibilidade igual aos scripts R e B
+THRESHOLD_SIGMA = 1.5          
+MIN_SNR = 5.0                  
+DIST_ISOLAMENTO = 1.2 * RAIO_AP 
+MAX_REGIOES_DS9 = 500  
 
+# Leitura e fundo
 dados, header = fits.getdata(ARQUIVO, header=True)
 dados = dados.astype(float)
 wcs = WCS(header)
@@ -29,6 +34,7 @@ bkg = Background2D(
 dados_sub = dados - bkg.background
 _, _, std_fundo = sigma_clipped_stats(dados_sub, sigma=3.0)
 
+# Deteccao de fontes
 daofind = DAOStarFinder(
     fwhm=FWHM,
     threshold=THRESHOLD_SIGMA * std_fundo, 
@@ -38,6 +44,7 @@ daofind = DAOStarFinder(
 fontes = daofind(dados_sub)
 posicoes = np.transpose((fontes['x_centroid'], fontes['y_centroid']))
 
+# Fotometria de abertura
 aberturas = CircularAperture(posicoes, r=RAIO_AP)
 aneis = CircularAnnulus(posicoes, r_in=RAIO_IN, r_out=RAIO_OUT)
 
@@ -69,8 +76,8 @@ df = pd.DataFrame({
     'Exptime': exptime,
 })
 
+# Filtros de borda, SNR e isolamento
 margem = np.ceil(RAIO_OUT)
-
 df = df[
     (df['X_pix'] > margem) & (df['X_pix'] < largura - margem) &
     (df['Y_pix'] > margem) & (df['Y_pix'] < altura - margem) &
@@ -82,17 +89,18 @@ if not df.empty:
     coords_pix = df[['X_pix', 'Y_pix']].values
     matriz_dist = distance.cdist(coords_pix, coords_pix)
     np.fill_diagonal(matriz_dist, np.inf)
-    
-    df = df[np.min(matriz_dist, axis=1) >= RAIO_IN]
+    df = df[np.min(matriz_dist, axis=1) >= DIST_ISOLAMENTO]
 
 df = df.sort_values(by='Fluxo', ascending=False).reset_index(drop=True)
 
-df.to_csv('fotometria_final_G.csv', index=False)
+df.to_csv('fotometria_limpa_G.csv', index=False)
 
+# DS9
+df_500 = df.head(MAX_REGIOES_DS9)
 with open('regioes_aneis_G.reg', 'w') as f:
     f.write('global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1\nimage\n')
-    for _, row in df.iterrows():
-        f.write(f"circle({row['X_pix']+1:.2f},{row['Y_pix']+1:.2f},{RAIO_AP:.2f}) # color=cyan text={{{int(row['ID'])-0}}}\n") 
+    for _, row in df_500.iterrows():
+        f.write(f"circle({row['X_pix']+1:.2f},{row['Y_pix']+1:.2f},{RAIO_AP:.2f}) # color=cyan text={{{int(row['ID'])}}}\n") 
         f.write(f"annulus({row['X_pix']+1:.2f},{row['Y_pix']+1:.2f},{RAIO_IN:.2f},{RAIO_OUT:.2f}) # color=yellow\n")
 
-print(f'Sucesso! {len(df)} fontes estelares detectadas e salvas no CSV.')
+print(f'Sucesso! {len(df)} fontes estelares salvas em fotometria_limpa_G.csv.')

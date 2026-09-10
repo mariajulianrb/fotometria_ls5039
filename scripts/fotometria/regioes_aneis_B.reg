@@ -1,1002 +1,1002 @@
 global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1
 image
-circle(2205.84,1271.36,8.47) # color=cyan text={1871}
+circle(2205.84,1271.36,10.59) # color=cyan text={848}
 annulus(2205.84,1271.36,21.18,28.23) # color=yellow
-circle(290.17,505.87,8.47) # color=cyan text={714}
+circle(290.17,505.87,10.59) # color=cyan text={340}
 annulus(290.17,505.87,21.18,28.23) # color=yellow
-circle(1750.77,1319.23,8.47) # color=cyan text={1954}
+circle(1750.77,1319.23,10.59) # color=cyan text={883}
 annulus(1750.77,1319.23,21.18,28.23) # color=yellow
-circle(1921.21,137.23,8.47) # color=cyan text={175}
+circle(1921.21,137.23,10.59) # color=cyan text={87}
 annulus(1921.21,137.23,21.18,28.23) # color=yellow
-circle(295.88,1557.71,8.47) # color=cyan text={2300}
-annulus(295.88,1557.71,21.18,28.23) # color=yellow
-circle(2518.77,2059.10,8.47) # color=cyan text={2987}
+circle(2518.77,2059.10,10.59) # color=cyan text={1285}
 annulus(2518.77,2059.10,21.18,28.23) # color=yellow
-circle(40.43,556.60,8.47) # color=cyan text={788}
+circle(295.88,1557.71,10.59) # color=cyan text={1033}
+annulus(295.88,1557.71,21.18,28.23) # color=yellow
+circle(40.43,556.60,10.59) # color=cyan text={372}
 annulus(40.43,556.60,21.18,28.23) # color=yellow
-circle(1122.12,1008.80,8.47) # color=cyan text={1471}
+circle(1122.12,1008.80,10.59) # color=cyan text={661}
 annulus(1122.12,1008.80,21.18,28.23) # color=yellow
-circle(514.73,516.35,8.47) # color=cyan text={734}
+circle(514.73,516.35,10.59) # color=cyan text={345}
 annulus(514.73,516.35,21.18,28.23) # color=yellow
-circle(2232.69,1961.24,8.47) # color=cyan text={2857}
+circle(2232.69,1961.24,10.59) # color=cyan text={1238}
 annulus(2232.69,1961.24,21.18,28.23) # color=yellow
-circle(1292.17,244.49,8.47) # color=cyan text={325}
+circle(1292.17,244.49,10.59) # color=cyan text={155}
 annulus(1292.17,244.49,21.18,28.23) # color=yellow
-circle(1819.32,1067.94,8.47) # color=cyan text={1565}
+circle(1819.32,1067.94,10.59) # color=cyan text={709}
 annulus(1819.32,1067.94,21.18,28.23) # color=yellow
-circle(1348.51,1808.23,8.47) # color=cyan text={2627}
-annulus(1348.51,1808.23,21.18,28.23) # color=yellow
-circle(1432.01,667.28,8.47) # color=cyan text={941}
+circle(1432.01,667.28,10.59) # color=cyan text={433}
 annulus(1432.01,667.28,21.18,28.23) # color=yellow
-circle(1101.95,36.21,8.47) # color=cyan text={31}
+circle(1101.95,36.21,10.59) # color=cyan text={14}
 annulus(1101.95,36.21,21.18,28.23) # color=yellow
-circle(1447.29,1915.83,8.47) # color=cyan text={2787}
-annulus(1447.29,1915.83,21.18,28.23) # color=yellow
-circle(2664.97,820.09,8.47) # color=cyan text={1184}
+circle(2664.97,820.09,10.59) # color=cyan text={543}
 annulus(2664.97,820.09,21.18,28.23) # color=yellow
-circle(2021.34,1764.92,8.47) # color=cyan text={2567}
-annulus(2021.34,1764.92,21.18,28.23) # color=yellow
-circle(2756.60,290.51,8.47) # color=cyan text={392}
+circle(1348.51,1808.23,10.59) # color=cyan text={1158}
+annulus(1348.51,1808.23,21.18,28.23) # color=yellow
+circle(1447.29,1915.83,10.59) # color=cyan text={1209}
+annulus(1447.29,1915.83,21.18,28.23) # color=yellow
+circle(2756.60,290.51,10.59) # color=cyan text={183}
 annulus(2756.60,290.51,21.18,28.23) # color=yellow
-circle(1469.78,993.07,8.47) # color=cyan text={1434}
-annulus(1469.78,993.07,21.18,28.23) # color=yellow
-circle(685.72,1059.01,8.47) # color=cyan text={1547}
-annulus(685.72,1059.01,21.18,28.23) # color=yellow
-circle(821.56,1067.28,8.47) # color=cyan text={1563}
-annulus(821.56,1067.28,21.18,28.23) # color=yellow
-circle(432.88,1592.08,8.47) # color=cyan text={2340}
-annulus(432.88,1592.08,21.18,28.23) # color=yellow
-circle(284.73,202.70,8.47) # color=cyan text={265}
-annulus(284.73,202.70,21.18,28.23) # color=yellow
-circle(2518.03,312.54,8.47) # color=cyan text={427}
+circle(2021.34,1764.92,10.59) # color=cyan text={1135}
+annulus(2021.34,1764.92,21.18,28.23) # color=yellow
+circle(2518.03,312.54,10.59) # color=cyan text={200}
 annulus(2518.03,312.54,21.18,28.23) # color=yellow
-circle(2766.88,1276.22,8.47) # color=cyan text={1879}
+circle(1469.78,993.07,10.59) # color=cyan text={647}
+annulus(1469.78,993.07,21.18,28.23) # color=yellow
+circle(685.72,1059.01,10.59) # color=cyan text={702}
+annulus(685.72,1059.01,21.18,28.23) # color=yellow
+circle(284.73,202.70,10.59) # color=cyan text={126}
+annulus(284.73,202.70,21.18,28.23) # color=yellow
+circle(821.56,1067.28,10.59) # color=cyan text={708}
+annulus(821.56,1067.28,21.18,28.23) # color=yellow
+circle(2766.88,1276.22,10.59) # color=cyan text={850}
 annulus(2766.88,1276.22,21.18,28.23) # color=yellow
-circle(786.18,1465.59,8.47) # color=cyan text={2170}
+circle(432.88,1592.08,10.59) # color=cyan text={1043}
+annulus(432.88,1592.08,21.18,28.23) # color=yellow
+circle(786.18,1465.59,10.59) # color=cyan text={981}
 annulus(786.18,1465.59,21.18,28.23) # color=yellow
-circle(285.32,783.73,8.47) # color=cyan text={1125}
+circle(667.92,1111.47,10.59) # color=cyan text={735}
+annulus(667.92,1111.47,21.18,28.23) # color=yellow
+circle(285.32,783.73,10.59) # color=cyan text={521}
 annulus(285.32,783.73,21.18,28.23) # color=yellow
-circle(313.29,989.38,8.47) # color=cyan text={1430}
+circle(313.29,989.38,10.59) # color=cyan text={644}
 annulus(313.29,989.38,21.18,28.23) # color=yellow
-circle(593.61,1591.78,8.47) # color=cyan text={2341}
-annulus(593.61,1591.78,21.18,28.23) # color=yellow
-circle(1019.73,625.58,8.47) # color=cyan text={887}
-annulus(1019.73,625.58,21.18,28.23) # color=yellow
-circle(321.34,926.02,8.47) # color=cyan text={1330}
-annulus(321.34,926.02,21.18,28.23) # color=yellow
-circle(1007.05,38.24,8.47) # color=cyan text={36}
+circle(1007.05,38.24,10.59) # color=cyan text={18}
 annulus(1007.05,38.24,21.18,28.23) # color=yellow
-circle(394.54,177.91,8.47) # color=cyan text={231}
+circle(394.54,177.91,10.59) # color=cyan text={114}
 annulus(394.54,177.91,21.18,28.23) # color=yellow
-circle(1057.97,1948.89,8.47) # color=cyan text={2839}
-annulus(1057.97,1948.89,21.18,28.23) # color=yellow
-circle(106.06,346.32,8.47) # color=cyan text={464}
-annulus(106.06,346.32,21.18,28.23) # color=yellow
-circle(1838.27,297.12,8.47) # color=cyan text={402}
-annulus(1838.27,297.12,21.18,28.23) # color=yellow
-circle(1361.65,170.57,8.47) # color=cyan text={222}
+circle(1019.73,625.58,10.59) # color=cyan text={413}
+annulus(1019.73,625.58,21.18,28.23) # color=yellow
+circle(321.34,926.02,10.59) # color=cyan text={608}
+annulus(321.34,926.02,21.18,28.23) # color=yellow
+circle(593.61,1591.78,10.59) # color=cyan text={1044}
+annulus(593.61,1591.78,21.18,28.23) # color=yellow
+circle(1361.65,170.57,10.59) # color=cyan text={111}
 annulus(1361.65,170.57,21.18,28.23) # color=yellow
-circle(1451.51,1284.76,8.47) # color=cyan text={1894}
-annulus(1451.51,1284.76,21.18,28.23) # color=yellow
-circle(1986.94,716.78,8.47) # color=cyan text={1019}
+circle(106.06,346.32,10.59) # color=cyan text={218}
+annulus(106.06,346.32,21.18,28.23) # color=yellow
+circle(1057.97,1948.89,10.59) # color=cyan text={1230}
+annulus(1057.97,1948.89,21.18,28.23) # color=yellow
+circle(1838.27,297.12,10.59) # color=cyan text={189}
+annulus(1838.27,297.12,21.18,28.23) # color=yellow
+circle(1986.94,716.78,10.59) # color=cyan text={470}
 annulus(1986.94,716.78,21.18,28.23) # color=yellow
-circle(1601.28,1899.94,8.47) # color=cyan text={2762}
-annulus(1601.28,1899.94,21.18,28.23) # color=yellow
-circle(2690.21,1411.30,8.47) # color=cyan text={2101}
+circle(1451.51,1284.76,10.59) # color=cyan text={856}
+annulus(1451.51,1284.76,21.18,28.23) # color=yellow
+circle(2690.21,1411.30,10.59) # color=cyan text={952}
 annulus(2690.21,1411.30,21.18,28.23) # color=yellow
-circle(2551.25,1672.17,8.47) # color=cyan text={2448}
+circle(1601.28,1899.94,10.59) # color=cyan text={1199}
+annulus(1601.28,1899.94,21.18,28.23) # color=yellow
+circle(2551.25,1672.17,10.59) # color=cyan text={1088}
 annulus(2551.25,1672.17,21.18,28.23) # color=yellow
-circle(578.14,1360.46,8.47) # color=cyan text={2017}
-annulus(578.14,1360.46,21.18,28.23) # color=yellow
-circle(1906.32,361.85,8.47) # color=cyan text={491}
-annulus(1906.32,361.85,21.18,28.23) # color=yellow
-circle(1307.38,212.86,8.47) # color=cyan text={285}
-annulus(1307.38,212.86,21.18,28.23) # color=yellow
-circle(2915.07,1291.14,8.47) # color=cyan text={1904}
+circle(2915.07,1291.14,10.59) # color=cyan text={860}
 annulus(2915.07,1291.14,21.18,28.23) # color=yellow
-circle(1969.20,1236.30,8.47) # color=cyan text={1823}
-annulus(1969.20,1236.30,21.18,28.23) # color=yellow
-circle(963.60,886.62,8.47) # color=cyan text={1278}
-annulus(963.60,886.62,21.18,28.23) # color=yellow
-circle(747.16,680.56,8.47) # color=cyan text={963}
-annulus(747.16,680.56,21.18,28.23) # color=yellow
-circle(97.38,1992.96,8.47) # color=cyan text={2898}
-annulus(97.38,1992.96,21.18,28.23) # color=yellow
-circle(1850.68,2017.24,8.47) # color=cyan text={2929}
-annulus(1850.68,2017.24,21.18,28.23) # color=yellow
-circle(900.99,1530.65,8.47) # color=cyan text={2263}
-annulus(900.99,1530.65,21.18,28.23) # color=yellow
-circle(30.44,41.12,8.47) # color=cyan text={40}
+circle(30.44,41.12,10.59) # color=cyan text={20}
 annulus(30.44,41.12,21.18,28.23) # color=yellow
-circle(1748.00,419.60,8.47) # color=cyan text={578}
-annulus(1748.00,419.60,21.18,28.23) # color=yellow
-circle(2970.05,1924.56,8.47) # color=cyan text={2807}
+circle(1906.32,361.85,10.59) # color=cyan text={232}
+annulus(1906.32,361.85,21.18,28.23) # color=yellow
+circle(578.14,1360.46,10.59) # color=cyan text={913}
+annulus(578.14,1360.46,21.18,28.23) # color=yellow
+circle(1307.38,212.86,10.59) # color=cyan text={131}
+annulus(1307.38,212.86,21.18,28.23) # color=yellow
+circle(1969.20,1236.30,10.59) # color=cyan text={821}
+annulus(1969.20,1236.30,21.18,28.23) # color=yellow
+circle(97.38,1992.96,10.59) # color=cyan text={1254}
+annulus(97.38,1992.96,21.18,28.23) # color=yellow
+circle(747.16,680.56,10.59) # color=cyan text={439}
+annulus(747.16,680.56,21.18,28.23) # color=yellow
+circle(963.60,886.62,10.59) # color=cyan text={590}
+annulus(963.60,886.62,21.18,28.23) # color=yellow
+circle(1850.68,2017.24,10.59) # color=cyan text={1266}
+annulus(1850.68,2017.24,21.18,28.23) # color=yellow
+circle(2970.05,1924.56,10.59) # color=cyan text={1219}
 annulus(2970.05,1924.56,21.18,28.23) # color=yellow
-circle(57.05,2050.76,8.47) # color=cyan text={2968}
+circle(57.05,2050.76,10.59) # color=cyan text={1279}
 annulus(57.05,2050.76,21.18,28.23) # color=yellow
-circle(2279.64,835.35,8.47) # color=cyan text={1212}
+circle(900.99,1530.65,10.59) # color=cyan text={1018}
+annulus(900.99,1530.65,21.18,28.23) # color=yellow
+circle(1748.00,419.60,10.59) # color=cyan text={285}
+annulus(1748.00,419.60,21.18,28.23) # color=yellow
+circle(2279.64,835.35,10.59) # color=cyan text={556}
 annulus(2279.64,835.35,21.18,28.23) # color=yellow
-circle(525.51,248.54,8.47) # color=cyan text={329}
-annulus(525.51,248.54,21.18,28.23) # color=yellow
-circle(2486.40,615.42,8.47) # color=cyan text={876}
+circle(2486.40,615.42,10.59) # color=cyan text={409}
 annulus(2486.40,615.42,21.18,28.23) # color=yellow
-circle(930.51,1503.05,8.47) # color=cyan text={2226}
+circle(525.51,248.54,10.59) # color=cyan text={157}
+annulus(525.51,248.54,21.18,28.23) # color=yellow
+circle(930.51,1503.05,10.59) # color=cyan text={1001}
 annulus(930.51,1503.05,21.18,28.23) # color=yellow
-circle(1682.53,1255.99,8.47) # color=cyan text={1851}
+circle(1682.53,1255.99,10.59) # color=cyan text={838}
 annulus(1682.53,1255.99,21.18,28.23) # color=yellow
-circle(1675.49,1878.82,8.47) # color=cyan text={2734}
+circle(1675.49,1878.82,10.59) # color=cyan text={1193}
 annulus(1675.49,1878.82,21.18,28.23) # color=yellow
-circle(1845.71,696.54,8.47) # color=cyan text={993}
-annulus(1845.71,696.54,21.18,28.23) # color=yellow
-circle(1099.53,749.17,8.47) # color=cyan text={1067}
-annulus(1099.53,749.17,21.18,28.23) # color=yellow
-circle(2466.09,1208.83,8.47) # color=cyan text={1787}
-annulus(2466.09,1208.83,21.18,28.23) # color=yellow
-circle(542.69,1059.89,8.47) # color=cyan text={1551}
-annulus(542.69,1059.89,21.18,28.23) # color=yellow
-circle(2656.12,1842.62,8.47) # color=cyan text={2678}
+circle(2656.12,1842.62,10.59) # color=cyan text={1177}
 annulus(2656.12,1842.62,21.18,28.23) # color=yellow
-circle(1793.73,294.52,8.47) # color=cyan text={397}
-annulus(1793.73,294.52,21.18,28.23) # color=yellow
-circle(1423.69,1646.27,8.47) # color=cyan text={2410}
-annulus(1423.69,1646.27,21.18,28.23) # color=yellow
-circle(1733.13,1601.65,8.47) # color=cyan text={2356}
-annulus(1733.13,1601.65,21.18,28.23) # color=yellow
-circle(1328.12,1055.29,8.47) # color=cyan text={1540}
-annulus(1328.12,1055.29,21.18,28.23) # color=yellow
-circle(2708.67,121.06,8.47) # color=cyan text={151}
+circle(1845.71,696.54,10.59) # color=cyan text={454}
+annulus(1845.71,696.54,21.18,28.23) # color=yellow
+circle(2466.09,1208.83,10.59) # color=cyan text={806}
+annulus(2466.09,1208.83,21.18,28.23) # color=yellow
+circle(2708.67,121.06,10.59) # color=cyan text={70}
 annulus(2708.67,121.06,21.18,28.23) # color=yellow
-circle(1143.59,705.26,8.47) # color=cyan text={1003}
-annulus(1143.59,705.26,21.18,28.23) # color=yellow
-circle(1307.67,188.53,8.47) # color=cyan text={248}
+circle(1099.53,749.17,10.59) # color=cyan text={494}
+annulus(1099.53,749.17,21.18,28.23) # color=yellow
+circle(1793.73,294.52,10.59) # color=cyan text={185}
+annulus(1793.73,294.52,21.18,28.23) # color=yellow
+circle(542.69,1059.89,10.59) # color=cyan text={704}
+annulus(542.69,1059.89,21.18,28.23) # color=yellow
+circle(1733.13,1601.65,10.59) # color=cyan text={1050}
+annulus(1733.13,1601.65,21.18,28.23) # color=yellow
+circle(1307.67,188.53,10.59) # color=cyan text={120}
 annulus(1307.67,188.53,21.18,28.23) # color=yellow
-circle(1431.37,1708.39,8.47) # color=cyan text={2490}
-annulus(1431.37,1708.39,21.18,28.23) # color=yellow
-circle(2110.58,1422.31,8.47) # color=cyan text={2115}
-annulus(2110.58,1422.31,21.18,28.23) # color=yellow
-circle(98.92,117.40,8.47) # color=cyan text={139}
-annulus(98.92,117.40,21.18,28.23) # color=yellow
-circle(773.66,580.33,8.47) # color=cyan text={821}
-annulus(773.66,580.33,21.18,28.23) # color=yellow
-circle(1440.58,353.11,8.47) # color=cyan text={475}
+circle(1328.12,1055.29,10.59) # color=cyan text={697}
+annulus(1328.12,1055.29,21.18,28.23) # color=yellow
+circle(1423.69,1646.27,10.59) # color=cyan text={1070}
+annulus(1423.69,1646.27,21.18,28.23) # color=yellow
+circle(1143.59,705.26,10.59) # color=cyan text={460}
+annulus(1143.59,705.26,21.18,28.23) # color=yellow
+circle(1440.58,353.11,10.59) # color=cyan text={225}
 annulus(1440.58,353.11,21.18,28.23) # color=yellow
-circle(2348.62,1962.69,8.47) # color=cyan text={2860}
-annulus(2348.62,1962.69,21.18,28.23) # color=yellow
-circle(737.24,1071.68,8.47) # color=cyan text={1571}
-annulus(737.24,1071.68,21.18,28.23) # color=yellow
-circle(2661.94,380.73,8.47) # color=cyan text={529}
+circle(98.92,117.40,10.59) # color=cyan text={67}
+annulus(98.92,117.40,21.18,28.23) # color=yellow
+circle(2110.58,1422.31,10.59) # color=cyan text={959}
+annulus(2110.58,1422.31,21.18,28.23) # color=yellow
+circle(1431.37,1708.39,10.59) # color=cyan text={1104}
+annulus(1431.37,1708.39,21.18,28.23) # color=yellow
+circle(2661.94,380.73,10.59) # color=cyan text={255}
 annulus(2661.94,380.73,21.18,28.23) # color=yellow
-circle(1413.61,1199.11,8.47) # color=cyan text={1763}
-annulus(1413.61,1199.11,21.18,28.23) # color=yellow
-circle(1030.94,1320.67,8.47) # color=cyan text={1956}
-annulus(1030.94,1320.67,21.18,28.23) # color=yellow
-circle(3061.37,488.78,8.47) # color=cyan text={692}
+circle(2348.62,1962.69,10.59) # color=cyan text={1240}
+annulus(2348.62,1962.69,21.18,28.23) # color=yellow
+circle(773.66,580.33,10.59) # color=cyan text={388}
+annulus(773.66,580.33,21.18,28.23) # color=yellow
+circle(3061.37,488.78,10.59) # color=cyan text={330}
 annulus(3061.37,488.78,21.18,28.23) # color=yellow
-circle(1787.07,1155.94,8.47) # color=cyan text={1694}
-annulus(1787.07,1155.94,21.18,28.23) # color=yellow
-circle(2230.26,1311.97,8.47) # color=cyan text={1938}
-annulus(2230.26,1311.97,21.18,28.23) # color=yellow
-circle(3019.38,1899.94,8.47) # color=cyan text={2763}
+circle(737.24,1071.68,10.59) # color=cyan text={711}
+annulus(737.24,1071.68,21.18,28.23) # color=yellow
+circle(3019.38,1899.94,10.59) # color=cyan text={1200}
 annulus(3019.38,1899.94,21.18,28.23) # color=yellow
-circle(754.63,741.34,8.47) # color=cyan text={1048}
-annulus(754.63,741.34,21.18,28.23) # color=yellow
-circle(2094.36,792.80,8.47) # color=cyan text={1138}
+circle(1413.61,1199.11,10.59) # color=cyan text={793}
+annulus(1413.61,1199.11,21.18,28.23) # color=yellow
+circle(1030.94,1320.67,10.59) # color=cyan text={884}
+annulus(1030.94,1320.67,21.18,28.23) # color=yellow
+circle(1787.07,1155.94,10.59) # color=cyan text={763}
+annulus(1787.07,1155.94,21.18,28.23) # color=yellow
+circle(2230.26,1311.97,10.59) # color=cyan text={875}
+annulus(2230.26,1311.97,21.18,28.23) # color=yellow
+circle(2094.36,792.80,10.59) # color=cyan text={525}
 annulus(2094.36,792.80,21.18,28.23) # color=yellow
-circle(275.90,1055.49,8.47) # color=cyan text={1542}
+circle(754.63,741.34,10.59) # color=cyan text={486}
+annulus(754.63,741.34,21.18,28.23) # color=yellow
+circle(275.90,1055.49,10.59) # color=cyan text={699}
 annulus(275.90,1055.49,21.18,28.23) # color=yellow
-circle(1293.17,85.71,8.47) # color=cyan text={91}
+circle(1293.17,85.71,10.59) # color=cyan text={44}
 annulus(1293.17,85.71,21.18,28.23) # color=yellow
-circle(2494.98,1185.68,8.47) # color=cyan text={1751}
+circle(2494.98,1185.68,10.59) # color=cyan text={790}
 annulus(2494.98,1185.68,21.18,28.23) # color=yellow
-circle(134.82,1603.13,8.47) # color=cyan text={2358}
-annulus(134.82,1603.13,21.18,28.23) # color=yellow
-circle(1409.99,657.72,8.47) # color=cyan text={931}
+circle(647.85,1106.54,10.59) # color=cyan text={732}
+annulus(647.85,1106.54,21.18,28.23) # color=yellow
+circle(1409.99,657.72,10.59) # color=cyan text={430}
 annulus(1409.99,657.72,21.18,28.23) # color=yellow
-circle(836.31,1026.49,8.47) # color=cyan text={1495}
-annulus(836.31,1026.49,21.18,28.23) # color=yellow
-circle(545.71,432.50,8.47) # color=cyan text={602}
+circle(545.71,432.50,10.59) # color=cyan text={296}
 annulus(545.71,432.50,21.18,28.23) # color=yellow
-circle(357.15,634.46,8.47) # color=cyan text={902}
-annulus(357.15,634.46,21.18,28.23) # color=yellow
-circle(62.19,1765.89,8.47) # color=cyan text={2568}
-annulus(62.19,1765.89,21.18,28.23) # color=yellow
-circle(2160.84,1380.99,8.47) # color=cyan text={2048}
+circle(134.82,1603.13,10.59) # color=cyan text={1051}
+annulus(134.82,1603.13,21.18,28.23) # color=yellow
+circle(836.31,1026.49,10.59) # color=cyan text={673}
+annulus(836.31,1026.49,21.18,28.23) # color=yellow
+circle(2160.84,1380.99,10.59) # color=cyan text={929}
 annulus(2160.84,1380.99,21.18,28.23) # color=yellow
-circle(203.25,100.33,8.47) # color=cyan text={110}
+circle(203.25,100.33,10.59) # color=cyan text={53}
 annulus(203.25,100.33,21.18,28.23) # color=yellow
-circle(639.69,2038.44,8.47) # color=cyan text={2953}
-annulus(639.69,2038.44,21.18,28.23) # color=yellow
-circle(2067.88,1532.64,8.47) # color=cyan text={2266}
-annulus(2067.88,1532.64,21.18,28.23) # color=yellow
-circle(339.66,1827.42,8.47) # color=cyan text={2648}
-annulus(339.66,1827.42,21.18,28.23) # color=yellow
-circle(1184.05,240.84,8.47) # color=cyan text={321}
+circle(357.15,634.46,10.59) # color=cyan text={419}
+annulus(357.15,634.46,21.18,28.23) # color=yellow
+circle(1184.05,240.84,10.59) # color=cyan text={151}
 annulus(1184.05,240.84,21.18,28.23) # color=yellow
-circle(604.66,1250.32,8.47) # color=cyan text={1841}
+circle(62.19,1765.89,10.59) # color=cyan text={1136}
+annulus(62.19,1765.89,21.18,28.23) # color=yellow
+circle(2067.88,1532.64,10.59) # color=cyan text={1019}
+annulus(2067.88,1532.64,21.18,28.23) # color=yellow
+circle(339.66,1827.42,10.59) # color=cyan text={1167}
+annulus(339.66,1827.42,21.18,28.23) # color=yellow
+circle(639.69,2038.44,10.59) # color=cyan text={1273}
+annulus(639.69,2038.44,21.18,28.23) # color=yellow
+circle(604.66,1250.32,10.59) # color=cyan text={832}
 annulus(604.66,1250.32,21.18,28.23) # color=yellow
-circle(802.15,1687.46,8.47) # color=cyan text={2462}
+circle(802.15,1687.46,10.59) # color=cyan text={1094}
 annulus(802.15,1687.46,21.18,28.23) # color=yellow
-circle(1162.32,908.14,8.47) # color=cyan text={1305}
-annulus(1162.32,908.14,21.18,28.23) # color=yellow
-circle(103.04,881.27,8.47) # color=cyan text={1272}
+circle(103.04,881.27,10.59) # color=cyan text={585}
 annulus(103.04,881.27,21.18,28.23) # color=yellow
-circle(1446.02,1127.77,8.47) # color=cyan text={1642}
-annulus(1446.02,1127.77,21.18,28.23) # color=yellow
-circle(1616.83,1299.08,8.47) # color=cyan text={1922}
+circle(1162.32,908.14,10.59) # color=cyan text={599}
+annulus(1162.32,908.14,21.18,28.23) # color=yellow
+circle(1616.83,1299.08,10.59) # color=cyan text={869}
 annulus(1616.83,1299.08,21.18,28.23) # color=yellow
-circle(724.90,1140.00,8.47) # color=cyan text={1666}
-annulus(724.90,1140.00,21.18,28.23) # color=yellow
-circle(1757.28,104.83,8.47) # color=cyan text={116}
+circle(1757.28,104.83,10.59) # color=cyan text={57}
 annulus(1757.28,104.83,21.18,28.23) # color=yellow
-circle(1256.97,963.59,8.47) # color=cyan text={1387}
-annulus(1256.97,963.59,21.18,28.23) # color=yellow
-circle(648.67,1386.01,8.47) # color=cyan text={2056}
-annulus(648.67,1386.01,21.18,28.23) # color=yellow
-circle(446.43,1710.83,8.47) # color=cyan text={2492}
-annulus(446.43,1710.83,21.18,28.23) # color=yellow
-circle(2778.29,879.87,8.47) # color=cyan text={1271}
+circle(1446.02,1127.77,10.59) # color=cyan text={747}
+annulus(1446.02,1127.77,21.18,28.23) # color=yellow
+circle(2778.29,879.87,10.59) # color=cyan text={584}
 annulus(2778.29,879.87,21.18,28.23) # color=yellow
-circle(708.40,808.87,8.47) # color=cyan text={1166}
-annulus(708.40,808.87,21.18,28.23) # color=yellow
-circle(2930.91,1081.79,8.47) # color=cyan text={1579}
+circle(724.90,1140.00,10.59) # color=cyan text={753}
+annulus(724.90,1140.00,21.18,28.23) # color=yellow
+circle(2930.91,1081.79,10.59) # color=cyan text={714}
 annulus(2930.91,1081.79,21.18,28.23) # color=yellow
-circle(2667.82,610.03,8.47) # color=cyan text={867}
+circle(1256.97,963.59,10.59) # color=cyan text={629}
+annulus(1256.97,963.59,21.18,28.23) # color=yellow
+circle(648.67,1386.01,10.59) # color=cyan text={932}
+annulus(648.67,1386.01,21.18,28.23) # color=yellow
+circle(446.43,1710.83,10.59) # color=cyan text={1105}
+annulus(446.43,1710.83,21.18,28.23) # color=yellow
+circle(2667.82,610.03,10.59) # color=cyan text={406}
 annulus(2667.82,610.03,21.18,28.23) # color=yellow
-circle(783.78,41.85,8.47) # color=cyan text={41}
-annulus(783.78,41.85,21.18,28.23) # color=yellow
-circle(1083.28,1486.89,8.47) # color=cyan text={2198}
-annulus(1083.28,1486.89,21.18,28.23) # color=yellow
-circle(788.79,374.20,8.47) # color=cyan text={516}
-annulus(788.79,374.20,21.18,28.23) # color=yellow
-circle(1819.61,1683.28,8.47) # color=cyan text={2459}
-annulus(1819.61,1683.28,21.18,28.23) # color=yellow
-circle(1499.26,778.55,8.47) # color=cyan text={1119}
-annulus(1499.26,778.55,21.18,28.23) # color=yellow
-circle(2597.39,233.74,8.47) # color=cyan text={310}
-annulus(2597.39,233.74,21.18,28.23) # color=yellow
-circle(3033.09,1370.71,8.47) # color=cyan text={2038}
+circle(708.40,808.87,10.59) # color=cyan text={533}
+annulus(708.40,808.87,21.18,28.23) # color=yellow
+circle(3033.09,1370.71,10.59) # color=cyan text={924}
 annulus(3033.09,1370.71,21.18,28.23) # color=yellow
-circle(1628.56,853.43,8.47) # color=cyan text={1236}
-annulus(1628.56,853.43,21.18,28.23) # color=yellow
-circle(1455.19,374.03,8.47) # color=cyan text={518}
-annulus(1455.19,374.03,21.18,28.23) # color=yellow
-circle(1982.75,125.11,8.47) # color=cyan text={156}
+circle(2597.39,233.74,10.59) # color=cyan text={145}
+annulus(2597.39,233.74,21.18,28.23) # color=yellow
+circle(783.78,41.85,10.59) # color=cyan text={21}
+annulus(783.78,41.85,21.18,28.23) # color=yellow
+circle(1499.26,778.55,10.59) # color=cyan text={517}
+annulus(1499.26,778.55,21.18,28.23) # color=yellow
+circle(788.79,374.20,10.59) # color=cyan text={246}
+annulus(788.79,374.20,21.18,28.23) # color=yellow
+circle(1083.28,1486.89,10.59) # color=cyan text={991}
+annulus(1083.28,1486.89,21.18,28.23) # color=yellow
+circle(1819.61,1683.28,10.59) # color=cyan text={1093}
+annulus(1819.61,1683.28,21.18,28.23) # color=yellow
+circle(1982.75,125.11,10.59) # color=cyan text={74}
 annulus(1982.75,125.11,21.18,28.23) # color=yellow
-circle(2133.83,1159.26,8.47) # color=cyan text={1701}
-annulus(2133.83,1159.26,21.18,28.23) # color=yellow
-circle(2203.52,1922.03,8.47) # color=cyan text={2801}
-annulus(2203.52,1922.03,21.18,28.23) # color=yellow
-circle(536.12,1561.95,8.47) # color=cyan text={2307}
-annulus(536.12,1561.95,21.18,28.23) # color=yellow
-circle(1625.57,1941.57,8.47) # color=cyan text={2827}
-annulus(1625.57,1941.57,21.18,28.23) # color=yellow
-circle(861.18,1004.75,8.47) # color=cyan text={1461}
-annulus(861.18,1004.75,21.18,28.23) # color=yellow
-circle(1990.02,54.40,8.47) # color=cyan text={55}
+circle(1455.19,374.03,10.59) # color=cyan text={247}
+annulus(1455.19,374.03,21.18,28.23) # color=yellow
+circle(1628.56,853.43,10.59) # color=cyan text={568}
+annulus(1628.56,853.43,21.18,28.23) # color=yellow
+circle(1990.02,54.40,10.59) # color=cyan text={29}
 annulus(1990.02,54.40,21.18,28.23) # color=yellow
-circle(415.11,978.45,8.47) # color=cyan text={1419}
-annulus(415.11,978.45,21.18,28.23) # color=yellow
-circle(1829.43,907.92,8.47) # color=cyan text={1306}
-annulus(1829.43,907.92,21.18,28.23) # color=yellow
-circle(1592.64,1608.97,8.47) # color=cyan text={2363}
-annulus(1592.64,1608.97,21.18,28.23) # color=yellow
-circle(2650.63,45.18,8.47) # color=cyan text={47}
+circle(2203.52,1922.03,10.59) # color=cyan text={1216}
+annulus(2203.52,1922.03,21.18,28.23) # color=yellow
+circle(2133.83,1159.26,10.59) # color=cyan text={767}
+annulus(2133.83,1159.26,21.18,28.23) # color=yellow
+circle(2650.63,45.18,10.59) # color=cyan text={25}
 annulus(2650.63,45.18,21.18,28.23) # color=yellow
-circle(671.14,218.28,8.47) # color=cyan text={294}
-annulus(671.14,218.28,21.18,28.23) # color=yellow
-circle(441.63,1887.40,8.47) # color=cyan text={2742}
-annulus(441.63,1887.40,21.18,28.23) # color=yellow
-circle(1722.82,1701.88,8.47) # color=cyan text={2482}
-annulus(1722.82,1701.88,21.18,28.23) # color=yellow
-circle(284.16,1243.79,8.47) # color=cyan text={1837}
-annulus(284.16,1243.79,21.18,28.23) # color=yellow
-circle(2708.63,1854.06,8.47) # color=cyan text={2693}
+circle(536.12,1561.95,10.59) # color=cyan text={1035}
+annulus(536.12,1561.95,21.18,28.23) # color=yellow
+circle(1625.57,1941.57,10.59) # color=cyan text={1224}
+annulus(1625.57,1941.57,21.18,28.23) # color=yellow
+circle(861.18,1004.75,10.59) # color=cyan text={655}
+annulus(861.18,1004.75,21.18,28.23) # color=yellow
+circle(415.11,978.45,10.59) # color=cyan text={641}
+annulus(415.11,978.45,21.18,28.23) # color=yellow
+circle(2708.63,1854.06,10.59) # color=cyan text={1181}
 annulus(2708.63,1854.06,21.18,28.23) # color=yellow
-circle(845.22,1144.57,8.47) # color=cyan text={1675}
+circle(671.14,218.28,10.59) # color=cyan text={137}
+annulus(671.14,218.28,21.18,28.23) # color=yellow
+circle(1829.43,907.92,10.59) # color=cyan text={600}
+annulus(1829.43,907.92,21.18,28.23) # color=yellow
+circle(441.63,1887.40,10.59) # color=cyan text={1194}
+annulus(441.63,1887.40,21.18,28.23) # color=yellow
+circle(1592.64,1608.97,10.59) # color=cyan text={1054}
+annulus(1592.64,1608.97,21.18,28.23) # color=yellow
+circle(1722.82,1701.88,10.59) # color=cyan text={1101}
+annulus(1722.82,1701.88,21.18,28.23) # color=yellow
+circle(845.22,1144.57,10.59) # color=cyan text={756}
 annulus(845.22,1144.57,21.18,28.23) # color=yellow
-circle(614.10,1819.98,8.47) # color=cyan text={2646}
-annulus(614.10,1819.98,21.18,28.23) # color=yellow
-circle(1755.09,1254.90,8.47) # color=cyan text={1850}
-annulus(1755.09,1254.90,21.18,28.23) # color=yellow
-circle(575.40,1105.06,8.47) # color=cyan text={1614}
-annulus(575.40,1105.06,21.18,28.23) # color=yellow
-circle(452.51,685.89,8.47) # color=cyan text={973}
+circle(284.16,1243.79,10.59) # color=cyan text={829}
+annulus(284.16,1243.79,21.18,28.23) # color=yellow
+circle(452.51,685.89,10.59) # color=cyan text={443}
 annulus(452.51,685.89,21.18,28.23) # color=yellow
-circle(1965.60,1397.92,8.47) # color=cyan text={2079}
-annulus(1965.60,1397.92,21.18,28.23) # color=yellow
-circle(979.41,1252.54,8.47) # color=cyan text={1847}
-annulus(979.41,1252.54,21.18,28.23) # color=yellow
-circle(1562.64,935.69,8.47) # color=cyan text={1349}
-annulus(1562.64,935.69,21.18,28.23) # color=yellow
-circle(1192.56,1100.48,8.47) # color=cyan text={1610}
-annulus(1192.56,1100.48,21.18,28.23) # color=yellow
-circle(785.27,130.72,8.47) # color=cyan text={165}
-annulus(785.27,130.72,21.18,28.23) # color=yellow
-circle(60.76,1470.52,8.47) # color=cyan text={2179}
-annulus(60.76,1470.52,21.18,28.23) # color=yellow
-circle(1332.32,405.32,8.47) # color=cyan text={562}
-annulus(1332.32,405.32,21.18,28.23) # color=yellow
-circle(1085.43,1983.52,8.47) # color=cyan text={2886}
-annulus(1085.43,1983.52,21.18,28.23) # color=yellow
-circle(824.31,469.68,8.47) # color=cyan text={653}
+circle(824.31,469.68,10.59) # color=cyan text={312}
 annulus(824.31,469.68,21.18,28.23) # color=yellow
-circle(825.43,310.59,8.47) # color=cyan text={420}
-annulus(825.43,310.59,21.18,28.23) # color=yellow
-circle(1287.96,159.01,8.47) # color=cyan text={207}
-annulus(1287.96,159.01,21.18,28.23) # color=yellow
-circle(349.43,1082.44,8.47) # color=cyan text={1580}
-annulus(349.43,1082.44,21.18,28.23) # color=yellow
-circle(233.08,36.04,8.47) # color=cyan text={29}
+circle(614.10,1819.98,10.59) # color=cyan text={1165}
+annulus(614.10,1819.98,21.18,28.23) # color=yellow
+circle(1965.60,1397.92,10.59) # color=cyan text={944}
+annulus(1965.60,1397.92,21.18,28.23) # color=yellow
+circle(1755.09,1254.90,10.59) # color=cyan text={837}
+annulus(1755.09,1254.90,21.18,28.23) # color=yellow
+circle(785.27,130.72,10.59) # color=cyan text={80}
+annulus(785.27,130.72,21.18,28.23) # color=yellow
+circle(575.40,1105.06,10.59) # color=cyan text={731}
+annulus(575.40,1105.06,21.18,28.23) # color=yellow
+circle(1332.32,405.32,10.59) # color=cyan text={275}
+annulus(1332.32,405.32,21.18,28.23) # color=yellow
+circle(979.41,1252.54,10.59) # color=cyan text={834}
+annulus(979.41,1252.54,21.18,28.23) # color=yellow
+circle(1562.64,935.69,10.59) # color=cyan text={615}
+annulus(1562.64,935.69,21.18,28.23) # color=yellow
+circle(233.08,36.04,10.59) # color=cyan text={12}
 annulus(233.08,36.04,21.18,28.23) # color=yellow
-circle(683.97,946.64,8.47) # color=cyan text={1368}
+circle(1192.56,1100.48,10.59) # color=cyan text={729}
+annulus(1192.56,1100.48,21.18,28.23) # color=yellow
+circle(60.76,1470.52,10.59) # color=cyan text={986}
+annulus(60.76,1470.52,21.18,28.23) # color=yellow
+circle(825.43,310.59,10.59) # color=cyan text={197}
+annulus(825.43,310.59,21.18,28.23) # color=yellow
+circle(1287.96,159.01,10.59) # color=cyan text={103}
+annulus(1287.96,159.01,21.18,28.23) # color=yellow
+circle(349.43,1082.44,10.59) # color=cyan text={715}
+annulus(349.43,1082.44,21.18,28.23) # color=yellow
+circle(1085.43,1983.52,10.59) # color=cyan text={1250}
+annulus(1085.43,1983.52,21.18,28.23) # color=yellow
+circle(1153.58,1960.87,10.59) # color=cyan text={1237}
+annulus(1153.58,1960.87,21.18,28.23) # color=yellow
+circle(683.97,946.64,10.59) # color=cyan text={624}
 annulus(683.97,946.64,21.18,28.23) # color=yellow
-circle(1665.21,710.12,8.47) # color=cyan text={1010}
+circle(1665.21,710.12,10.59) # color=cyan text={463}
 annulus(1665.21,710.12,21.18,28.23) # color=yellow
-circle(119.68,1467.45,8.47) # color=cyan text={2173}
-annulus(119.68,1467.45,21.18,28.23) # color=yellow
-circle(520.70,108.92,8.47) # color=cyan text={122}
-annulus(520.70,108.92,21.18,28.23) # color=yellow
-circle(762.75,1110.18,8.47) # color=cyan text={1617}
-annulus(762.75,1110.18,21.18,28.23) # color=yellow
-circle(964.20,1008.57,8.47) # color=cyan text={1469}
-annulus(964.20,1008.57,21.18,28.23) # color=yellow
-circle(1329.92,994.15,8.47) # color=cyan text={1438}
-annulus(1329.92,994.15,21.18,28.23) # color=yellow
-circle(2235.74,1402.29,8.47) # color=cyan text={2086}
-annulus(2235.74,1402.29,21.18,28.23) # color=yellow
-circle(1933.02,1809.07,8.47) # color=cyan text={2628}
-annulus(1933.02,1809.07,21.18,28.23) # color=yellow
-circle(2765.59,808.05,8.47) # color=cyan text={1168}
+circle(2765.59,808.05,10.59) # color=cyan text={535}
 annulus(2765.59,808.05,21.18,28.23) # color=yellow
-circle(782.37,1785.48,8.47) # color=cyan text={2588}
-annulus(782.37,1785.48,21.18,28.23) # color=yellow
-circle(473.88,1008.39,8.47) # color=cyan text={1468}
+circle(520.70,108.92,10.59) # color=cyan text={60}
+annulus(520.70,108.92,21.18,28.23) # color=yellow
+circle(473.88,1008.39,10.59) # color=cyan text={658}
 annulus(473.88,1008.39,21.18,28.23) # color=yellow
-circle(176.82,680.97,8.47) # color=cyan text={962}
-annulus(176.82,680.97,21.18,28.23) # color=yellow
-circle(733.45,777.59,8.47) # color=cyan text={1116}
-annulus(733.45,777.59,21.18,28.23) # color=yellow
-circle(2489.66,369.15,8.47) # color=cyan text={510}
+circle(119.68,1467.45,10.59) # color=cyan text={982}
+annulus(119.68,1467.45,21.18,28.23) # color=yellow
+circle(2489.66,369.15,10.59) # color=cyan text={242}
 annulus(2489.66,369.15,21.18,28.23) # color=yellow
-circle(393.22,1624.23,8.47) # color=cyan text={2382}
-annulus(393.22,1624.23,21.18,28.23) # color=yellow
-circle(2453.25,613.52,8.47) # color=cyan text={873}
-annulus(2453.25,613.52,21.18,28.23) # color=yellow
-circle(2565.16,1056.01,8.47) # color=cyan text={1545}
-annulus(2565.16,1056.01,21.18,28.23) # color=yellow
-circle(800.42,712.51,8.47) # color=cyan text={1015}
-annulus(800.42,712.51,21.18,28.23) # color=yellow
-circle(441.89,1112.98,8.47) # color=cyan text={1622}
-annulus(441.89,1112.98,21.18,28.23) # color=yellow
-circle(1390.40,964.76,8.47) # color=cyan text={1390}
-annulus(1390.40,964.76,21.18,28.23) # color=yellow
-circle(2997.69,996.02,8.47) # color=cyan text={1444}
+circle(2997.69,996.02,10.59) # color=cyan text={649}
 annulus(2997.69,996.02,21.18,28.23) # color=yellow
-circle(2046.57,882.55,8.47) # color=cyan text={1275}
-annulus(2046.57,882.55,21.18,28.23) # color=yellow
-circle(2820.72,1757.37,8.47) # color=cyan text={2557}
+circle(762.75,1110.18,10.59) # color=cyan text={733}
+annulus(762.75,1110.18,21.18,28.23) # color=yellow
+circle(1329.92,994.15,10.59) # color=cyan text={648}
+annulus(1329.92,994.15,21.18,28.23) # color=yellow
+circle(964.20,1008.57,10.59) # color=cyan text={659}
+annulus(964.20,1008.57,21.18,28.23) # color=yellow
+circle(2235.74,1402.29,10.59) # color=cyan text={947}
+annulus(2235.74,1402.29,21.18,28.23) # color=yellow
+circle(782.37,1785.48,10.59) # color=cyan text={1142}
+annulus(782.37,1785.48,21.18,28.23) # color=yellow
+circle(1933.02,1809.07,10.59) # color=cyan text={1159}
+annulus(1933.02,1809.07,21.18,28.23) # color=yellow
+circle(2453.25,613.52,10.59) # color=cyan text={407}
+annulus(2453.25,613.52,21.18,28.23) # color=yellow
+circle(2820.72,1757.37,10.59) # color=cyan text={1128}
 annulus(2820.72,1757.37,21.18,28.23) # color=yellow
-circle(2887.23,1952.39,8.47) # color=cyan text={2846}
-annulus(2887.23,1952.39,21.18,28.23) # color=yellow
-circle(147.80,213.34,8.47) # color=cyan text={287}
-annulus(147.80,213.34,21.18,28.23) # color=yellow
-circle(897.84,1316.41,8.47) # color=cyan text={1946}
-annulus(897.84,1316.41,21.18,28.23) # color=yellow
-circle(1718.72,572.16,8.47) # color=cyan text={811}
+circle(2565.16,1056.01,10.59) # color=cyan text={701}
+annulus(2565.16,1056.01,21.18,28.23) # color=yellow
+circle(176.82,680.97,10.59) # color=cyan text={438}
+annulus(176.82,680.97,21.18,28.23) # color=yellow
+circle(733.45,777.59,10.59) # color=cyan text={515}
+annulus(733.45,777.59,21.18,28.23) # color=yellow
+circle(393.22,1624.23,10.59) # color=cyan text={1059}
+annulus(393.22,1624.23,21.18,28.23) # color=yellow
+circle(1718.72,572.16,10.59) # color=cyan text={383}
 annulus(1718.72,572.16,21.18,28.23) # color=yellow
-circle(707.07,295.61,8.47) # color=cyan text={398}
+circle(1390.40,964.76,10.59) # color=cyan text={630}
+annulus(1390.40,964.76,21.18,28.23) # color=yellow
+circle(2887.23,1952.39,10.59) # color=cyan text={1234}
+annulus(2887.23,1952.39,21.18,28.23) # color=yellow
+circle(2046.57,882.55,10.59) # color=cyan text={587}
+annulus(2046.57,882.55,21.18,28.23) # color=yellow
+circle(800.42,712.51,10.59) # color=cyan text={466}
+annulus(800.42,712.51,21.18,28.23) # color=yellow
+circle(441.89,1112.98,10.59) # color=cyan text={736}
+annulus(441.89,1112.98,21.18,28.23) # color=yellow
+circle(707.07,295.61,10.59) # color=cyan text={186}
 annulus(707.07,295.61,21.18,28.23) # color=yellow
-circle(1704.52,1456.38,8.47) # color=cyan text={2157}
-annulus(1704.52,1456.38,21.18,28.23) # color=yellow
-circle(2930.05,1009.04,8.47) # color=cyan text={1473}
+circle(2930.05,1009.04,10.59) # color=cyan text={663}
 annulus(2930.05,1009.04,21.18,28.23) # color=yellow
-circle(2837.82,311.66,8.47) # color=cyan text={428}
+circle(2837.82,311.66,10.59) # color=cyan text={201}
 annulus(2837.82,311.66,21.18,28.23) # color=yellow
-circle(1364.71,1871.98,8.47) # color=cyan text={2723}
-annulus(1364.71,1871.98,21.18,28.23) # color=yellow
-circle(659.52,2052.24,8.47) # color=cyan text={2970}
-annulus(659.52,2052.24,21.18,28.23) # color=yellow
-circle(508.14,693.21,8.47) # color=cyan text={987}
-annulus(508.14,693.21,21.18,28.23) # color=yellow
-circle(990.04,603.43,8.47) # color=cyan text={846}
-annulus(990.04,603.43,21.18,28.23) # color=yellow
-circle(1672.81,802.62,8.47) # color=cyan text={1161}
-annulus(1672.81,802.62,21.18,28.23) # color=yellow
-circle(541.41,1505.01,8.47) # color=cyan text={2229}
-annulus(541.41,1505.01,21.18,28.23) # color=yellow
-circle(1053.14,1807.55,8.47) # color=cyan text={2626}
-annulus(1053.14,1807.55,21.18,28.23) # color=yellow
-circle(762.02,1673.10,8.47) # color=cyan text={2450}
-annulus(762.02,1673.10,21.18,28.23) # color=yellow
-circle(1510.46,894.37,8.47) # color=cyan text={1287}
-annulus(1510.46,894.37,21.18,28.23) # color=yellow
-circle(2923.74,1828.15,8.47) # color=cyan text={2653}
+circle(147.80,213.34,10.59) # color=cyan text={133}
+annulus(147.80,213.34,21.18,28.23) # color=yellow
+circle(897.84,1316.41,10.59) # color=cyan text={879}
+annulus(897.84,1316.41,21.18,28.23) # color=yellow
+circle(2923.74,1828.15,10.59) # color=cyan text={1169}
 annulus(2923.74,1828.15,21.18,28.23) # color=yellow
-circle(1376.26,1230.67,8.47) # color=cyan text={1813}
-annulus(1376.26,1230.67,21.18,28.23) # color=yellow
-circle(1375.69,1708.31,8.47) # color=cyan text={2489}
-annulus(1375.69,1708.31,21.18,28.23) # color=yellow
-circle(1564.30,472.41,8.47) # color=cyan text={664}
-annulus(1564.30,472.41,21.18,28.23) # color=yellow
-circle(2258.49,1920.40,8.47) # color=cyan text={2797}
-annulus(2258.49,1920.40,21.18,28.23) # color=yellow
-circle(2352.13,548.53,8.47) # color=cyan text={779}
-annulus(2352.13,548.53,21.18,28.23) # color=yellow
-circle(1529.92,727.32,8.47) # color=cyan text={1037}
-annulus(1529.92,727.32,21.18,28.23) # color=yellow
-circle(2153.88,1312.81,8.47) # color=cyan text={1940}
-annulus(2153.88,1312.81,21.18,28.23) # color=yellow
-circle(2525.12,1607.66,8.47) # color=cyan text={2362}
+circle(1704.52,1456.38,10.59) # color=cyan text={973}
+annulus(1704.52,1456.38,21.18,28.23) # color=yellow
+circle(990.04,603.43,10.59) # color=cyan text={399}
+annulus(990.04,603.43,21.18,28.23) # color=yellow
+circle(1672.81,802.62,10.59) # color=cyan text={532}
+annulus(1672.81,802.62,21.18,28.23) # color=yellow
+circle(508.14,693.21,10.59) # color=cyan text={451}
+annulus(508.14,693.21,21.18,28.23) # color=yellow
+circle(2525.12,1607.66,10.59) # color=cyan text={1053}
 annulus(2525.12,1607.66,21.18,28.23) # color=yellow
-circle(2568.94,1474.45,8.47) # color=cyan text={2184}
+circle(1364.71,1871.98,10.59) # color=cyan text={1188}
+annulus(1364.71,1871.98,21.18,28.23) # color=yellow
+circle(659.52,2052.24,10.59) # color=cyan text={1281}
+annulus(659.52,2052.24,21.18,28.23) # color=yellow
+circle(1564.30,472.41,10.59) # color=cyan text={316}
+annulus(1564.30,472.41,21.18,28.23) # color=yellow
+circle(2352.13,548.53,10.59) # color=cyan text={370}
+annulus(2352.13,548.53,21.18,28.23) # color=yellow
+circle(1510.46,894.37,10.59) # color=cyan text={593}
+annulus(1510.46,894.37,21.18,28.23) # color=yellow
+circle(1376.26,1230.67,10.59) # color=cyan text={817}
+annulus(1376.26,1230.67,21.18,28.23) # color=yellow
+circle(2568.94,1474.45,10.59) # color=cyan text={987}
 annulus(2568.94,1474.45,21.18,28.23) # color=yellow
-circle(407.34,1555.36,8.47) # color=cyan text={2297}
-annulus(407.34,1555.36,21.18,28.23) # color=yellow
-circle(53.54,1911.12,8.47) # color=cyan text={2780}
-annulus(53.54,1911.12,21.18,28.23) # color=yellow
-circle(1159.06,131.30,8.47) # color=cyan text={166}
-annulus(1159.06,131.30,21.18,28.23) # color=yellow
-circle(2099.84,970.33,8.47) # color=cyan text={1404}
-annulus(2099.84,970.33,21.18,28.23) # color=yellow
-circle(1040.61,1925.78,8.47) # color=cyan text={2808}
-annulus(1040.61,1925.78,21.18,28.23) # color=yellow
-circle(2923.60,1555.68,8.47) # color=cyan text={2298}
+circle(2923.60,1555.68,10.59) # color=cyan text={1032}
 annulus(2923.60,1555.68,21.18,28.23) # color=yellow
-circle(2180.73,1868.99,8.47) # color=cyan text={2717}
-annulus(2180.73,1868.99,21.18,28.23) # color=yellow
-circle(2440.15,1789.53,8.47) # color=cyan text={2595}
+circle(762.02,1673.10,10.59) # color=cyan text={1089}
+annulus(762.02,1673.10,21.18,28.23) # color=yellow
+circle(1053.14,1807.55,10.59) # color=cyan text={1157}
+annulus(1053.14,1807.55,21.18,28.23) # color=yellow
+circle(541.41,1505.01,10.59) # color=cyan text={1004}
+annulus(541.41,1505.01,21.18,28.23) # color=yellow
+circle(2440.15,1789.53,10.59) # color=cyan text={1144}
 annulus(2440.15,1789.53,21.18,28.23) # color=yellow
-circle(327.52,1447.51,8.47) # color=cyan text={2149}
-annulus(327.52,1447.51,21.18,28.23) # color=yellow
-circle(2598.68,1176.70,8.47) # color=cyan text={1739}
-annulus(2598.68,1176.70,21.18,28.23) # color=yellow
-circle(667.58,444.97,8.47) # color=cyan text={623}
-annulus(667.58,444.97,21.18,28.23) # color=yellow
-circle(545.27,279.70,8.47) # color=cyan text={376}
-annulus(545.27,279.70,21.18,28.23) # color=yellow
-circle(2589.15,1094.67,8.47) # color=cyan text={1599}
-annulus(2589.15,1094.67,21.18,28.23) # color=yellow
-circle(2828.27,273.81,8.47) # color=cyan text={365}
+circle(1375.69,1708.31,10.59) # color=cyan text={1103}
+annulus(1375.69,1708.31,21.18,28.23) # color=yellow
+circle(2258.49,1920.40,10.59) # color=cyan text={1213}
+annulus(2258.49,1920.40,21.18,28.23) # color=yellow
+circle(1529.92,727.32,10.59) # color=cyan text={481}
+annulus(1529.92,727.32,21.18,28.23) # color=yellow
+circle(53.54,1911.12,10.59) # color=cyan text={1205}
+annulus(53.54,1911.12,21.18,28.23) # color=yellow
+circle(2828.27,273.81,10.59) # color=cyan text={172}
 annulus(2828.27,273.81,21.18,28.23) # color=yellow
-circle(1659.14,1921.91,8.47) # color=cyan text={2800}
-annulus(1659.14,1921.91,21.18,28.23) # color=yellow
-circle(413.49,347.35,8.47) # color=cyan text={467}
-annulus(413.49,347.35,21.18,28.23) # color=yellow
-circle(1383.37,213.70,8.47) # color=cyan text={289}
+circle(1159.06,131.30,10.59) # color=cyan text={81}
+annulus(1159.06,131.30,21.18,28.23) # color=yellow
+circle(2153.88,1312.81,10.59) # color=cyan text={876}
+annulus(2153.88,1312.81,21.18,28.23) # color=yellow
+circle(2180.73,1868.99,10.59) # color=cyan text={1185}
+annulus(2180.73,1868.99,21.18,28.23) # color=yellow
+circle(2099.84,970.33,10.59) # color=cyan text={635}
+annulus(2099.84,970.33,21.18,28.23) # color=yellow
+circle(407.34,1555.36,10.59) # color=cyan text={1031}
+annulus(407.34,1555.36,21.18,28.23) # color=yellow
+circle(1040.61,1925.78,10.59) # color=cyan text={1220}
+annulus(1040.61,1925.78,21.18,28.23) # color=yellow
+circle(327.52,1447.51,10.59) # color=cyan text={970}
+annulus(327.52,1447.51,21.18,28.23) # color=yellow
+circle(2598.68,1176.70,10.59) # color=cyan text={784}
+annulus(2598.68,1176.70,21.18,28.23) # color=yellow
+circle(2589.15,1094.67,10.59) # color=cyan text={721}
+annulus(2589.15,1094.67,21.18,28.23) # color=yellow
+circle(2663.27,282.18,10.59) # color=cyan text={178}
+annulus(2663.27,282.18,21.18,28.23) # color=yellow
+circle(545.27,279.70,10.59) # color=cyan text={176}
+annulus(545.27,279.70,21.18,28.23) # color=yellow
+circle(1383.37,213.70,10.59) # color=cyan text={135}
 annulus(1383.37,213.70,21.18,28.23) # color=yellow
-circle(1053.22,1653.81,8.47) # color=cyan text={2423}
-annulus(1053.22,1653.81,21.18,28.23) # color=yellow
-circle(382.27,1742.43,8.47) # color=cyan text={2538}
-annulus(382.27,1742.43,21.18,28.23) # color=yellow
-circle(734.14,1161.65,8.47) # color=cyan text={1704}
-annulus(734.14,1161.65,21.18,28.23) # color=yellow
-circle(94.84,819.70,8.47) # color=cyan text={1182}
-annulus(94.84,819.70,21.18,28.23) # color=yellow
-circle(1124.00,749.62,8.47) # color=cyan text={1070}
-annulus(1124.00,749.62,21.18,28.23) # color=yellow
-circle(1182.22,839.76,8.47) # color=cyan text={1214}
-annulus(1182.22,839.76,21.18,28.23) # color=yellow
-circle(2665.07,329.42,8.47) # color=cyan text={443}
-annulus(2665.07,329.42,21.18,28.23) # color=yellow
-circle(127.80,1290.05,8.47) # color=cyan text={1902}
-annulus(127.80,1290.05,21.18,28.23) # color=yellow
-circle(2610.04,179.99,8.47) # color=cyan text={238}
-annulus(2610.04,179.99,21.18,28.23) # color=yellow
-circle(810.01,607.53,8.47) # color=cyan text={859}
-annulus(810.01,607.53,21.18,28.23) # color=yellow
-circle(502.39,334.57,8.47) # color=cyan text={451}
-annulus(502.39,334.57,21.18,28.23) # color=yellow
-circle(2127.91,420.04,8.47) # color=cyan text={580}
-annulus(2127.91,420.04,21.18,28.23) # color=yellow
-circle(2795.78,1019.24,8.47) # color=cyan text={1489}
-annulus(2795.78,1019.24,21.18,28.23) # color=yellow
-circle(1350.13,1289.08,8.47) # color=cyan text={1901}
-annulus(1350.13,1289.08,21.18,28.23) # color=yellow
-circle(725.23,1841.18,8.47) # color=cyan text={2673}
-annulus(725.23,1841.18,21.18,28.23) # color=yellow
-circle(1809.94,128.02,8.47) # color=cyan text={160}
-annulus(1809.94,128.02,21.18,28.23) # color=yellow
-circle(2773.92,62.20,8.47) # color=cyan text={70}
+circle(2773.92,62.20,10.59) # color=cyan text={34}
 annulus(2773.92,62.20,21.18,28.23) # color=yellow
-circle(2590.08,308.61,8.47) # color=cyan text={417}
-annulus(2590.08,308.61,21.18,28.23) # color=yellow
-circle(423.02,1365.36,8.47) # color=cyan text={2026}
-annulus(423.02,1365.36,21.18,28.23) # color=yellow
-circle(894.27,1166.70,8.47) # color=cyan text={1718}
-annulus(894.27,1166.70,21.18,28.23) # color=yellow
-circle(1314.55,1666.64,8.47) # color=cyan text={2438}
-annulus(1314.55,1666.64,21.18,28.23) # color=yellow
-circle(595.83,616.11,8.47) # color=cyan text={874}
-annulus(595.83,616.11,21.18,28.23) # color=yellow
-circle(2994.71,374.55,8.47) # color=cyan text={523}
+circle(2665.07,329.42,10.59) # color=cyan text={207}
+annulus(2665.07,329.42,21.18,28.23) # color=yellow
+circle(413.49,347.35,10.59) # color=cyan text={221}
+annulus(413.49,347.35,21.18,28.23) # color=yellow
+circle(667.58,444.97,10.59) # color=cyan text={305}
+annulus(667.58,444.97,21.18,28.23) # color=yellow
+circle(94.84,819.70,10.59) # color=cyan text={541}
+annulus(94.84,819.70,21.18,28.23) # color=yellow
+circle(1350.13,1289.08,10.59) # color=cyan text={858}
+annulus(1350.13,1289.08,21.18,28.23) # color=yellow
+circle(2795.78,1019.24,10.59) # color=cyan text={671}
+annulus(2795.78,1019.24,21.18,28.23) # color=yellow
+circle(1659.14,1921.91,10.59) # color=cyan text={1215}
+annulus(1659.14,1921.91,21.18,28.23) # color=yellow
+circle(2610.04,179.99,10.59) # color=cyan text={117}
+annulus(2610.04,179.99,21.18,28.23) # color=yellow
+circle(382.27,1742.43,10.59) # color=cyan text={1124}
+annulus(382.27,1742.43,21.18,28.23) # color=yellow
+circle(1053.22,1653.81,10.59) # color=cyan text={1078}
+annulus(1053.22,1653.81,21.18,28.23) # color=yellow
+circle(810.01,607.53,10.59) # color=cyan text={404}
+annulus(810.01,607.53,21.18,28.23) # color=yellow
+circle(1124.00,749.62,10.59) # color=cyan text={495}
+annulus(1124.00,749.62,21.18,28.23) # color=yellow
+circle(2994.71,374.55,10.59) # color=cyan text={251}
 annulus(2994.71,374.55,21.18,28.23) # color=yellow
-circle(140.23,296.54,8.47) # color=cyan text={400}
-annulus(140.23,296.54,21.18,28.23) # color=yellow
-circle(1192.78,1327.41,8.47) # color=cyan text={1966}
-annulus(1192.78,1327.41,21.18,28.23) # color=yellow
-circle(411.52,1338.39,8.47) # color=cyan text={1979}
-annulus(411.52,1338.39,21.18,28.23) # color=yellow
-circle(76.23,243.52,8.47) # color=cyan text={323}
-annulus(76.23,243.52,21.18,28.23) # color=yellow
-circle(690.29,510.90,8.47) # color=cyan text={725}
-annulus(690.29,510.90,21.18,28.23) # color=yellow
-circle(2855.29,105.04,8.47) # color=cyan text={117}
+circle(502.39,334.57,10.59) # color=cyan text={211}
+annulus(502.39,334.57,21.18,28.23) # color=yellow
+circle(1182.22,839.76,10.59) # color=cyan text={557}
+annulus(1182.22,839.76,21.18,28.23) # color=yellow
+circle(2590.08,308.61,10.59) # color=cyan text={195}
+annulus(2590.08,308.61,21.18,28.23) # color=yellow
+circle(127.80,1290.05,10.59) # color=cyan text={859}
+annulus(127.80,1290.05,21.18,28.23) # color=yellow
+circle(2855.29,105.04,10.59) # color=cyan text={58}
 annulus(2855.29,105.04,21.18,28.23) # color=yellow
-circle(1039.69,1725.64,8.47) # color=cyan text={2515}
-annulus(1039.69,1725.64,21.18,28.23) # color=yellow
-circle(2134.42,1362.64,8.47) # color=cyan text={2022}
-annulus(2134.42,1362.64,21.18,28.23) # color=yellow
-circle(2900.38,1428.36,8.47) # color=cyan text={2124}
+circle(595.83,616.11,10.59) # color=cyan text={408}
+annulus(595.83,616.11,21.18,28.23) # color=yellow
+circle(734.14,1161.65,10.59) # color=cyan text={769}
+annulus(734.14,1161.65,21.18,28.23) # color=yellow
+circle(2127.91,420.04,10.59) # color=cyan text={286}
+annulus(2127.91,420.04,21.18,28.23) # color=yellow
+circle(1809.94,128.02,10.59) # color=cyan text={77}
+annulus(1809.94,128.02,21.18,28.23) # color=yellow
+circle(140.23,296.54,10.59) # color=cyan text={188}
+annulus(140.23,296.54,21.18,28.23) # color=yellow
+circle(2900.38,1428.36,10.59) # color=cyan text={961}
 annulus(2900.38,1428.36,21.18,28.23) # color=yellow
-circle(348.57,769.38,8.47) # color=cyan text={1101}
-annulus(348.57,769.38,21.18,28.23) # color=yellow
-circle(599.98,39.35,8.47) # color=cyan text={39}
-annulus(599.98,39.35,21.18,28.23) # color=yellow
-circle(748.18,1144.20,8.47) # color=cyan text={1673}
-annulus(748.18,1144.20,21.18,28.23) # color=yellow
-circle(1112.00,508.57,8.47) # color=cyan text={722}
-annulus(1112.00,508.57,21.18,28.23) # color=yellow
-circle(1588.48,882.44,8.47) # color=cyan text={1274}
-annulus(1588.48,882.44,21.18,28.23) # color=yellow
-circle(2177.70,1095.75,8.47) # color=cyan text={1602}
-annulus(2177.70,1095.75,21.18,28.23) # color=yellow
-circle(43.73,1742.52,8.47) # color=cyan text={2537}
-annulus(43.73,1742.52,21.18,28.23) # color=yellow
-circle(2756.47,683.53,8.47) # color=cyan text={969}
+circle(1296.78,404.21,10.59) # color=cyan text={274}
+annulus(1296.78,404.21,21.18,28.23) # color=yellow
+circle(76.23,243.52,10.59) # color=cyan text={153}
+annulus(76.23,243.52,21.18,28.23) # color=yellow
+circle(894.27,1166.70,10.59) # color=cyan text={774}
+annulus(894.27,1166.70,21.18,28.23) # color=yellow
+circle(725.23,1841.18,10.59) # color=cyan text={1175}
+annulus(725.23,1841.18,21.18,28.23) # color=yellow
+circle(690.29,510.90,10.59) # color=cyan text={344}
+annulus(690.29,510.90,21.18,28.23) # color=yellow
+circle(1314.55,1666.64,10.59) # color=cyan text={1085}
+annulus(1314.55,1666.64,21.18,28.23) # color=yellow
+circle(423.02,1365.36,10.59) # color=cyan text={919}
+annulus(423.02,1365.36,21.18,28.23) # color=yellow
+circle(2756.47,683.53,10.59) # color=cyan text={441}
 annulus(2756.47,683.53,21.18,28.23) # color=yellow
-circle(983.42,428.94,8.47) # color=cyan text={598}
-annulus(983.42,428.94,21.18,28.23) # color=yellow
-circle(648.08,471.39,8.47) # color=cyan text={658}
-annulus(648.08,471.39,21.18,28.23) # color=yellow
-circle(1957.21,1872.54,8.47) # color=cyan text={2726}
-annulus(1957.21,1872.54,21.18,28.23) # color=yellow
-circle(856.97,1042.45,8.47) # color=cyan text={1521}
-annulus(856.97,1042.45,21.18,28.23) # color=yellow
-circle(2567.75,437.27,8.47) # color=cyan text={613}
+circle(1192.78,1327.41,10.59) # color=cyan text={889}
+annulus(1192.78,1327.41,21.18,28.23) # color=yellow
+circle(599.98,39.35,10.59) # color=cyan text={19}
+annulus(599.98,39.35,21.18,28.23) # color=yellow
+circle(411.52,1338.39,10.59) # color=cyan text={897}
+annulus(411.52,1338.39,21.18,28.23) # color=yellow
+circle(2134.42,1362.64,10.59) # color=cyan text={917}
+annulus(2134.42,1362.64,21.18,28.23) # color=yellow
+circle(1112.00,508.57,10.59) # color=cyan text={342}
+annulus(1112.00,508.57,21.18,28.23) # color=yellow
+circle(2567.75,437.27,10.59) # color=cyan text={300}
 annulus(2567.75,437.27,21.18,28.23) # color=yellow
-circle(1295.45,33.70,8.47) # color=cyan text={23}
-annulus(1295.45,33.70,21.18,28.23) # color=yellow
-circle(3040.09,407.34,8.47) # color=cyan text={567}
+circle(1039.69,1725.64,10.59) # color=cyan text={1114}
+annulus(1039.69,1725.64,21.18,28.23) # color=yellow
+circle(3040.09,407.34,10.59) # color=cyan text={280}
 annulus(3040.09,407.34,21.18,28.23) # color=yellow
-circle(766.81,1164.35,8.47) # color=cyan text={1711}
-annulus(766.81,1164.35,21.18,28.23) # color=yellow
-circle(890.77,683.00,8.47) # color=cyan text={968}
-annulus(890.77,683.00,21.18,28.23) # color=yellow
-circle(2404.26,93.46,8.47) # color=cyan text={103}
+circle(648.08,471.39,10.59) # color=cyan text={314}
+annulus(648.08,471.39,21.18,28.23) # color=yellow
+circle(348.57,769.38,10.59) # color=cyan text={509}
+annulus(348.57,769.38,21.18,28.23) # color=yellow
+circle(2177.70,1095.75,10.59) # color=cyan text={723}
+annulus(2177.70,1095.75,21.18,28.23) # color=yellow
+circle(983.42,428.94,10.59) # color=cyan text={292}
+annulus(983.42,428.94,21.18,28.23) # color=yellow
+circle(1588.48,882.44,10.59) # color=cyan text={586}
+annulus(1588.48,882.44,21.18,28.23) # color=yellow
+circle(1281.15,390.28,10.59) # color=cyan text={264}
+annulus(1281.15,390.28,21.18,28.23) # color=yellow
+circle(1295.45,33.70,10.59) # color=cyan text={8}
+annulus(1295.45,33.70,21.18,28.23) # color=yellow
+circle(2404.26,93.46,10.59) # color=cyan text={49}
 annulus(2404.26,93.46,21.18,28.23) # color=yellow
-circle(2001.48,1501.66,8.47) # color=cyan text={2223}
-annulus(2001.48,1501.66,21.18,28.23) # color=yellow
-circle(1655.59,1454.10,8.47) # color=cyan text={2154}
-annulus(1655.59,1454.10,21.18,28.23) # color=yellow
-circle(252.44,1634.42,8.47) # color=cyan text={2395}
-annulus(252.44,1634.42,21.18,28.23) # color=yellow
-circle(960.27,1204.14,8.47) # color=cyan text={1773}
-annulus(960.27,1204.14,21.18,28.23) # color=yellow
-circle(2530.52,1996.75,8.47) # color=cyan text={2905}
-annulus(2530.52,1996.75,21.18,28.23) # color=yellow
-circle(2323.00,2045.18,8.47) # color=cyan text={2959}
-annulus(2323.00,2045.18,21.18,28.23) # color=yellow
-circle(679.29,393.50,8.47) # color=cyan text={549}
+circle(932.90,761.17,10.59) # color=cyan text={506}
+annulus(932.90,761.17,21.18,28.23) # color=yellow
+circle(856.97,1042.45,10.59) # color=cyan text={686}
+annulus(856.97,1042.45,21.18,28.23) # color=yellow
+circle(1957.21,1872.54,10.59) # color=cyan text={1190}
+annulus(1957.21,1872.54,21.18,28.23) # color=yellow
+circle(679.29,393.50,10.59) # color=cyan text={268}
 annulus(679.29,393.50,21.18,28.23) # color=yellow
-circle(277.45,687.60,8.47) # color=cyan text={975}
-annulus(277.45,687.60,21.18,28.23) # color=yellow
-circle(1350.60,578.65,8.47) # color=cyan text={819}
-annulus(1350.60,578.65,21.18,28.23) # color=yellow
-circle(301.13,811.88,8.47) # color=cyan text={1175}
-annulus(301.13,811.88,21.18,28.23) # color=yellow
-circle(562.11,1346.17,8.47) # color=cyan text={1998}
-annulus(562.11,1346.17,21.18,28.23) # color=yellow
-circle(622.87,1014.48,8.47) # color=cyan text={1480}
-annulus(622.87,1014.48,21.18,28.23) # color=yellow
-circle(1814.14,723.90,8.47) # color=cyan text={1032}
-annulus(1814.14,723.90,21.18,28.23) # color=yellow
-circle(2726.80,184.48,8.47) # color=cyan text={243}
-annulus(2726.80,184.48,21.18,28.23) # color=yellow
-circle(2472.23,516.85,8.47) # color=cyan text={737}
-annulus(2472.23,516.85,21.18,28.23) # color=yellow
-circle(708.76,1651.59,8.47) # color=cyan text={2419}
-annulus(708.76,1651.59,21.18,28.23) # color=yellow
-circle(1339.86,43.45,8.47) # color=cyan text={42}
-annulus(1339.86,43.45,21.18,28.23) # color=yellow
-circle(754.66,48.64,8.47) # color=cyan text={49}
-annulus(754.66,48.64,21.18,28.23) # color=yellow
-circle(1363.92,1358.21,8.47) # color=cyan text={2011}
-annulus(1363.92,1358.21,21.18,28.23) # color=yellow
-circle(3021.11,1612.30,8.47) # color=cyan text={2369}
-annulus(3021.11,1612.30,21.18,28.23) # color=yellow
-circle(3091.89,746.35,8.47) # color=cyan text={1065}
+circle(2530.52,1996.75,10.59) # color=cyan text={1258}
+annulus(2530.52,1996.75,21.18,28.23) # color=yellow
+circle(748.18,1144.20,10.59) # color=cyan text={755}
+annulus(748.18,1144.20,21.18,28.23) # color=yellow
+circle(2323.00,2045.18,10.59) # color=cyan text={1277}
+annulus(2323.00,2045.18,21.18,28.23) # color=yellow
+circle(3091.89,746.35,10.59) # color=cyan text={492}
 annulus(3091.89,746.35,21.18,28.23) # color=yellow
-circle(2736.46,598.09,8.47) # color=cyan text={844}
-annulus(2736.46,598.09,21.18,28.23) # color=yellow
-circle(980.93,626.04,8.47) # color=cyan text={886}
+circle(2726.80,184.48,10.59) # color=cyan text={118}
+annulus(2726.80,184.48,21.18,28.23) # color=yellow
+circle(890.77,683.00,10.59) # color=cyan text={440}
+annulus(890.77,683.00,21.18,28.23) # color=yellow
+circle(766.81,1164.35,10.59) # color=cyan text={772}
+annulus(766.81,1164.35,21.18,28.23) # color=yellow
+circle(2001.48,1501.66,10.59) # color=cyan text={1000}
+annulus(2001.48,1501.66,21.18,28.23) # color=yellow
+circle(960.27,1204.14,10.59) # color=cyan text={799}
+annulus(960.27,1204.14,21.18,28.23) # color=yellow
+circle(980.93,626.04,10.59) # color=cyan text={412}
 annulus(980.93,626.04,21.18,28.23) # color=yellow
-circle(2889.09,1264.02,8.47) # color=cyan text={1867}
+circle(2736.46,598.09,10.59) # color=cyan text={397}
+annulus(2736.46,598.09,21.18,28.23) # color=yellow
+circle(3021.11,1612.30,10.59) # color=cyan text={1057}
+annulus(3021.11,1612.30,21.18,28.23) # color=yellow
+circle(1339.86,43.45,10.59) # color=cyan text={22}
+annulus(1339.86,43.45,21.18,28.23) # color=yellow
+circle(252.44,1634.42,10.59) # color=cyan text={1065}
+annulus(252.44,1634.42,21.18,28.23) # color=yellow
+circle(562.11,1346.17,10.59) # color=cyan text={904}
+annulus(562.11,1346.17,21.18,28.23) # color=yellow
+circle(1655.59,1454.10,10.59) # color=cyan text={972}
+annulus(1655.59,1454.10,21.18,28.23) # color=yellow
+circle(2472.23,516.85,10.59) # color=cyan text={346}
+annulus(2472.23,516.85,21.18,28.23) # color=yellow
+circle(277.45,687.60,10.59) # color=cyan text={445}
+annulus(277.45,687.60,21.18,28.23) # color=yellow
+circle(1814.14,723.90,10.59) # color=cyan text={479}
+annulus(1814.14,723.90,21.18,28.23) # color=yellow
+circle(1350.60,578.65,10.59) # color=cyan text={387}
+annulus(1350.60,578.65,21.18,28.23) # color=yellow
+circle(2889.09,1264.02,10.59) # color=cyan text={846}
 annulus(2889.09,1264.02,21.18,28.23) # color=yellow
-circle(926.44,878.52,8.47) # color=cyan text={1268}
-annulus(926.44,878.52,21.18,28.23) # color=yellow
-circle(317.02,1497.89,8.47) # color=cyan text={2214}
-annulus(317.02,1497.89,21.18,28.23) # color=yellow
-circle(320.46,107.36,8.47) # color=cyan text={121}
-annulus(320.46,107.36,21.18,28.23) # color=yellow
-circle(486.22,251.36,8.47) # color=cyan text={334}
-annulus(486.22,251.36,21.18,28.23) # color=yellow
-circle(2457.99,1445.85,8.47) # color=cyan text={2147}
-annulus(2457.99,1445.85,21.18,28.23) # color=yellow
-circle(2836.53,234.95,8.47) # color=cyan text={311}
+circle(43.73,1742.52,10.59) # color=cyan text={1123}
+annulus(43.73,1742.52,21.18,28.23) # color=yellow
+circle(301.13,811.88,10.59) # color=cyan text={537}
+annulus(301.13,811.88,21.18,28.23) # color=yellow
+circle(2836.53,234.95,10.59) # color=cyan text={146}
 annulus(2836.53,234.95,21.18,28.23) # color=yellow
-circle(386.37,129.90,8.47) # color=cyan text={164}
-annulus(386.37,129.90,21.18,28.23) # color=yellow
-circle(1277.28,1838.12,8.47) # color=cyan text={2668}
-annulus(1277.28,1838.12,21.18,28.23) # color=yellow
-circle(161.62,375.06,8.47) # color=cyan text={519}
-annulus(161.62,375.06,21.18,28.23) # color=yellow
-circle(2048.82,1694.06,8.47) # color=cyan text={2472}
-annulus(2048.82,1694.06,21.18,28.23) # color=yellow
-circle(1368.63,916.03,8.47) # color=cyan text={1311}
-annulus(1368.63,916.03,21.18,28.23) # color=yellow
-circle(83.59,1350.27,8.47) # color=cyan text={2001}
-annulus(83.59,1350.27,21.18,28.23) # color=yellow
-circle(2565.12,1647.09,8.47) # color=cyan text={2412}
-annulus(2565.12,1647.09,21.18,28.23) # color=yellow
-circle(2518.25,1316.45,8.47) # color=cyan text={1948}
-annulus(2518.25,1316.45,21.18,28.23) # color=yellow
-circle(1426.95,717.51,8.47) # color=cyan text={1021}
-annulus(1426.95,717.51,21.18,28.23) # color=yellow
-circle(1310.24,759.05,8.47) # color=cyan text={1087}
-annulus(1310.24,759.05,21.18,28.23) # color=yellow
-circle(928.43,1253.49,8.47) # color=cyan text={1846}
-annulus(928.43,1253.49,21.18,28.23) # color=yellow
-circle(2012.02,44.53,8.47) # color=cyan text={46}
-annulus(2012.02,44.53,21.18,28.23) # color=yellow
-circle(255.24,272.22,8.47) # color=cyan text={361}
-annulus(255.24,272.22,21.18,28.23) # color=yellow
-circle(208.61,408.19,8.47) # color=cyan text={565}
-annulus(208.61,408.19,21.18,28.23) # color=yellow
-circle(3020.89,1831.86,8.47) # color=cyan text={2661}
+circle(622.87,1014.48,10.59) # color=cyan text={666}
+annulus(622.87,1014.48,21.18,28.23) # color=yellow
+circle(754.66,48.64,10.59) # color=cyan text={26}
+annulus(754.66,48.64,21.18,28.23) # color=yellow
+circle(1149.87,1981.31,10.59) # color=cyan text={1247}
+annulus(1149.87,1981.31,21.18,28.23) # color=yellow
+circle(2457.99,1445.85,10.59) # color=cyan text={969}
+annulus(2457.99,1445.85,21.18,28.23) # color=yellow
+circle(708.76,1651.59,10.59) # color=cyan text={1075}
+annulus(708.76,1651.59,21.18,28.23) # color=yellow
+circle(2032.33,1521.97,10.59) # color=cyan text={1015}
+annulus(2032.33,1521.97,21.18,28.23) # color=yellow
+circle(1363.92,1358.21,10.59) # color=cyan text={911}
+annulus(1363.92,1358.21,21.18,28.23) # color=yellow
+circle(3020.89,1831.86,10.59) # color=cyan text={1171}
 annulus(3020.89,1831.86,21.18,28.23) # color=yellow
-circle(225.34,635.30,8.47) # color=cyan text={903}
-annulus(225.34,635.30,21.18,28.23) # color=yellow
-circle(1936.43,346.88,8.47) # color=cyan text={466}
+circle(926.44,878.52,10.59) # color=cyan text={582}
+annulus(926.44,878.52,21.18,28.23) # color=yellow
+circle(386.37,129.90,10.59) # color=cyan text={79}
+annulus(386.37,129.90,21.18,28.23) # color=yellow
+circle(2012.02,44.53,10.59) # color=cyan text={24}
+annulus(2012.02,44.53,21.18,28.23) # color=yellow
+circle(486.22,251.36,10.59) # color=cyan text={160}
+annulus(486.22,251.36,21.18,28.23) # color=yellow
+circle(317.02,1497.89,10.59) # color=cyan text={995}
+annulus(317.02,1497.89,21.18,28.23) # color=yellow
+circle(255.24,272.22,10.59) # color=cyan text={168}
+annulus(255.24,272.22,21.18,28.23) # color=yellow
+circle(2565.12,1647.09,10.59) # color=cyan text={1071}
+annulus(2565.12,1647.09,21.18,28.23) # color=yellow
+circle(1277.28,1838.12,10.59) # color=cyan text={1174}
+annulus(1277.28,1838.12,21.18,28.23) # color=yellow
+circle(881.33,358.25,10.59) # color=cyan text={227}
+annulus(881.33,358.25,21.18,28.23) # color=yellow
+circle(320.46,107.36,10.59) # color=cyan text={59}
+annulus(320.46,107.36,21.18,28.23) # color=yellow
+circle(161.62,375.06,10.59) # color=cyan text={248}
+annulus(161.62,375.06,21.18,28.23) # color=yellow
+circle(2048.82,1694.06,10.59) # color=cyan text={1097}
+annulus(2048.82,1694.06,21.18,28.23) # color=yellow
+circle(1936.43,346.88,10.59) # color=cyan text={220}
 annulus(1936.43,346.88,21.18,28.23) # color=yellow
-circle(2129.38,384.07,8.47) # color=cyan text={536}
-annulus(2129.38,384.07,21.18,28.23) # color=yellow
-circle(851.68,427.21,8.47) # color=cyan text={594}
+circle(208.61,408.19,10.59) # color=cyan text={278}
+annulus(208.61,408.19,21.18,28.23) # color=yellow
+circle(1368.63,916.03,10.59) # color=cyan text={603}
+annulus(1368.63,916.03,21.18,28.23) # color=yellow
+circle(1310.24,759.05,10.59) # color=cyan text={504}
+annulus(1310.24,759.05,21.18,28.23) # color=yellow
+circle(225.34,635.30,10.59) # color=cyan text={420}
+annulus(225.34,635.30,21.18,28.23) # color=yellow
+circle(1426.95,717.51,10.59) # color=cyan text={472}
+annulus(1426.95,717.51,21.18,28.23) # color=yellow
+circle(2518.25,1316.45,10.59) # color=cyan text={880}
+annulus(2518.25,1316.45,21.18,28.23) # color=yellow
+circle(2655.44,263.10,10.59) # color=cyan text={164}
+annulus(2655.44,263.10,21.18,28.23) # color=yellow
+circle(851.68,427.21,10.59) # color=cyan text={290}
 annulus(851.68,427.21,21.18,28.23) # color=yellow
-circle(840.07,979.27,8.47) # color=cyan text={1420}
-annulus(840.07,979.27,21.18,28.23) # color=yellow
-circle(1631.11,1792.82,8.47) # color=cyan text={2603}
-annulus(1631.11,1792.82,21.18,28.23) # color=yellow
-circle(1787.39,799.97,8.47) # color=cyan text={1157}
-annulus(1787.39,799.97,21.18,28.23) # color=yellow
-circle(592.16,1413.14,8.47) # color=cyan text={2103}
-annulus(592.16,1413.14,21.18,28.23) # color=yellow
-circle(836.80,1519.25,8.47) # color=cyan text={2250}
-annulus(836.80,1519.25,21.18,28.23) # color=yellow
-circle(1456.58,1554.38,8.47) # color=cyan text={2296}
-annulus(1456.58,1554.38,21.18,28.23) # color=yellow
-circle(1391.48,98.31,8.47) # color=cyan text={109}
-annulus(1391.48,98.31,21.18,28.23) # color=yellow
-circle(2035.36,1652.10,8.47) # color=cyan text={2420}
-annulus(2035.36,1652.10,21.18,28.23) # color=yellow
-circle(853.35,718.85,8.47) # color=cyan text={1024}
-annulus(853.35,718.85,21.18,28.23) # color=yellow
-circle(1192.38,1417.28,8.47) # color=cyan text={2109}
-annulus(1192.38,1417.28,21.18,28.23) # color=yellow
-circle(1165.85,811.16,8.47) # color=cyan text={1172}
-annulus(1165.85,811.16,21.18,28.23) # color=yellow
-circle(414.43,1490.39,8.47) # color=cyan text={2205}
-annulus(414.43,1490.39,21.18,28.23) # color=yellow
-circle(2947.32,1390.13,8.47) # color=cyan text={2067}
+circle(83.59,1350.27,10.59) # color=cyan text={906}
+annulus(83.59,1350.27,21.18,28.23) # color=yellow
+circle(2129.38,384.07,10.59) # color=cyan text={261}
+annulus(2129.38,384.07,21.18,28.23) # color=yellow
+circle(928.43,1253.49,10.59) # color=cyan text={833}
+annulus(928.43,1253.49,21.18,28.23) # color=yellow
+circle(2947.32,1390.13,10.59) # color=cyan text={937}
 annulus(2947.32,1390.13,21.18,28.23) # color=yellow
-circle(1809.82,97.27,8.47) # color=cyan text={107}
-annulus(1809.82,97.27,21.18,28.23) # color=yellow
-circle(1076.10,723.15,8.47) # color=cyan text={1030}
-annulus(1076.10,723.15,21.18,28.23) # color=yellow
-circle(800.09,169.53,8.47) # color=cyan text={221}
-annulus(800.09,169.53,21.18,28.23) # color=yellow
-circle(2469.42,100.60,8.47) # color=cyan text={112}
-annulus(2469.42,100.60,21.18,28.23) # color=yellow
-circle(2213.25,1731.57,8.47) # color=cyan text={2524}
-annulus(2213.25,1731.57,21.18,28.23) # color=yellow
-circle(2952.20,1336.40,8.47) # color=cyan text={1978}
+circle(2952.20,1336.40,10.59) # color=cyan text={896}
 annulus(2952.20,1336.40,21.18,28.23) # color=yellow
-circle(742.25,213.86,8.47) # color=cyan text={288}
-annulus(742.25,213.86,21.18,28.23) # color=yellow
-circle(1647.21,391.49,8.47) # color=cyan text={545}
-annulus(1647.21,391.49,21.18,28.23) # color=yellow
-circle(1681.12,875.56,8.47) # color=cyan text={1266}
-annulus(1681.12,875.56,21.18,28.23) # color=yellow
-circle(2267.08,1638.49,8.47) # color=cyan text={2400}
-annulus(2267.08,1638.49,21.18,28.23) # color=yellow
-circle(961.59,1732.12,8.47) # color=cyan text={2526}
-annulus(961.59,1732.12,21.18,28.23) # color=yellow
-circle(530.36,35.82,8.47) # color=cyan text={30}
-annulus(530.36,35.82,21.18,28.23) # color=yellow
-circle(158.26,1625.25,8.47) # color=cyan text={2384}
-annulus(158.26,1625.25,21.18,28.23) # color=yellow
-circle(1642.47,935.70,8.47) # color=cyan text={1350}
-annulus(1642.47,935.70,21.18,28.23) # color=yellow
-circle(1043.64,218.99,8.47) # color=cyan text={297}
-annulus(1043.64,218.99,21.18,28.23) # color=yellow
-circle(935.84,1074.14,8.47) # color=cyan text={1572}
-annulus(935.84,1074.14,21.18,28.23) # color=yellow
-circle(2174.49,1647.80,8.47) # color=cyan text={2414}
-annulus(2174.49,1647.80,21.18,28.23) # color=yellow
-circle(2702.89,1333.52,8.47) # color=cyan text={1974}
-annulus(2702.89,1333.52,21.18,28.23) # color=yellow
-circle(210.83,474.99,8.47) # color=cyan text={668}
-annulus(210.83,474.99,21.18,28.23) # color=yellow
-circle(2904.48,1598.38,8.47) # color=cyan text={2351}
-annulus(2904.48,1598.38,21.18,28.23) # color=yellow
-circle(1737.79,605.49,8.47) # color=cyan text={852}
-annulus(1737.79,605.49,21.18,28.23) # color=yellow
-circle(814.25,1516.32,8.47) # color=cyan text={2244}
-annulus(814.25,1516.32,21.18,28.23) # color=yellow
-circle(1611.74,1765.51,8.47) # color=cyan text={2565}
-annulus(1611.74,1765.51,21.18,28.23) # color=yellow
-circle(3047.89,59.47,8.47) # color=cyan text={58}
+circle(2430.14,976.95,10.59) # color=cyan text={639}
+annulus(2430.14,976.95,21.18,28.23) # color=yellow
+circle(1787.39,799.97,10.59) # color=cyan text={530}
+annulus(1787.39,799.97,21.18,28.23) # color=yellow
+circle(2469.42,100.60,10.59) # color=cyan text={54}
+annulus(2469.42,100.60,21.18,28.23) # color=yellow
+circle(1391.48,98.31,10.59) # color=cyan text={52}
+annulus(1391.48,98.31,21.18,28.23) # color=yellow
+circle(1631.11,1792.82,10.59) # color=cyan text={1150}
+annulus(1631.11,1792.82,21.18,28.23) # color=yellow
+circle(3047.89,59.47,10.59) # color=cyan text={30}
 annulus(3047.89,59.47,21.18,28.23) # color=yellow
-circle(678.34,114.85,8.47) # color=cyan text={137}
-annulus(678.34,114.85,21.18,28.23) # color=yellow
-circle(720.19,1089.94,8.47) # color=cyan text={1595}
-annulus(720.19,1089.94,21.18,28.23) # color=yellow
-circle(1678.49,201.19,8.47) # color=cyan text={263}
-annulus(1678.49,201.19,21.18,28.23) # color=yellow
-circle(2088.10,1430.58,8.47) # color=cyan text={2128}
-annulus(2088.10,1430.58,21.18,28.23) # color=yellow
-circle(1320.30,944.64,8.47) # color=cyan text={1366}
-annulus(1320.30,944.64,21.18,28.23) # color=yellow
-circle(2289.29,36.32,8.47) # color=cyan text={33}
-annulus(2289.29,36.32,21.18,28.23) # color=yellow
-circle(504.82,482.77,8.47) # color=cyan text={678}
-annulus(504.82,482.77,21.18,28.23) # color=yellow
-circle(2451.39,1844.75,8.47) # color=cyan text={2681}
-annulus(2451.39,1844.75,21.18,28.23) # color=yellow
-circle(1197.53,1210.80,8.47) # color=cyan text={1790}
-annulus(1197.53,1210.80,21.18,28.23) # color=yellow
-circle(2773.14,1498.98,8.47) # color=cyan text={2217}
-annulus(2773.14,1498.98,21.18,28.23) # color=yellow
-circle(592.08,872.45,8.47) # color=cyan text={1261}
-annulus(592.08,872.45,21.18,28.23) # color=yellow
-circle(1361.78,875.54,8.47) # color=cyan text={1265}
-annulus(1361.78,875.54,21.18,28.23) # color=yellow
-circle(206.28,190.22,8.47) # color=cyan text={249}
-annulus(206.28,190.22,21.18,28.23) # color=yellow
-circle(87.57,781.28,8.47) # color=cyan text={1121}
-annulus(87.57,781.28,21.18,28.23) # color=yellow
-circle(1669.11,75.88,8.47) # color=cyan text={83}
-annulus(1669.11,75.88,21.18,28.23) # color=yellow
-circle(1172.15,1373.66,8.47) # color=cyan text={2041}
-annulus(1172.15,1373.66,21.18,28.23) # color=yellow
-circle(1479.11,442.67,8.47) # color=cyan text={619}
+circle(840.07,979.27,10.59) # color=cyan text={642}
+annulus(840.07,979.27,21.18,28.23) # color=yellow
+circle(1456.58,1554.38,10.59) # color=cyan text={1030}
+annulus(1456.58,1554.38,21.18,28.23) # color=yellow
+circle(2213.25,1731.57,10.59) # color=cyan text={1117}
+annulus(2213.25,1731.57,21.18,28.23) # color=yellow
+circle(800.09,169.53,10.59) # color=cyan text={110}
+annulus(800.09,169.53,21.18,28.23) # color=yellow
+circle(2035.36,1652.10,10.59) # color=cyan text={1076}
+annulus(2035.36,1652.10,21.18,28.23) # color=yellow
+circle(836.80,1519.25,10.59) # color=cyan text={1013}
+annulus(836.80,1519.25,21.18,28.23) # color=yellow
+circle(1192.38,1417.28,10.59) # color=cyan text={955}
+annulus(1192.38,1417.28,21.18,28.23) # color=yellow
+circle(1809.82,97.27,10.59) # color=cyan text={51}
+annulus(1809.82,97.27,21.18,28.23) # color=yellow
+circle(853.35,718.85,10.59) # color=cyan text={475}
+annulus(853.35,718.85,21.18,28.23) # color=yellow
+circle(592.16,1413.14,10.59) # color=cyan text={953}
+annulus(592.16,1413.14,21.18,28.23) # color=yellow
+circle(530.36,35.82,10.59) # color=cyan text={13}
+annulus(530.36,35.82,21.18,28.23) # color=yellow
+circle(1647.21,391.49,10.59) # color=cyan text={266}
+annulus(1647.21,391.49,21.18,28.23) # color=yellow
+circle(2904.48,1598.38,10.59) # color=cyan text={1049}
+annulus(2904.48,1598.38,21.18,28.23) # color=yellow
+circle(1076.10,723.15,10.59) # color=cyan text={477}
+annulus(1076.10,723.15,21.18,28.23) # color=yellow
+circle(1165.85,811.16,10.59) # color=cyan text={536}
+annulus(1165.85,811.16,21.18,28.23) # color=yellow
+circle(414.43,1490.39,10.59) # color=cyan text={993}
+annulus(414.43,1490.39,21.18,28.23) # color=yellow
+circle(1043.64,218.99,10.59) # color=cyan text={140}
+annulus(1043.64,218.99,21.18,28.23) # color=yellow
+circle(1479.11,442.67,10.59) # color=cyan text={304}
 annulus(1479.11,442.67,21.18,28.23) # color=yellow
-circle(2565.90,571.47,8.47) # color=cyan text={805}
-annulus(2565.90,571.47,21.18,28.23) # color=yellow
-circle(2782.85,150.80,8.47) # color=cyan text={192}
-annulus(2782.85,150.80,21.18,28.23) # color=yellow
-circle(1924.06,1383.66,8.47) # color=cyan text={2052}
-annulus(1924.06,1383.66,21.18,28.23) # color=yellow
-circle(1570.71,368.46,8.47) # color=cyan text={504}
-annulus(1570.71,368.46,21.18,28.23) # color=yellow
-circle(1175.05,1068.57,8.47) # color=cyan text={1567}
-annulus(1175.05,1068.57,21.18,28.23) # color=yellow
-circle(412.57,112.54,8.47) # color=cyan text={131}
-annulus(412.57,112.54,21.18,28.23) # color=yellow
-circle(1215.74,391.42,8.47) # color=cyan text={544}
-annulus(1215.74,391.42,21.18,28.23) # color=yellow
-circle(2099.71,1171.75,8.47) # color=cyan text={1726}
-annulus(2099.71,1171.75,21.18,28.23) # color=yellow
-circle(395.08,479.10,8.47) # color=cyan text={672}
-annulus(395.08,479.10,21.18,28.23) # color=yellow
-circle(657.81,423.62,8.47) # color=cyan text={587}
-annulus(657.81,423.62,21.18,28.23) # color=yellow
-circle(1588.22,740.38,8.47) # color=cyan text={1047}
-annulus(1588.22,740.38,21.18,28.23) # color=yellow
-circle(2872.81,359.44,8.47) # color=cyan text={486}
-annulus(2872.81,359.44,21.18,28.23) # color=yellow
-circle(2784.30,1780.42,8.47) # color=cyan text={2584}
-annulus(2784.30,1780.42,21.18,28.23) # color=yellow
-circle(33.82,1095.86,8.47) # color=cyan text={1600}
-annulus(33.82,1095.86,21.18,28.23) # color=yellow
-circle(2003.37,667.84,8.47) # color=cyan text={946}
-annulus(2003.37,667.84,21.18,28.23) # color=yellow
-circle(1187.06,1241.51,8.47) # color=cyan text={1832}
-annulus(1187.06,1241.51,21.18,28.23) # color=yellow
-circle(1762.07,144.84,8.47) # color=cyan text={186}
-annulus(1762.07,144.84,21.18,28.23) # color=yellow
-circle(2754.01,2021.39,8.47) # color=cyan text={2932}
-annulus(2754.01,2021.39,21.18,28.23) # color=yellow
-circle(1811.19,949.75,8.47) # color=cyan text={1371}
-annulus(1811.19,949.75,21.18,28.23) # color=yellow
-circle(38.48,1680.55,8.47) # color=cyan text={2455}
-annulus(38.48,1680.55,21.18,28.23) # color=yellow
-circle(465.98,1534.56,8.47) # color=cyan text={2268}
-annulus(465.98,1534.56,21.18,28.23) # color=yellow
-circle(1144.30,74.17,8.47) # color=cyan text={81}
-annulus(1144.30,74.17,21.18,28.23) # color=yellow
-circle(1570.68,815.06,8.47) # color=cyan text={1176}
-annulus(1570.68,815.06,21.18,28.23) # color=yellow
-circle(1795.19,1609.74,8.47) # color=cyan text={2364}
-annulus(1795.19,1609.74,21.18,28.23) # color=yellow
-circle(1569.38,249.30,8.47) # color=cyan text={331}
-annulus(1569.38,249.30,21.18,28.23) # color=yellow
-circle(271.61,398.53,8.47) # color=cyan text={553}
-annulus(271.61,398.53,21.18,28.23) # color=yellow
-circle(1036.23,868.05,8.47) # color=cyan text={1259}
-annulus(1036.23,868.05,21.18,28.23) # color=yellow
-circle(2474.34,1369.18,8.47) # color=cyan text={2034}
-annulus(2474.34,1369.18,21.18,28.23) # color=yellow
-circle(664.32,1740.50,8.47) # color=cyan text={2535}
-annulus(664.32,1740.50,21.18,28.23) # color=yellow
-circle(263.46,122.91,8.47) # color=cyan text={153}
+circle(2267.08,1638.49,10.59) # color=cyan text={1067}
+annulus(2267.08,1638.49,21.18,28.23) # color=yellow
+circle(2702.89,1333.52,10.59) # color=cyan text={893}
+annulus(2702.89,1333.52,21.18,28.23) # color=yellow
+circle(678.34,114.85,10.59) # color=cyan text={66}
+annulus(678.34,114.85,21.18,28.23) # color=yellow
+circle(1681.12,875.56,10.59) # color=cyan text={580}
+annulus(1681.12,875.56,21.18,28.23) # color=yellow
+circle(742.25,213.86,10.59) # color=cyan text={134}
+annulus(742.25,213.86,21.18,28.23) # color=yellow
+circle(263.46,122.91,10.59) # color=cyan text={71}
 annulus(263.46,122.91,21.18,28.23) # color=yellow
-circle(2758.53,322.56,8.47) # color=cyan text={438}
-annulus(2758.53,322.56,21.18,28.23) # color=yellow
-circle(3069.71,1788.42,8.47) # color=cyan text={2596}
-annulus(3069.71,1788.42,21.18,28.23) # color=yellow
-circle(2348.15,639.08,8.47) # color=cyan text={908}
-annulus(2348.15,639.08,21.18,28.23) # color=yellow
-circle(195.54,1475.72,8.47) # color=cyan text={2185}
+circle(1642.47,935.70,10.59) # color=cyan text={616}
+annulus(1642.47,935.70,21.18,28.23) # color=yellow
+circle(395.08,479.10,10.59) # color=cyan text={321}
+annulus(395.08,479.10,21.18,28.23) # color=yellow
+circle(935.84,1074.14,10.59) # color=cyan text={712}
+annulus(935.84,1074.14,21.18,28.23) # color=yellow
+circle(961.59,1732.12,10.59) # color=cyan text={1118}
+annulus(961.59,1732.12,21.18,28.23) # color=yellow
+circle(1737.79,605.49,10.59) # color=cyan text={401}
+annulus(1737.79,605.49,21.18,28.23) # color=yellow
+circle(2773.14,1498.98,10.59) # color=cyan text={998}
+annulus(2773.14,1498.98,21.18,28.23) # color=yellow
+circle(2174.49,1647.80,10.59) # color=cyan text={1073}
+annulus(2174.49,1647.80,21.18,28.23) # color=yellow
+circle(2782.85,150.80,10.59) # color=cyan text={98}
+annulus(2782.85,150.80,21.18,28.23) # color=yellow
+circle(2289.29,36.32,10.59) # color=cyan text={16}
+annulus(2289.29,36.32,21.18,28.23) # color=yellow
+circle(1924.06,1383.66,10.59) # color=cyan text={931}
+annulus(1924.06,1383.66,21.18,28.23) # color=yellow
+circle(210.83,474.99,10.59) # color=cyan text={318}
+annulus(210.83,474.99,21.18,28.23) # color=yellow
+circle(158.26,1625.25,10.59) # color=cyan text={1060}
+annulus(158.26,1625.25,21.18,28.23) # color=yellow
+circle(1678.49,201.19,10.59) # color=cyan text={125}
+annulus(1678.49,201.19,21.18,28.23) # color=yellow
+circle(2451.39,1844.75,10.59) # color=cyan text={1179}
+annulus(2451.39,1844.75,21.18,28.23) # color=yellow
+circle(814.25,1516.32,10.59) # color=cyan text={1011}
+annulus(814.25,1516.32,21.18,28.23) # color=yellow
+circle(2565.90,571.47,10.59) # color=cyan text={380}
+annulus(2565.90,571.47,21.18,28.23) # color=yellow
+circle(2088.10,1430.58,10.59) # color=cyan text={962}
+annulus(2088.10,1430.58,21.18,28.23) # color=yellow
+circle(195.54,1475.72,10.59) # color=cyan text={988}
 annulus(195.54,1475.72,21.18,28.23) # color=yellow
-circle(182.69,254.99,8.47) # color=cyan text={338}
-annulus(182.69,254.99,21.18,28.23) # color=yellow
-circle(993.07,351.92,8.47) # color=cyan text={474}
-annulus(993.07,351.92,21.18,28.23) # color=yellow
-circle(1425.55,1054.49,8.47) # color=cyan text={1536}
-annulus(1425.55,1054.49,21.18,28.23) # color=yellow
-circle(2971.49,688.78,8.47) # color=cyan text={978}
+circle(206.28,190.22,10.59) # color=cyan text={121}
+annulus(206.28,190.22,21.18,28.23) # color=yellow
+circle(3069.71,1788.42,10.59) # color=cyan text={1145}
+annulus(3069.71,1788.42,21.18,28.23) # color=yellow
+circle(1611.74,1765.51,10.59) # color=cyan text={1133}
+annulus(1611.74,1765.51,21.18,28.23) # color=yellow
+circle(1669.11,75.88,10.59) # color=cyan text={41}
+annulus(1669.11,75.88,21.18,28.23) # color=yellow
+circle(1172.15,1373.66,10.59) # color=cyan text={926}
+annulus(1172.15,1373.66,21.18,28.23) # color=yellow
+circle(2872.81,359.44,10.59) # color=cyan text={229}
+annulus(2872.81,359.44,21.18,28.23) # color=yellow
+circle(1175.05,1068.57,10.59) # color=cyan text={710}
+annulus(1175.05,1068.57,21.18,28.23) # color=yellow
+circle(2754.01,2021.39,10.59) # color=cyan text={1267}
+annulus(2754.01,2021.39,21.18,28.23) # color=yellow
+circle(720.19,1089.94,10.59) # color=cyan text={720}
+annulus(720.19,1089.94,21.18,28.23) # color=yellow
+circle(504.82,482.77,10.59) # color=cyan text={324}
+annulus(504.82,482.77,21.18,28.23) # color=yellow
+circle(592.08,872.45,10.59) # color=cyan text={577}
+annulus(592.08,872.45,21.18,28.23) # color=yellow
+circle(2099.71,1171.75,10.59) # color=cyan text={777}
+annulus(2099.71,1171.75,21.18,28.23) # color=yellow
+circle(1197.53,1210.80,10.59) # color=cyan text={807}
+annulus(1197.53,1210.80,21.18,28.23) # color=yellow
+circle(2784.30,1780.42,10.59) # color=cyan text={1140}
+annulus(2784.30,1780.42,21.18,28.23) # color=yellow
+circle(2758.53,322.56,10.59) # color=cyan text={205}
+annulus(2758.53,322.56,21.18,28.23) # color=yellow
+circle(1570.71,368.46,10.59) # color=cyan text={239}
+annulus(1570.71,368.46,21.18,28.23) # color=yellow
+circle(1361.78,875.54,10.59) # color=cyan text={579}
+annulus(1361.78,875.54,21.18,28.23) # color=yellow
+circle(1569.38,249.30,10.59) # color=cyan text={158}
+annulus(1569.38,249.30,21.18,28.23) # color=yellow
+circle(1320.30,944.64,10.59) # color=cyan text={622}
+annulus(1320.30,944.64,21.18,28.23) # color=yellow
+circle(2003.37,667.84,10.59) # color=cyan text={435}
+annulus(2003.37,667.84,21.18,28.23) # color=yellow
+circle(412.57,112.54,10.59) # color=cyan text={63}
+annulus(412.57,112.54,21.18,28.23) # color=yellow
+circle(87.57,781.28,10.59) # color=cyan text={518}
+annulus(87.57,781.28,21.18,28.23) # color=yellow
+circle(1762.07,144.84,10.59) # color=cyan text={95}
+annulus(1762.07,144.84,21.18,28.23) # color=yellow
+circle(465.98,1534.56,10.59) # color=cyan text={1021}
+annulus(465.98,1534.56,21.18,28.23) # color=yellow
+circle(1795.19,1609.74,10.59) # color=cyan text={1055}
+annulus(1795.19,1609.74,21.18,28.23) # color=yellow
+circle(1215.74,391.42,10.59) # color=cyan text={265}
+annulus(1215.74,391.42,21.18,28.23) # color=yellow
+circle(1588.22,740.38,10.59) # color=cyan text={485}
+annulus(1588.22,740.38,21.18,28.23) # color=yellow
+circle(2971.49,688.78,10.59) # color=cyan text={447}
 annulus(2971.49,688.78,21.18,28.23) # color=yellow
-circle(974.83,1399.06,8.47) # color=cyan text={2080}
-annulus(974.83,1399.06,21.18,28.23) # color=yellow
-circle(499.22,931.45,8.47) # color=cyan text={1339}
-annulus(499.22,931.45,21.18,28.23) # color=yellow
-circle(494.72,1047.77,8.47) # color=cyan text={1525}
-annulus(494.72,1047.77,21.18,28.23) # color=yellow
-circle(54.70,954.47,8.47) # color=cyan text={1377}
-annulus(54.70,954.47,21.18,28.23) # color=yellow
-circle(767.20,1283.63,8.47) # color=cyan text={1891}
-annulus(767.20,1283.63,21.18,28.23) # color=yellow
-circle(596.77,1689.41,8.47) # color=cyan text={2466}
-annulus(596.77,1689.41,21.18,28.23) # color=yellow
-circle(1083.06,301.67,8.47) # color=cyan text={408}
-annulus(1083.06,301.67,21.18,28.23) # color=yellow
-circle(681.85,1004.15,8.47) # color=cyan text={1458}
-annulus(681.85,1004.15,21.18,28.23) # color=yellow
-circle(943.76,232.00,8.47) # color=cyan text={305}
-annulus(943.76,232.00,21.18,28.23) # color=yellow
-circle(2474.07,859.71,8.47) # color=cyan text={1247}
-annulus(2474.07,859.71,21.18,28.23) # color=yellow
-circle(505.77,781.32,8.47) # color=cyan text={1123}
-annulus(505.77,781.32,21.18,28.23) # color=yellow
-circle(1263.08,581.10,8.47) # color=cyan text={825}
-annulus(1263.08,581.10,21.18,28.23) # color=yellow
-circle(31.38,1507.78,8.47) # color=cyan text={2236}
-annulus(31.38,1507.78,21.18,28.23) # color=yellow
-circle(1468.48,1196.20,8.47) # color=cyan text={1760}
-annulus(1468.48,1196.20,21.18,28.23) # color=yellow
-circle(2170.22,1690.15,8.47) # color=cyan text={2469}
-annulus(2170.22,1690.15,21.18,28.23) # color=yellow
-circle(2457.01,1156.53,8.47) # color=cyan text={1698}
-annulus(2457.01,1156.53,21.18,28.23) # color=yellow
-circle(868.50,1540.82,8.47) # color=cyan text={2279}
-annulus(868.50,1540.82,21.18,28.23) # color=yellow
-circle(2570.44,1790.65,8.47) # color=cyan text={2602}
-annulus(2570.44,1790.65,21.18,28.23) # color=yellow
-circle(937.81,1872.60,8.47) # color=cyan text={2724}
-annulus(937.81,1872.60,21.18,28.23) # color=yellow
-circle(557.16,1460.54,8.47) # color=cyan text={2165}
-annulus(557.16,1460.54,21.18,28.23) # color=yellow
-circle(1598.74,1215.13,8.47) # color=cyan text={1796}
+circle(271.61,398.53,10.59) # color=cyan text={270}
+annulus(271.61,398.53,21.18,28.23) # color=yellow
+circle(1570.68,815.06,10.59) # color=cyan text={538}
+annulus(1570.68,815.06,21.18,28.23) # color=yellow
+circle(1811.19,949.75,10.59) # color=cyan text={625}
+annulus(1811.19,949.75,21.18,28.23) # color=yellow
+circle(657.81,423.62,10.59) # color=cyan text={289}
+annulus(657.81,423.62,21.18,28.23) # color=yellow
+circle(1144.30,74.17,10.59) # color=cyan text={40}
+annulus(1144.30,74.17,21.18,28.23) # color=yellow
+circle(2348.15,639.08,10.59) # color=cyan text={424}
+annulus(2348.15,639.08,21.18,28.23) # color=yellow
+circle(1036.23,868.05,10.59) # color=cyan text={576}
+annulus(1036.23,868.05,21.18,28.23) # color=yellow
+circle(1187.06,1241.51,10.59) # color=cyan text={825}
+annulus(1187.06,1241.51,21.18,28.23) # color=yellow
+circle(2474.34,1369.18,10.59) # color=cyan text={922}
+annulus(2474.34,1369.18,21.18,28.23) # color=yellow
+circle(38.48,1680.55,10.59) # color=cyan text={1090}
+annulus(38.48,1680.55,21.18,28.23) # color=yellow
+circle(33.82,1095.86,10.59) # color=cyan text={722}
+annulus(33.82,1095.86,21.18,28.23) # color=yellow
+circle(1425.55,1054.49,10.59) # color=cyan text={693}
+annulus(1425.55,1054.49,21.18,28.23) # color=yellow
+circle(1598.74,1215.13,10.59) # color=cyan text={812}
 annulus(1598.74,1215.13,21.18,28.23) # color=yellow
-circle(2030.46,426.36,8.47) # color=cyan text={597}
+circle(681.85,1004.15,10.59) # color=cyan text={652}
+annulus(681.85,1004.15,21.18,28.23) # color=yellow
+circle(664.32,1740.50,10.59) # color=cyan text={1121}
+annulus(664.32,1740.50,21.18,28.23) # color=yellow
+circle(2030.46,426.36,10.59) # color=cyan text={291}
 annulus(2030.46,426.36,21.18,28.23) # color=yellow
-circle(2325.85,780.45,8.47) # color=cyan text={1122}
-annulus(2325.85,780.45,21.18,28.23) # color=yellow
-circle(1044.92,1186.32,8.47) # color=cyan text={1750}
-annulus(1044.92,1186.32,21.18,28.23) # color=yellow
-circle(2394.19,1418.75,8.47) # color=cyan text={2112}
-annulus(2394.19,1418.75,21.18,28.23) # color=yellow
-circle(354.86,1160.80,8.47) # color=cyan text={1702}
-annulus(354.86,1160.80,21.18,28.23) # color=yellow
-circle(786.35,501.86,8.47) # color=cyan text={710}
-annulus(786.35,501.86,21.18,28.23) # color=yellow
-circle(309.60,442.92,8.47) # color=cyan text={618}
-annulus(309.60,442.92,21.18,28.23) # color=yellow
-circle(1789.56,969.43,8.47) # color=cyan text={1401}
-annulus(1789.56,969.43,21.18,28.23) # color=yellow
-circle(1914.55,1767.20,8.47) # color=cyan text={2571}
-annulus(1914.55,1767.20,21.18,28.23) # color=yellow
-circle(2918.78,679.02,8.47) # color=cyan text={961}
+circle(182.69,254.99,10.59) # color=cyan text={161}
+annulus(182.69,254.99,21.18,28.23) # color=yellow
+circle(1263.08,581.10,10.59) # color=cyan text={390}
+annulus(1263.08,581.10,21.18,28.23) # color=yellow
+circle(494.72,1047.77,10.59) # color=cyan text={688}
+annulus(494.72,1047.77,21.18,28.23) # color=yellow
+circle(943.76,232.00,10.59) # color=cyan text={143}
+annulus(943.76,232.00,21.18,28.23) # color=yellow
+circle(1083.06,301.67,10.59) # color=cyan text={191}
+annulus(1083.06,301.67,21.18,28.23) # color=yellow
+circle(993.07,351.92,10.59) # color=cyan text={224}
+annulus(993.07,351.92,21.18,28.23) # color=yellow
+circle(2918.78,679.02,10.59) # color=cyan text={437}
 annulus(2918.78,679.02,21.18,28.23) # color=yellow
-circle(165.72,326.25,8.47) # color=cyan text={440}
-annulus(165.72,326.25,21.18,28.23) # color=yellow
-circle(1834.85,440.65,8.47) # color=cyan text={616}
-annulus(1834.85,440.65,21.18,28.23) # color=yellow
-circle(2237.63,1640.08,8.47) # color=cyan text={2402}
-annulus(2237.63,1640.08,21.18,28.23) # color=yellow
-circle(695.16,128.33,8.47) # color=cyan text={159}
-annulus(695.16,128.33,21.18,28.23) # color=yellow
-circle(755.34,239.42,8.47) # color=cyan text={319}
-annulus(755.34,239.42,21.18,28.23) # color=yellow
-circle(1161.37,246.64,8.47) # color=cyan text={327}
-annulus(1161.37,246.64,21.18,28.23) # color=yellow
-circle(336.35,858.10,8.47) # color=cyan text={1241}
-annulus(336.35,858.10,21.18,28.23) # color=yellow
-circle(1115.88,564.93,8.47) # color=cyan text={795}
-annulus(1115.88,564.93,21.18,28.23) # color=yellow
-circle(595.42,1743.23,8.47) # color=cyan text={2540}
-annulus(595.42,1743.23,21.18,28.23) # color=yellow
-circle(115.83,1258.69,8.47) # color=cyan text={1853}
-annulus(115.83,1258.69,21.18,28.23) # color=yellow
-circle(2072.35,1701.68,8.47) # color=cyan text={2483}
-annulus(2072.35,1701.68,21.18,28.23) # color=yellow
-circle(261.96,1920.28,8.47) # color=cyan text={2796}
-annulus(261.96,1920.28,21.18,28.23) # color=yellow
-circle(2044.95,1788.06,8.47) # color=cyan text={2591}
-annulus(2044.95,1788.06,21.18,28.23) # color=yellow
-circle(3026.48,1505.64,8.47) # color=cyan text={2234}
+circle(3026.48,1505.64,10.59) # color=cyan text={1006}
 annulus(3026.48,1505.64,21.18,28.23) # color=yellow
-circle(1736.72,846.63,8.47) # color=cyan text={1227}
-annulus(1736.72,846.63,21.18,28.23) # color=yellow
-circle(1062.54,377.82,8.47) # color=cyan text={525}
-annulus(1062.54,377.82,21.18,28.23) # color=yellow
-circle(3019.99,421.22,8.47) # color=cyan text={583}
-annulus(3019.99,421.22,21.18,28.23) # color=yellow
-circle(379.01,1129.43,8.47) # color=cyan text={1643}
-annulus(379.01,1129.43,21.18,28.23) # color=yellow
-circle(1802.50,623.34,8.47) # color=cyan text={884}
-annulus(1802.50,623.34,21.18,28.23) # color=yellow
-circle(1917.90,1790.94,8.47) # color=cyan text={2599}
-annulus(1917.90,1790.94,21.18,28.23) # color=yellow
-circle(715.36,902.81,8.47) # color=cyan text={1299}
-annulus(715.36,902.81,21.18,28.23) # color=yellow
-circle(2550.32,1016.83,8.47) # color=cyan text={1485}
-annulus(2550.32,1016.83,21.18,28.23) # color=yellow
-circle(690.13,342.69,8.47) # color=cyan text={460}
-annulus(690.13,342.69,21.18,28.23) # color=yellow
-circle(1138.57,766.21,8.47) # color=cyan text={1096}
-annulus(1138.57,766.21,21.18,28.23) # color=yellow
-circle(1286.04,132.21,8.47) # color=cyan text={167}
-annulus(1286.04,132.21,21.18,28.23) # color=yellow
-circle(2437.82,1312.67,8.47) # color=cyan text={1941}
-annulus(2437.82,1312.67,21.18,28.23) # color=yellow
-circle(1165.99,1620.63,8.47) # color=cyan text={2379}
-annulus(1165.99,1620.63,21.18,28.23) # color=yellow
-circle(292.17,575.97,8.47) # color=cyan text={812}
-annulus(292.17,575.97,21.18,28.23) # color=yellow
-circle(2687.32,1171.18,8.47) # color=cyan text={1727}
-annulus(2687.32,1171.18,21.18,28.23) # color=yellow
-circle(1789.55,1391.97,8.47) # color=cyan text={2071}
-annulus(1789.55,1391.97,21.18,28.23) # color=yellow
-circle(2698.96,489.85,8.47) # color=cyan text={694}
-annulus(2698.96,489.85,21.18,28.23) # color=yellow
-circle(858.43,1389.93,8.47) # color=cyan text={2065}
-annulus(858.43,1389.93,21.18,28.23) # color=yellow
-circle(1503.09,1175.37,8.47) # color=cyan text={1736}
-annulus(1503.09,1175.37,21.18,28.23) # color=yellow
-circle(1554.41,1323.78,8.47) # color=cyan text={1961}
+circle(2325.85,780.45,10.59) # color=cyan text={519}
+annulus(2325.85,780.45,21.18,28.23) # color=yellow
+circle(2474.07,859.71,10.59) # color=cyan text={572}
+annulus(2474.07,859.71,21.18,28.23) # color=yellow
+circle(974.83,1399.06,10.59) # color=cyan text={945}
+annulus(974.83,1399.06,21.18,28.23) # color=yellow
+circle(865.90,344.73,10.59) # color=cyan text={216}
+annulus(865.90,344.73,21.18,28.23) # color=yellow
+circle(499.22,931.45,10.59) # color=cyan text={611}
+annulus(499.22,931.45,21.18,28.23) # color=yellow
+circle(2570.44,1790.65,10.59) # color=cyan text={1149}
+annulus(2570.44,1790.65,21.18,28.23) # color=yellow
+circle(2394.19,1418.75,10.59) # color=cyan text={957}
+annulus(2394.19,1418.75,21.18,28.23) # color=yellow
+circle(54.70,954.47,10.59) # color=cyan text={627}
+annulus(54.70,954.47,21.18,28.23) # color=yellow
+circle(2170.22,1690.15,10.59) # color=cyan text={1096}
+annulus(2170.22,1690.15,21.18,28.23) # color=yellow
+circle(767.20,1283.63,10.59) # color=cyan text={853}
+annulus(767.20,1283.63,21.18,28.23) # color=yellow
+circle(1789.56,969.43,10.59) # color=cyan text={634}
+annulus(1789.56,969.43,21.18,28.23) # color=yellow
+circle(2457.01,1156.53,10.59) # color=cyan text={766}
+annulus(2457.01,1156.53,21.18,28.23) # color=yellow
+circle(2028.49,1502.82,10.59) # color=cyan text={1002}
+annulus(2028.49,1502.82,21.18,28.23) # color=yellow
+circle(505.77,781.32,10.59) # color=cyan text={520}
+annulus(505.77,781.32,21.18,28.23) # color=yellow
+circle(1554.41,1323.78,10.59) # color=cyan text={886}
 annulus(1554.41,1323.78,21.18,28.23) # color=yellow
-circle(828.07,1582.58,8.47) # color=cyan text={2332}
-annulus(828.07,1582.58,21.18,28.23) # color=yellow
-circle(1590.57,494.93,8.47) # color=cyan text={706}
-annulus(1590.57,494.93,21.18,28.23) # color=yellow
-circle(1879.97,1923.30,8.47) # color=cyan text={2806}
-annulus(1879.97,1923.30,21.18,28.23) # color=yellow
-circle(615.67,818.51,8.47) # color=cyan text={1181}
-annulus(615.67,818.51,21.18,28.23) # color=yellow
-circle(2673.65,1640.74,8.47) # color=cyan text={2404}
+circle(868.50,1540.82,10.59) # color=cyan text={1025}
+annulus(868.50,1540.82,21.18,28.23) # color=yellow
+circle(354.86,1160.80,10.59) # color=cyan text={768}
+annulus(354.86,1160.80,21.18,28.23) # color=yellow
+circle(1468.48,1196.20,10.59) # color=cyan text={792}
+annulus(1468.48,1196.20,21.18,28.23) # color=yellow
+circle(31.38,1507.78,10.59) # color=cyan text={1007}
+annulus(31.38,1507.78,21.18,28.23) # color=yellow
+circle(1834.85,440.65,10.59) # color=cyan text={302}
+annulus(1834.85,440.65,21.18,28.23) # color=yellow
+circle(690.13,342.69,10.59) # color=cyan text={215}
+annulus(690.13,342.69,21.18,28.23) # color=yellow
+circle(596.77,1689.41,10.59) # color=cyan text={1095}
+annulus(596.77,1689.41,21.18,28.23) # color=yellow
+circle(557.16,1460.54,10.59) # color=cyan text={978}
+annulus(557.16,1460.54,21.18,28.23) # color=yellow
+circle(2687.32,1171.18,10.59) # color=cyan text={778}
+annulus(2687.32,1171.18,21.18,28.23) # color=yellow
+circle(2698.96,489.85,10.59) # color=cyan text={331}
+annulus(2698.96,489.85,21.18,28.23) # color=yellow
+circle(937.81,1872.60,10.59) # color=cyan text={1189}
+annulus(937.81,1872.60,21.18,28.23) # color=yellow
+circle(3019.99,421.22,10.59) # color=cyan text={287}
+annulus(3019.99,421.22,21.18,28.23) # color=yellow
+circle(786.35,501.86,10.59) # color=cyan text={338}
+annulus(786.35,501.86,21.18,28.23) # color=yellow
+circle(1417.12,835.43,10.59) # color=cyan text={555}
+annulus(1417.12,835.43,21.18,28.23) # color=yellow
+circle(1914.55,1767.20,10.59) # color=cyan text={1138}
+annulus(1914.55,1767.20,21.18,28.23) # color=yellow
+circle(2072.35,1701.68,10.59) # color=cyan text={1102}
+annulus(2072.35,1701.68,21.18,28.23) # color=yellow
+circle(1802.50,623.34,10.59) # color=cyan text={411}
+annulus(1802.50,623.34,21.18,28.23) # color=yellow
+circle(2550.32,1016.83,10.59) # color=cyan text={669}
+annulus(2550.32,1016.83,21.18,28.23) # color=yellow
+circle(1044.92,1186.32,10.59) # color=cyan text={789}
+annulus(1044.92,1186.32,21.18,28.23) # color=yellow
+circle(336.35,858.10,10.59) # color=cyan text={569}
+annulus(336.35,858.10,21.18,28.23) # color=yellow
+circle(755.34,239.42,10.59) # color=cyan text={150}
+annulus(755.34,239.42,21.18,28.23) # color=yellow
+circle(695.16,128.33,10.59) # color=cyan text={76}
+annulus(695.16,128.33,21.18,28.23) # color=yellow
+circle(309.60,442.92,10.59) # color=cyan text={303}
+annulus(309.60,442.92,21.18,28.23) # color=yellow
+circle(1161.37,246.64,10.59) # color=cyan text={156}
+annulus(1161.37,246.64,21.18,28.23) # color=yellow
+circle(292.17,575.97,10.59) # color=cyan text={384}
+annulus(292.17,575.97,21.18,28.23) # color=yellow
+circle(2044.95,1788.06,10.59) # color=cyan text={1143}
+annulus(2044.95,1788.06,21.18,28.23) # color=yellow
+circle(1115.88,564.93,10.59) # color=cyan text={375}
+annulus(1115.88,564.93,21.18,28.23) # color=yellow
+circle(1736.72,846.63,10.59) # color=cyan text={564}
+annulus(1736.72,846.63,21.18,28.23) # color=yellow
+circle(1138.57,766.21,10.59) # color=cyan text={507}
+annulus(1138.57,766.21,21.18,28.23) # color=yellow
+circle(1917.90,1790.94,10.59) # color=cyan text={1147}
+annulus(1917.90,1790.94,21.18,28.23) # color=yellow
+circle(165.72,326.25,10.59) # color=cyan text={206}
+annulus(165.72,326.25,21.18,28.23) # color=yellow
+circle(1062.54,377.82,10.59) # color=cyan text={253}
+annulus(1062.54,377.82,21.18,28.23) # color=yellow
+circle(2673.65,1640.74,10.59) # color=cyan text={1069}
 annulus(2673.65,1640.74,21.18,28.23) # color=yellow
-circle(1341.06,361.89,8.47) # color=cyan text={490}
-annulus(1341.06,361.89,21.18,28.23) # color=yellow
-circle(1486.25,1717.66,8.47) # color=cyan text={2502}
-annulus(1486.25,1717.66,21.18,28.23) # color=yellow
-circle(886.40,484.63,8.47) # color=cyan text={681}
+circle(595.42,1743.23,10.59) # color=cyan text={1126}
+annulus(595.42,1743.23,21.18,28.23) # color=yellow
+circle(379.01,1129.43,10.59) # color=cyan text={748}
+annulus(379.01,1129.43,21.18,28.23) # color=yellow
+circle(261.96,1920.28,10.59) # color=cyan text={1212}
+annulus(261.96,1920.28,21.18,28.23) # color=yellow
+circle(886.40,484.63,10.59) # color=cyan text={325}
 annulus(886.40,484.63,21.18,28.23) # color=yellow
-circle(765.47,1032.58,8.47) # color=cyan text={1505}
+circle(115.83,1258.69,10.59) # color=cyan text={840}
+annulus(115.83,1258.69,21.18,28.23) # color=yellow
+circle(765.47,1032.58,10.59) # color=cyan text={680}
 annulus(765.47,1032.58,21.18,28.23) # color=yellow
-circle(2505.05,1500.43,8.47) # color=cyan text={2221}
-annulus(2505.05,1500.43,21.18,28.23) # color=yellow
-circle(2150.62,369.16,8.47) # color=cyan text={509}
-annulus(2150.62,369.16,21.18,28.23) # color=yellow
-circle(2299.88,198.46,8.47) # color=cyan text={262}
-annulus(2299.88,198.46,21.18,28.23) # color=yellow
+circle(1789.55,1391.97,10.59) # color=cyan text={941}
+annulus(1789.55,1391.97,21.18,28.23) # color=yellow
+circle(2237.63,1640.08,10.59) # color=cyan text={1068}
+annulus(2237.63,1640.08,21.18,28.23) # color=yellow

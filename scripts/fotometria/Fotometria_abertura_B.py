@@ -10,11 +10,12 @@ from scipy.spatial import distance
 
 ARQUIVO = '/home/maju/Downloads/dados/astronometry/ls5039_B_wcs.fits'
 FWHM = 7.05857
-RAIO_AP = 1.2 * FWHM
+RAIO_AP = 1.5 * FWHM
 RAIO_IN, RAIO_OUT = 3.0 * FWHM, 4.0 * FWHM
 
-THRESHOLD_SIGMA = 3.5  
-MIN_SNR = 5.0          
+THRESHOLD_SIGMA = 5.0     
+MIN_SNR = 5.0              
+DIST_ISOLAMENTO = 1.5 * RAIO_AP 
 MAX_REGIOES_DS9 = 500  
 
 dados, header = fits.getdata(ARQUIVO, header=True)
@@ -29,6 +30,7 @@ bkg = Background2D(
 )
 dados_sub = dados - bkg.background
 _, _, std_fundo = sigma_clipped_stats(dados_sub, sigma=3.0)
+
 
 daofind = DAOStarFinder(
     fwhm=FWHM,
@@ -72,6 +74,7 @@ df = pd.DataFrame({
 
 margem = np.ceil(RAIO_OUT)
 
+# Filtro de bordas e SNR
 df = df[
     (df['X_pix'] > margem) & (df['X_pix'] < largura - margem) &
     (df['Y_pix'] > margem) & (df['Y_pix'] < altura - margem) &
@@ -83,18 +86,18 @@ if not df.empty:
     coords_pix = df[['X_pix', 'Y_pix']].values
     matriz_dist = distance.cdist(coords_pix, coords_pix)
     np.fill_diagonal(matriz_dist, np.inf)
-    df = df[np.min(matriz_dist, axis=1) >= RAIO_IN]
+    df = df[np.min(matriz_dist, axis=1) >= DIST_ISOLAMENTO]
 
 df = df.sort_values(by='Fluxo', ascending=False).reset_index(drop=True)
 
-df.to_csv('fotometria_abertura_B.csv', index=False)
+# Save
+df.to_csv('fotometria_limpa_B.csv', index=False)
 
 df_500 = df.head(MAX_REGIOES_DS9)
-
 with open('regioes_aneis_B.reg', 'w') as f:
     f.write('global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1 source=1\nimage\n')
     for _, row in df_500.iterrows():
-        f.write(f"circle({row['X_pix']+1:.2f},{row['Y_pix']+1:.2f},{RAIO_AP:.2f}) # color=cyan text={{{int(row['ID'])-0}}}\n") 
+        f.write(f"circle({row['X_pix']+1:.2f},{row['Y_pix']+1:.2f},{RAIO_AP:.2f}) # color=cyan text={{{int(row['ID'])}}}\n") 
         f.write(f"annulus({row['X_pix']+1:.2f},{row['Y_pix']+1:.2f},{RAIO_IN:.2f},{RAIO_OUT:.2f}) # color=yellow\n")
 
-print(f'Sucesso! {len(df)} estrelas salvas no CSV e as {len(df_500)} mais brilhantes salvas no arquivo .reg.')
+print(f'Sucesso! {len(df)} estrelas detectadas e salvas.')
