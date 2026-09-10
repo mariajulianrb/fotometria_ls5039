@@ -87,7 +87,7 @@ if not df.empty:
 
 df = df.sort_values(by='Fluxo', ascending=False).reset_index(drop=True)
 
-df.to_csv('fotometria_final_B.csv', index=False)
+df.to_csv('fotometria_abertura_B.csv', index=False)
 
 df_500 = df.head(MAX_REGIOES_DS9)
 

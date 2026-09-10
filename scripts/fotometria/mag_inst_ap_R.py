@@ -7,145 +7,186 @@ from astropy.coordinates import SkyCoord
 import astropy.units as u
 from astroquery.vizier import Vizier
 
-# ====================================================================
-# 1. Arquivos e Configurações (Filtro R via Gaia DR3)
-# ====================================================================
-INPUT_CSV_TOTAL = 'fotometria_final_R.csv'
-OUTPUT_CSV = 'fotometria_R_calibrada_Gaia.csv'
+# Configurações de entrada e parâmetros da calibração
+arq_in = 'fotometria_limpa_R.csv'
+arq_out = 'resultado_fotometria_R_calibrada.csv'
 
-RAIO_MATCH_ARCSEC = 4.0 
-ZP_OFFSET = 25.0
-NUM_ESTRELAS_FIT = 500  # Usar apenas as N mais brilhantes para a reta
+zp_offset = 25.0
+raio_match_arcsec = 2.0
+num_top_estrelas = 500
+mag_lim_apass = (10.0, 18.0)
+cut_sigma = 2.5
 
-def ajuste_linear(x, alfa, c):
-    return alfa * x + c
+def reta(x, a, b):
+    return a * x + b
 
-def transformar_gaia_para_R(G, BP, RP):
-    """Transformação empírica de Gaia para a banda R (Cousins)."""
-    bp_rp = BP - RP
-    R_minus_G = -0.0107 - 0.1491 * bp_rp - 0.0084 * (bp_rp**2)
-    return G + R_minus_G
+# Leitura e ajuste da magnitude instrumental
+df = pd.read_csv(arq_in)
+df.columns = df.columns.str.strip()
+df['Mag_Inst'] += zp_offset
 
-# ====================================================================
-# 2. Leitura e Preparação dos Dados Instrumentais
-# ====================================================================
-df_total = pd.read_csv(INPUT_CSV_TOTAL)
-coluna_erro = 'Erro_Mag' if 'Erro_Mag' in df_total.columns else 'Erro_Mag_Inst'
+bg_std = df['Std_Fundo_Local'].iloc[0]
+ap_area = df['Area_Ap'].iloc[0]
+t_exp = df['Exptime'].iloc[0]
+col_erro = 'Erro_Mag' if 'Erro_Mag' in df.columns else 'Erro_Mag_Inst'
 
-std_fundo = df_total['Std_Fundo_Local'].iloc[0] if 'Std_Fundo_Local' in df_total.columns else 10.0
-area_ap = df_total['Area_Ap'].iloc[0] if 'Area_Ap' in df_total.columns else 60.0
-exptime = df_total['Exptime'].iloc[0] if 'Exptime' in df_total.columns else 1.0
+sky_obs = SkyCoord(ra=df['RA_deg'].values * u.deg, dec=df['Dec_deg'].values * u.deg)
 
-# Aplica o Zero Point
-df_total['Mag_Inst'] = df_total['Mag_Inst'] + ZP_OFFSET
-coords_total = SkyCoord(ra=df_total['RA_deg'].values * u.deg, dec=df_total['Dec_deg'].values * u.deg)
+# Consulta ao APASS DR9 (banda r')
+centro_campo = SkyCoord(ra=df['RA_deg'].mean() * u.deg, dec=df['Dec_deg'].mean() * u.deg)
+viz = Vizier(columns=['RAJ2000', 'DEJ2000', "r'mag", "e_r'mag"], row_limit=-1)
+consulta = viz.query_region(centro_campo, radius=15.0 * u.arcmin, catalog='II/336/apass9')[0]
 
-# ====================================================================
-# 3. Consulta ao Gaia DR3
-# ====================================================================
-centro = SkyCoord(ra=df_total['RA_deg'].mean() * u.deg, dec=df_total['Dec_deg'].mean() * u.deg)
-vizier = Vizier(columns=['RA_ICRS', 'DE_ICRS', 'Gmag', 'BPmag', 'RPmag'], row_limit=-1)
-gaia = vizier.query_region(centro, radius=18.0 * u.arcmin, catalog='I/355/gaiadr3')[0]
+cat_apass = consulta[~np.isnan(consulta["r'mag"])]
+sel_mag = (cat_apass["r'mag"] > mag_lim_apass[0]) & (cat_apass["r'mag"] < mag_lim_apass[1])
+cat_apass = cat_apass[sel_mag]
 
-# Filtra apenas estrelas que possuem G, BP e RP (Isso causa o limite visível ~16 mag do catálogo)
-mask_valid = (~np.isnan(gaia['Gmag'])) & (~np.isnan(gaia['BPmag'])) & (~np.isnan(gaia['RPmag']))
-gaia = gaia[mask_valid]
+sky_apass = SkyCoord(ra=cat_apass['RAJ2000'].value * u.deg, dec=cat_apass['DEJ2000'].value * u.deg)
 
-gaia['R_calc'] = transformar_gaia_para_R(gaia['Gmag'].value, gaia['BPmag'].value, gaia['RPmag'].value)
-coords_gaia = SkyCoord(ra=gaia['RA_ICRS'].value * u.deg, dec=gaia['DE_ICRS'].value * u.deg)
+# Cross-match astrométrico
+idx_cat, sep2d, _ = sky_obs.match_to_catalog_sky(sky_apass)
+m_validos = sep2d < (raio_match_arcsec * u.arcsec)
 
-# ====================================================================
-# 4. Cross-Match e Seleção das 500 mais Brilhantes
-# ====================================================================
-idx_tot, d2d_tot, _ = coords_total.match_to_catalog_sky(coords_gaia)
-mask_tot = d2d_tot < (RAIO_MATCH_ARCSEC * u.arcsec)
+m_cat_vals = cat_apass["r'mag"][idx_cat[m_validos]]
+if hasattr(m_cat_vals, 'value'):
+    m_cat_vals = m_cat_vals.value
 
-# Cria um DataFrame temporário só com as pareadas para podermos ordenar
-df_match = pd.DataFrame({
-    'Mag_Inst': df_total['Mag_Inst'].values[mask_tot],
-    'Erro_Inst': df_total[coluna_erro].values[mask_tot],
-    'Mag_Cat': gaia['R_calc'][idx_tot[mask_tot]].value
-})
+df_matched = pd.DataFrame({
+    'm_inst': df['Mag_Inst'].values[m_validos],
+    'm_cat': m_cat_vals,
+    'm_err': df[col_erro].values[m_validos]
+}).sort_values('m_inst').reset_index(drop=True)
 
-# Ordena do mais brilhante (menor mag) para o mais fraco
-df_match = df_match.sort_values(by='Mag_Inst').reset_index(drop=True)
+# Subconjunto das 500 mais brilhantes isolado para a regressão
+df_fit = df_matched.head(num_top_estrelas)
+x_fit = df_fit['m_inst'].values
+y_fit = df_fit['m_cat'].values
 
-x_tot = df_match['Mag_Inst'].values
-y_tot = df_match['Mag_Cat'].values
-err_tot = df_match['Erro_Inst'].values
+# Regressão linear com corte estatístico em 2.5 sigma
+p0, _ = curve_fit(reta, x_fit, y_fit)
+residuos = y_fit - reta(x_fit, *p0)
 
-# Isola estritamente as 500 mais brilhantes para o ajuste
-df_fit = df_match.head(NUM_ESTRELAS_FIT)
-x_fit = df_fit['Mag_Inst'].values
-y_fit = df_fit['Mag_Cat'].values
-err_fit = df_fit['Erro_Inst'].values
+clipped_res = sigma_clip(residuos, sigma=cut_sigma)
+inliers = ~clipped_res.mask
 
-# ====================================================================
-# 5. Ajuste Linear e Limite Instrumental
-# ====================================================================
-popt_init, _ = curve_fit(ajuste_linear, x_fit, y_fit)
-residuos = y_fit - ajuste_linear(x_fit, *popt_init)
-
-# Limpa outliers apenas das 500 estrelas selecionadas
-residuos_limpos = sigma_clip(residuos, sigma=2.5)
-inliers = ~residuos_limpos.mask
-outliers = residuos_limpos.mask
-
-# Ajuste final
-popt, pcov = curve_fit(ajuste_linear, x_fit[inliers], y_fit[inliers])
+popt, pcov = curve_fit(reta, x_fit[inliers], y_fit[inliers])
 alfa, c = popt
+e_alfa, e_c = np.sqrt(np.diag(pcov))
 
-# Calibra o catálogo COMPLETO original
-df_total['Mag_R_Calibrada'] = ajuste_linear(df_total['Mag_Inst'], alfa, c)
-df_total.to_csv(OUTPUT_CSV, index=False)
+# Magnitude limite (5 sigma) e calibração de toda a tabela original
+noise_ap = bg_std * np.sqrt(ap_area)
+m_inst_5sig = -2.5 * np.log10((5.0 * noise_ap) / t_exp) + zp_offset
+mag_limite_5sig = reta(m_inst_5sig, alfa, c)
 
-# Cálculo independente do limite 5-sigma (usando o ruído de fundo da imagem)
-ruido_fundo_total = std_fundo * np.sqrt(area_ap)
-fluxo_limite = 5.0 * ruido_fundo_total
-mag_inst_limite = -2.5 * np.log10(fluxo_limite / exptime) + ZP_OFFSET
-mag_aparente_limite = ajuste_linear(mag_inst_limite, alfa, c)
+df['Mag_R_Calibrada'] = reta(df['Mag_Inst'], alfa, c)
+df.to_csv(arq_out, index=False)
 
-print("\n--- Resultados do Ajuste (Filtro R via Gaia DR3) ---")
-print(f"Total pareado (Gaia com BP/RP): {len(x_tot)}")
-print(f"Estrelas fornecidas pro fit: {len(x_fit)} mais brilhantes")
-print(f"Estrelas efetivamente usadas (inliers): {np.sum(inliers)}")
-print(f"Equação: R_transf = ({alfa:.4f}) * Mag_Inst + ({c:.4f})")
-print(f"Limite 5-sigma Calculado: {mag_aparente_limite:.2f} mag\n")
+print(f"Total de pares encontrados: {len(df_matched)}")
+print(f"Amostra selecionada (mais brilhantes): {len(df_fit)}")
+print(f"Fontes efetivamente usadas (inliers): {inliers.sum()}")
+print(f"Ajuste: r' = ({alfa:.4f} +/- {e_alfa:.4f}) * m_inst + ({c:.4f} +/- {e_c:.4f})")
+print(f"Limite 5-sigma: {mag_limite_5sig:.2f} mag")
 
-# ====================================================================
-# 6. Gráfico Final
-# ====================================================================
-plt.figure(figsize=(10, 7))
+# ----------------------------------------------------------------------
+# 1. Gráfico de Calibração Fotométrica
+# ----------------------------------------------------------------------
+plt.figure(figsize=(9, 6), dpi=100)
 
-x_min_plot = min(min(x_tot), mag_inst_limite) - 0.5
-x_max_plot = max(x_tot) + 0.5
-eixo_x_reta = np.linspace(x_min_plot, x_max_plot, 100)
-eixo_y_reta = ajuste_linear(eixo_x_reta, alfa, c)
+plt.errorbar(
+    df_matched['m_inst'], df_matched['m_cat'], xerr=df_matched['m_err'],
+    fmt='.', color='darkgray', alpha=0.35, zorder=1, label='Todas as fontes pareadas'
+)
 
-# Plota TODAS as pareadas em cinza (como pano de fundo)
-plt.errorbar(x_tot, y_tot, xerr=err_tot, fmt='.', color='gray', alpha=0.3, label='Todas as Pareadas no Gaia')
+if (~inliers).any():
+    plt.errorbar(
+        x_fit[~inliers], y_fit[~inliers], xerr=df_fit['m_err'].values[~inliers],
+        fmt='x', color='crimson', alpha=0.8, zorder=2, label='Outliers descartados'
+    )
 
-# Plota os outliers em vermelho (dentre as 500 mais brilhantes)
-if np.sum(outliers) > 0:
-    plt.errorbar(x_fit[outliers], y_fit[outliers], xerr=err_fit[outliers], fmt='x', color='red', alpha=0.7, label='Outliers Rejeitados')
+plt.errorbar(
+    x_fit[inliers], y_fit[inliers], xerr=df_fit['m_err'].values[inliers],
+    fmt='o', color='royalblue', ecolor='darkred', elinewidth=1.2,
+    capsize=2, alpha=0.9, markeredgecolor='k', zorder=3,
+    label=f'Inliers do fit (Top {num_top_estrelas})'
+)
 
-# Plota as usadas no fit final em azul
-plt.errorbar(x_fit[inliers], y_fit[inliers], xerr=err_fit[inliers], fmt='o', color='blue', alpha=0.7, markeredgecolor='k', label=f'Top {NUM_ESTRELAS_FIT} Usadas no Fit')
+x_line = np.linspace(df_matched['m_inst'].min(), max(df_matched['m_inst'].max(), m_inst_5sig), 100)
+plt.plot(
+    x_line, reta(x_line, alfa, c),
+    color='darkorange', linestyle='--', linewidth=2, zorder=4,
+    label=rf'$r^\prime = ({alfa:.3f} \pm {e_alfa:.3f}) \cdot m_{{inst}} + ({c:.2f} \pm {e_c:.2f})$'
+)
 
-plt.plot(eixo_x_reta, eixo_y_reta, color='black', linewidth=2, label=rf'Fit: $Y = ({alfa:.2f})X + ({c:.2f})$')
+plt.axvline(x=m_inst_5sig, color='purple', linestyle=':', linewidth=1.5, zorder=5)
+plt.axhline(
+    y=mag_limite_5sig, color='purple', linestyle=':', linewidth=1.5, zorder=5,
+    label=f'Limite 5-$\sigma$ ({mag_limite_5sig:.2f} mag)'
+)
 
-plt.axvline(x=mag_inst_limite, color='purple', linestyle='--', alpha=0.6)
-plt.axhline(y=mag_aparente_limite, color='purple', linestyle='--', alpha=0.6, label=f'Limite 5$\sigma$: {mag_aparente_limite:.2f} mag')
+plt.xlabel('Magnitude Instrumental ($ZP = 25$)', fontsize=11)
+plt.ylabel('Magnitude Aparente APASS DR9 ($r^\prime$)', fontsize=11)
+plt.title('Calibração Fotométrica - Banda R (APASS DR9)', fontsize=12, pad=10)
+plt.legend(frameon=True, facecolor='white', edgecolor='gray', fontsize=9, loc='best')
+plt.grid(True, linestyle=':', alpha=0.6)
+
+plt.tight_layout()
+plt.savefig('grafico_calibracao_R.png', dpi=300)
+plt.show()
+
+# ----------------------------------------------------------------------
+# 2. Gráfico de Resíduos
+# ----------------------------------------------------------------------
+x_inliers = x_fit[inliers]
+y_inliers = y_fit[inliers]
+residuos_finais = y_inliers - reta(x_inliers, alfa, c)
+
+plt.figure(figsize=(8, 5), dpi=100)
+plt.scatter(
+    y_inliers, 
+    residuos_finais, 
+    color='purple', alpha=0.6, edgecolor='k', linewidth=0.8, zorder=2
+)
+plt.axhline(0, color='black', linestyle='--', linewidth=1.5, zorder=1)
+
+plt.xlabel("Magnitude Aparente Catálogo ($r'$)")
+plt.ylabel('Resíduo (Catálogo - Ajuste)')
+plt.title('Resíduos do Ajuste Linear')
+plt.grid(True, linestyle=':', alpha=0.6)
 
 plt.gca().invert_xaxis()
-plt.gca().invert_yaxis()
 
-plt.title('Calibração Filtro R: Top 500 Estrelas vs Limite Teórico', fontsize=13)
-plt.xlabel('Magnitude Instrumental (Mag_Inst + 25)', fontsize=11)
-plt.ylabel('Magnitude Aparente (R de Cousins Calculado via Gaia)', fontsize=11)
-plt.legend(loc='best')
-plt.grid(True, linestyle=':', alpha=0.6)
 plt.tight_layout()
+plt.savefig('grafico_residuos_R.png', dpi=300)
+plt.show()
 
-plt.savefig('grafico_calibracao_R_Gaia_Top500.png', dpi=300)
+# ----------------------------------------------------------------------
+# 3. Histograma de Distribuição de Magnitudes
+# ----------------------------------------------------------------------
+plt.figure(figsize=(8, 6), dpi=100)
+
+plt.hist(
+    df['Mag_R_Calibrada'].dropna(),
+    bins=25,
+    color='mediumseagreen',
+    edgecolor='black',
+    alpha=0.75,
+    label='Fontes Extraídas'
+)
+
+plt.axvline(
+    mag_limite_5sig, 
+    color='darkred', 
+    linestyle='--', 
+    linewidth=2.5, 
+    label=f'Limite 5-$\sigma$ ({mag_limite_5sig:.2f} mag)'
+)
+
+plt.xlabel('Magnitude Calibrada (R)', fontsize=12)
+plt.ylabel('Número de Estrelas (N)', fontsize=12)
+plt.title('Distribuição de Magnitudes e Profundidade da Imagem', fontsize=13, pad=12)
+plt.legend(frameon=True, facecolor='white', edgecolor='gray', fontsize=10)
+plt.grid(True, linestyle='--', alpha=0.5)
+
+plt.tight_layout()
+plt.savefig('grafico_histograma_R.png', dpi=300)
 plt.show()
