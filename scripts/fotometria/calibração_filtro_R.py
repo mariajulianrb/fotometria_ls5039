@@ -12,7 +12,7 @@ arq_in = 'fotometria_limpa_R.csv'
 arq_out = 'resultado_fotometria_R_calibrada.csv'
 
 zp_offset = 25.0
-raio_match_arcsec = 2.0
+raio_match_arcsec = 3.0
 num_top_estrelas = 500
 mag_lim_apass = (10.0, 18.0)
 cut_sigma = 2.5
@@ -88,21 +88,24 @@ print(f"Ajuste: r' = ({alfa:.4f} +/- {e_alfa:.4f}) * m_inst + ({c:.4f} +/- {e_c:
 print(f"Limite 5-sigma: {mag_limite_5sig:.2f} mag")
 
 # ----------------------------------------------------------------------
-# 1. Gráfico de Calibração Fotométrica
+# 1. Gráfico de Calibração Fotométrica (TODAS as estrelas no fundo)
 # ----------------------------------------------------------------------
 plt.figure(figsize=(9, 6), dpi=100)
 
+# Plota TODAS as mais de 1000 estrelas pareadas no fundo
 plt.errorbar(
     df_matched['m_inst'], df_matched['m_cat'], xerr=df_matched['m_err'],
-    fmt='.', color='darkgray', alpha=0.35, zorder=1, label='Todas as fontes pareadas'
+    fmt='.', color='lightgray', alpha=0.5, zorder=1, label=f'Todas as fontes pareadas ({len(df_matched)})'
 )
 
+# Outliers do Top 500
 if (~inliers).any():
     plt.errorbar(
         x_fit[~inliers], y_fit[~inliers], xerr=df_fit['m_err'].values[~inliers],
-        fmt='x', color='crimson', alpha=0.8, zorder=2, label='Outliers descartados'
+        fmt='x', color='crimson', alpha=0.8, zorder=2, label='Outliers descartados (Top 500)'
     )
 
+# Inliers do Top 500
 plt.errorbar(
     x_fit[inliers], y_fit[inliers], xerr=df_fit['m_err'].values[inliers],
     fmt='o', color='royalblue', ecolor='darkred', elinewidth=1.2,
@@ -117,12 +120,6 @@ plt.plot(
     label=rf'$r^\prime = ({alfa:.3f} \pm {e_alfa:.3f}) \cdot m_{{inst}} + ({c:.2f} \pm {e_c:.2f})$'
 )
 
-plt.axvline(x=m_inst_5sig, color='purple', linestyle=':', linewidth=1.5, zorder=5)
-plt.axhline(
-    y=mag_limite_5sig, color='purple', linestyle=':', linewidth=1.5, zorder=5,
-    label=f'Limite 5-$\sigma$ ({mag_limite_5sig:.2f} mag)'
-)
-
 plt.xlabel('Magnitude Instrumental ($ZP = 25$)', fontsize=11)
 plt.ylabel('Magnitude Aparente APASS DR9 ($r^\prime$)', fontsize=11)
 plt.title('Calibração Fotométrica - Banda R (APASS DR9)', fontsize=12, pad=10)
@@ -134,23 +131,33 @@ plt.savefig('grafico_calibracao_R.png', dpi=300)
 plt.show()
 
 # ----------------------------------------------------------------------
-# 2. Gráfico de Resíduos
+# 2. Gráfico de Resíduos (EXCLUSIVAMENTE a amostra usada no Fit)
 # ----------------------------------------------------------------------
-x_inliers = x_fit[inliers]
-y_inliers = y_fit[inliers]
-residuos_finais = y_inliers - reta(x_inliers, alfa, c)
+residuos_fit = y_fit - reta(x_fit, alfa, c)
 
 plt.figure(figsize=(8, 5), dpi=100)
+
+# Outliers do fit (se houver)
+if (~inliers).any():
+    plt.scatter(
+        y_fit[~inliers], 
+        residuos_fit[~inliers], 
+        color='crimson', marker='x', alpha=0.8, zorder=2, label='Outliers descartados'
+    )
+
+# Inliers do fit
 plt.scatter(
-    y_inliers, 
-    residuos_finais, 
-    color='purple', alpha=0.6, edgecolor='k', linewidth=0.8, zorder=2
+    y_fit[inliers], 
+    residuos_fit[inliers], 
+    color='purple', alpha=0.7, edgecolor='k', linewidth=0.8, zorder=3, label=f'Inliers do fit (Top {num_top_estrelas})'
 )
+
 plt.axhline(0, color='black', linestyle='--', linewidth=1.5, zorder=1)
 
 plt.xlabel("Magnitude Aparente Catálogo ($r'$)")
 plt.ylabel('Resíduo (Catálogo - Ajuste)')
-plt.title('Resíduos do Ajuste Linear')
+plt.title('Resíduos do Ajuste Linear (Apenas amostra do Fit)')
+plt.legend(frameon=True, facecolor='white', edgecolor='gray', fontsize=9)
 plt.grid(True, linestyle=':', alpha=0.6)
 
 plt.gca().invert_xaxis()
@@ -186,6 +193,11 @@ plt.ylabel('Número de Estrelas (N)', fontsize=12)
 plt.title('Distribuição de Magnitudes e Profundidade da Imagem', fontsize=13, pad=12)
 plt.legend(frameon=True, facecolor='white', edgecolor='gray', fontsize=10)
 plt.grid(True, linestyle='--', alpha=0.5)
+
+#plt.errorbar(
+#    todas_mag_inst, todas_mag_aparente, xerr=todos_erros,
+#    fmt='.', color='lightgray', alpha=0.5, label='Todas as fontes pareadas'
+#)
 
 plt.tight_layout()
 plt.savefig('grafico_histograma_R.png', dpi=300)
