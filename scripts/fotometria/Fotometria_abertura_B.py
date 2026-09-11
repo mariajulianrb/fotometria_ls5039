@@ -74,7 +74,6 @@ df = pd.DataFrame({
 
 margem = np.ceil(RAIO_OUT)
 
-# Filtro de bordas e SNR
 df = df[
     (df['X_pix'] > margem) & (df['X_pix'] < largura - margem) &
     (df['Y_pix'] > margem) & (df['Y_pix'] < altura - margem) &
@@ -90,8 +89,7 @@ if not df.empty:
 
 df = df.sort_values(by='Fluxo', ascending=False).reset_index(drop=True)
 
-# Save
-df.to_csv('fotometria_limpa_B.csv', index=False)
+df.to_csv('fotometria_abertura_B.csv', index=False)
 
 df_500 = df.head(MAX_REGIOES_DS9)
 with open('regioes_aneis_B.reg', 'w') as f:

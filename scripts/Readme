@@ -1,0 +1,45 @@
+/ BARRETO_MariaJulia_AST203_AtividadeFinal/
+│
+├── README.md                           <-- Este arquivo de metadados
+├── BARRETO_MariaJulia_AST203_AtividadeFinal.pdf  <-- Relatório final compilado
+│
+├── 01_imagens_brutas/                   <-- Quadros brutos (.fits.fz)
+│   ├── bias/                           <-- Quadros de Bias (20 arquivos)
+│   ├── darks/                          <-- Quadros de Dark (25s e 50s)
+│   ├── flats/                          <-- Quadros de Flat (B, G, R)
+│   └── ciencia/                        <-- Quadros brutos de LS 5039 (B, G, R)
+│
+├── 02_imagens_reduzidas_wcs/           <-- Masters e imagens empilhadas com WCS
+│   ├── master_bias.fits.fz
+│   ├── master_dark_25s.fits.fz
+│   ├── master_dark_50s.fits.fz
+│   ├── master_flat_B.fits.fz
+│   ├── master_flat_G.fits.fz
+│   ├── master_flat_R.fits.fz
+│   ├── ls5039_B_wcs.fits.fz             <-- Empilhada calibrada + WCS (Filtro B)
+│   ├── ls5039_G_wcs.fits.fz             <-- Empilhada calibrada + WCS (Filtro G)
+│   └── ls5039_R_wcs.fits.fz             <-- Empilhada calibrada + WCS (Filtro R)
+│
+├── 03_tabelas_fotometria/               <-- Tabelas de fotometria e calibração (.csv)
+│   ├── fotometria_extraida_B.csv       <-- Fontes detectadas e m_inst (B)
+│   ├── fotometria_extraida_G.csv       <-- Fontes detectadas e m_inst (G)
+│   ├── fotometria_extraida_R.csv       <-- Fontes detectadas e m_inst (R)
+│   ├── catalogo_calibrado_B.csv        <-- Crossmatch APASS DR9 + mag calibrada
+│   ├── catalogo_calibrado_G.csv        <-- Crossmatch Gaia DR3 + mag calibrada
+│   ├── catalogo_calibrado_R.csv        <-- Crossmatch APASS DR9 + mag calibrada
+│   └── campo_ls5039_CMD_final.csv      <-- Tabela consolidada com cores (B-R, B-G)
+│
+├── 04_codigos_python/                   <-- Scripts de processamento e análise
+│   ├── 01_reducao_e_fotometria.py       <-- Leitura FITS, background, Photutils
+│   ├── 02_crossmatch_e_calibracao.py   <-- Crossmatch (1.5"), regressão linear e RMS
+│   └── 03_geracao_diagramas_cmd.py     <-- Plotagem dos gráficos e histogramas
+│
+├── 05_figuras/                         <-- Figuras em alta resolução (.png)
+│   ├── calibracao/                     <-- Regressões lineares e resíduos (B, G, R)
+│   ├── histogramas/                    <-- Distribuição por classe de magnitude
+│   ├── astrometria/                    <-- Inspeção do WCS no DS9
+│   └── cmd/                            <-- Diagramas Cor-Magnitude Aparentes e Absolutos
+│
+└── 06_latex_source/                    <-- Arquivo fonte do relatório
+    ├── main.tex
+    └── inpe_logo.png

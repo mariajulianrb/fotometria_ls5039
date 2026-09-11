@@ -90,8 +90,8 @@ if not df.empty:
 
 df = df.sort_values(by='Fluxo', ascending=False).reset_index(drop=True)
 
-# Save
-df.to_csv('fotometria_limpa_R.csv', index=False)
+
+df.to_csv('fotometria_abertura_R.csv', index=False)
 
 df_500 = df.head(MAX_REGIOES_DS9)
 with open('regioes_aneis_R.reg', 'w') as f:

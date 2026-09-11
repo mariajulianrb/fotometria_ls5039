@@ -1,16 +1,40 @@
 import pandas as pd
 
-# Parâmetros das aberturas
 FWHM = 7.51846 
 raio_abertura = 1.5 * FWHM
 raio_in = 3.0 * FWHM
 raio_out = 4.0 * FWHM
 
-# 1. Carregar a tabela gerada
-df = pd.read_csv('fotometria_final_R.csv')
+df = pd.read_csv('fotometria_abertura_R.csv')
 
-# 2. Lista de IDs identificados na vinhetagem
 ids_vinhetagem = [
+    1797,
+    1774,
+    1763,
+    118,
+    39,
+    92,
+    122,
+    197,
+    228,
+    337,
+    427,
+    394,
+    430,
+    11,
+    32,
+    64,
+    134,
+    123,
+    1703,
+    1660,
+    1499,
+
+
+]
+
+"""R
+
     1107,
     1095,
     1088,
@@ -28,24 +52,25 @@ ids_vinhetagem = [
     78,
     70,
     85,
-    119,
-
-]
+    119,"""
 
 """G
-    992,
-    1019,
-    82,
-    46,
-    35,
-    148,
-    66,
-    23,
-    1014,
-    1008,
-    263,
-    46,
-    82,"""
+    374,
+    147,
+    323,
+    201,
+    143,
+    671,
+    2641,
+    2608,
+    2566,
+    2491,
+    2433,
+    2385,
+    197,
+    109,
+    76
+    2600"""
 
 
 """B
@@ -84,11 +109,9 @@ ids_vinhetagem = [
     60,
 """
 
-# 3. Remover os IDs e salvar a nova tabela
 df_limpo = df[~df['ID'].isin(ids_vinhetagem)].reset_index(drop=True)
-df_limpo.to_csv('fotometria_limpa_R.csv', index=False)
+df_limpo.to_csv('fotometria_abertura_R.csv', index=False)
 
-# 4. Gerar o novo arquivo de regiões sem os textos impresso no DS9
 with open('regioes_limpas_R.reg', 'w') as f:
     f.write(
         'global color=cyan width=1 select=1 edit=1 move=1 delete=1 include=1'
